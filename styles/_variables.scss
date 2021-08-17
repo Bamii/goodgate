@@ -1,0 +1,34 @@
+$primary_color: #464646;
+$secondary-color: #51C272;
+$font-color: #333431;
+$gray-bg: #F0EFEF;
+$btn-grey: #777777;
+$white: #fff;
+$breakpoint-tablet: 760px;
+$breakpoint-mobile: 420px;
+$breakpoint-desktop: 1024px;
+$emphasis-font: 'Roboto Condensed', sans-serif;
+$header-font: 'PT Serif', serif;
+$topbar-height: 10;
+$transluscent-white: #F0EFEFB5;
+$transluscent-black: rgba(16, 17, 20, 0.8);
+$almost-transluscent-black: rgba(16, 17, 20, 0.3);
+
+$blue: #003865;
+
+@mixin maxWidth($arg) {
+  @media screen and (max-width: $arg) {
+      @content;
+  }
+}
+
+@mixin minWidth($arg) {
+  @media screen and (min-width: $arg) {
+      @content;
+  }
+}
+
+@mixin generalWidth {
+  max-width: 1440px;
+  margin: 0 auto;
+}

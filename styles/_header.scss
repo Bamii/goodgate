@@ -1,0 +1,224 @@
+@import "variables";
+
+header {
+  position: relative;
+
+  #top-strip-container {
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    color: black;
+    background: $transluscent-white; 
+    position: fixed;
+
+    &.transparent {
+      @include minWidth($breakpoint-desktop) {
+        background: transparent;
+        color: white;
+      }
+    }
+
+    &.white {
+      background: $gray-bg;
+    }
+
+    #top-strip {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 1rem 0;
+
+      #logo {
+        width: 50%;
+        height: auto;
+        position: relative;
+
+        .main{
+          position: relative;
+          left: 0;
+          opacity: 1;
+        }
+
+        .icon{
+          width:110px;
+          height:110px;
+          bottom: -15px;
+          left: -35px;
+          opacity: 0.3;
+          position: absolute;
+        }
+
+        img {
+          height: 4rem;
+          width: auto;
+        }
+
+        @include minWidth($breakpoint-tablet) {
+          // height: 6.8rem;
+          width: auto;
+
+          // img {
+          //   height: 100%;
+          //   width: auto;
+          // }
+
+          img {
+            height: 7rem;
+          }
+        }
+      }
+
+      #mobile-menu-button {
+        display: flex;
+        cursor: pointer;
+
+        @include minWidth($breakpoint-desktop) {
+          display: none;
+        }
+      }
+
+      #navigation-wrapper {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @include minWidth($breakpoint-desktop) {
+          display: flex;
+        }
+
+        .menu-links {
+          display: none;
+          align-items: flex-start; 
+
+          .menu-link {
+            padding: 2.5rem 1.2rem;
+            display: inline-flex;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            color: $primary-color;
+            border-radius: 0 0 0.5rem 0.5rem;
+
+            &.auth-link{
+              color: $secondary-color;
+            }
+
+            &.selected,
+            &:hover {
+              background: $secondary-color;
+              color: $white;
+            }
+
+          }
+
+          @include minWidth($breakpoint-desktop) {
+            display: inline-flex;
+          }
+        }
+
+        .extra-menu-links-wrapper {
+          padding: 1rem 0rem 0rem 0rem;
+
+          .extra-menu-links {
+            display: flex;
+            cursor: pointer;
+
+            .extra-menu-link {
+              display: inline-flex;
+              align-items: center;
+              margin-right: 1rem;
+              cursor: pointer;
+
+              &:last-child {
+                margin: 0;
+              }
+
+              .extra-menu-link-image {
+                height: 1.8rem;
+                width: 1.8rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+                background: #34657f;
+                margin-right: 0.5rem;
+
+                img {
+                }
+              }
+
+              .menu-text {
+                color: $secondary-color;
+              }
+
+              #internet-banking-button {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @include minWidth($breakpoint-tablet) {
+      padding: 0 6rem;
+    }
+
+    @include minWidth($breakpoint-desktop) {
+      padding: 0 10rem;
+      
+      #top-strip {
+        align-items: flex-start;
+        padding: 0 0 0.8rem 0;
+      }
+    }
+  }
+
+  #menu-wrapper {
+    .mobile-menu-container {
+      background: $transluscent-white;
+      width: 100%;
+      position: relative;
+
+      #mobile-menu-close {
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+      }
+
+      .mobile-menu-links-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .mobile-menu-links {
+          text-align: center;
+  
+          .mobile-menu-link {
+            padding: 0.8rem 0;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: $primary-color;
+  
+            &:visited {
+              color: $white;
+            }
+  
+            &::after,
+            &::before {
+              content: "-";
+              color: $white;
+              margin: 0 0.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
