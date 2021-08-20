@@ -1,0 +1,132 @@
+@import "header";
+@import "footer";
+@import "variables";
+@import "common";
+
+@import "dashboard";
+
+#dashboard-content-container {
+  .dashboard-contents {
+    width: 100%;
+    
+    .left {
+      padding: 0;
+      flex: none;
+      width: 100%;
+      
+      @include minWidth($breakpoint-tablet) {
+        width: max-content;
+      }
+    }
+  
+    .right {
+      align-items: flex-start;
+      justify-content: flex-start;
+  
+      .product-type-row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 1rem;
+  
+        .product-type {
+          flex: 1;
+          width: 100%;
+          background: black;
+          border-radius: 5px;
+          height: 13rem;
+          margin-right: 1rem;
+  
+          &:last-child {
+            margin: 0;
+          }   
+
+          @include minWidth($breakpoint-desktop) {
+            height: 20rem;
+          }
+        }
+      }
+  
+      .transaction-history {
+        width: 100%;
+  
+        .transaction-history-header {
+          padding: 0.5rem 1rem;
+          color: white;
+          border-radius: 5px;
+          background: $secondary-color;
+  
+        }
+  
+        .transaction-history-list {
+  
+          .transaction-history-entry {
+            border:1px solid #D0EFD9;
+            border-radius: 5px;
+            padding: 0.6rem 1rem;
+            margin: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            
+            &.success {
+              border-left: 0.4rem solid $secondary-color;
+            }
+  
+            &.declined {
+              border-left: 0.4rem solid #FF0000;
+            }
+  
+            .small-text {
+              color: #A6B1C0;
+              font-size: 0.7rem;
+              text-transform: none;
+            }
+          }
+        }
+      }
+    }
+  
+    .dashboard-product-card {
+      background: #F7F7F7;
+      border-radius: 5px;
+      width: 100%;
+      color: #4B1F51;
+      margin-bottom: 2rem;
+  
+      .header{
+        padding: 1rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      .body {
+        text-align: center;
+        padding: 0 1rem 1rem 1rem;
+  
+        .details-row {
+          padding: 0.8rem 0;
+          line-height: 1.3;
+        }
+  
+      }
+  
+      .action {
+        width: 100%;
+        padding: 1rem 0;
+        background: $secondary-color;
+        border-radius: 5px;
+        text-align: center;
+        color: white;
+      }
+
+      @include minWidth($breakpoint-tablet) {
+        width: 15rem;
+      }
+
+      @include minWidth($breakpoint-desktop) {
+        width: 18rem;
+      }
+    }
+  }
+}
+                                          

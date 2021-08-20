@@ -1,0 +1,54 @@
+@import "header";
+@import "footer";
+@import "variables";
+@import "common";
+@import "dashboard";
+ 
+.dashboard-contents {
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .product-card {
+      width: 16rem;
+      border: 1px solid $primary-color;
+      border-radius: 5px;
+      border-bottom: 5px solid $secondary-color;
+      margin: 0 1rem 1rem 0;
+
+      .image {
+        height: 10rem;
+        width: 100%;
+      }
+
+      .body {
+        padding: 1rem;
+        font-size: 0.9rem;
+
+        .name-row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .name {
+            font-size: 1.1rem;
+            font-weight: 600;
+          }
+        }
+
+        .details-row {
+          padding: 1rem 0;
+          color: $primary-color;
+
+          span {
+            color: #9D9A94;
+          }
+        }
+
+        .duration-row {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

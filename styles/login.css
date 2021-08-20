@@ -503,7 +503,6 @@ body {
 
 .small-text {
   font-size: 0.9rem;
-  text-transform: uppercase;
   letter-spacing: 0.48px;
 }
 
@@ -529,7 +528,6 @@ body {
 
 .accented-text {
   color: #51C272;
-  font-family: 'PT Serif', serif;
 }
 
 main {
@@ -908,13 +906,13 @@ button.cta {
 
 .auth-input-container {
   position: relative;
-  -webkit-box-shadow: 0px 12px 40px #00000014;
-          box-shadow: 0px 12px 40px #00000014;
+  -webkit-box-shadow: 0px 3px 15px 6px #00000010;
+          box-shadow: 0px 3px 15px 6px #00000010;
 }
 
 .auth-input-container label {
   position: absolute;
-  top: 0.9rem;
+  top: 0.5rem;
   padding: 0 1rem;
   width: 100%;
   display: -webkit-box;
@@ -925,15 +923,15 @@ button.cta {
           justify-content: space-between;
   color: #464646;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .auth-input-container input {
   width: 100%;
-  padding: 2.5rem 1rem 1rem;
+  padding: 2.1rem 1rem 1rem;
   border: none;
-  border-radius: 4px;
-  font-size: 1.2rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
 }
 
 main {
@@ -962,6 +960,9 @@ main {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 6rem 2rem 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #auth-section .left .row-contents {
@@ -980,13 +981,17 @@ main {
   text-align: right;
 }
 
+#auth-section .left .row-contents .action {
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 760px) {
   #auth-section .row-half {
     height: 100%;
     width: 50%;
   }
   #auth-section .left {
-    padding: 5rem 7rem 3rem;
+    padding: 5rem 0;
   }
 }
 
