@@ -1990,6 +1990,11 @@ main {
   margin-top: auto;
 }
 
+#dashboard-container #dashboard-navigation-container .dashboard-navigation .logout .cta {
+  width: 100%;
+  background: #484848;
+}
+
 #dashboard-container #dashboard-content-container {
   padding: 0;
   overflow: scroll;

@@ -32,10 +32,16 @@
         .product-type {
           flex: 1;
           width: 100%;
-          background: black;
           border-radius: 5px;
+          border: 2px solid #D0EFD9;
           height: 13rem;
           margin-right: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: flex-end;
+          padding: 1rem ;
+          line-height: 1;
   
           &:last-child {
             margin: 0;
@@ -65,8 +71,9 @@
             border-radius: 5px;
             padding: 0.6rem 1rem;
             margin: 1rem 0;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            column-gap: 0.3rem;
             
             &.success {
               border-left: 0.4rem solid $secondary-color;
@@ -75,12 +82,33 @@
             &.declined {
               border-left: 0.4rem solid #FF0000;
             }
+
+            .details, .transaction-type, .status {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            }
   
             .small-text {
               color: #A6B1C0;
               font-size: 0.7rem;
               text-transform: none;
             }
+
+            .transaction-type {
+              text-align: center;
+            }
+
+            .status {
+              text-align: right;
+              align-items: flex-end;
+              
+              img {
+                height: 2rem;
+                width: 2rem;
+              }
+            }
+
           }
         }
       }

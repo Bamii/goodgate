@@ -2134,10 +2134,25 @@ main {
       -ms-flex: 1;
           flex: 1;
   width: 100%;
-  background: black;
   border-radius: 5px;
+  border: 2px solid #D0EFD9;
   height: 13rem;
   margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1rem;
+  line-height: 1;
 }
 
 #dashboard-content-container .dashboard-contents .right .product-type-row .product-type:last-child {
@@ -2166,12 +2181,12 @@ main {
   border-radius: 5px;
   padding: 0.6rem 1rem;
   margin: 1rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -webkit-column-gap: 0.3rem;
+          column-gap: 0.3rem;
 }
 
 #dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry.success {
@@ -2182,10 +2197,39 @@ main {
   border-left: 0.4rem solid #FF0000;
 }
 
+#dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry .details, #dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry .transaction-type, #dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 #dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry .small-text {
   color: #A6B1C0;
   font-size: 0.7rem;
   text-transform: none;
+}
+
+#dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry .transaction-type {
+  text-align: center;
+}
+
+#dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry .status {
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry .status img {
+  height: 2rem;
+  width: 2rem;
 }
 
 #dashboard-content-container .dashboard-contents .dashboard-product-card {

@@ -18,12 +18,12 @@
             </div>
             <div class="dashboard-navigation-items">
               <div class="dashboard-navigation-item selected">
-                <div class="tag">Dashboard</div>
+                <div class="tag"><a href="dashboard.html">Dashboard</a></div>
               </div>
               <div class="dashboard-navigation-item">
                 <div data-nav-tag="loan" class="tag">Loan <span>+</span></div>
                 <div data-nav-tag-target="loan" class="dashboard-navigation-subitems">
-                  <div class="dashboard-navigation-subitem">Loan Product</div>
+                  <div class="dashboard-navigation-subitem"><a href="products.html">Loan Product</a></div>
                   <div class="dashboard-navigation-subitem">My Loan History</div>
                   <div class="dashboard-navigation-subitem">Repayment</div>
                 </div>
@@ -31,7 +31,7 @@
               <div class="dashboard-navigation-item">
                 <div data-nav-tag="investment" class="tag">Investment <span>+</span></div>
                 <div data-nav-tag-target="investment" class="dashboard-navigation-subitems">
-                  <div class="dashboard-navigation-subitem">Loan Product</div>
+                  <div class="dashboard-navigation-subitem"><a href="products.html">Loan Product</a></div>
                   <div class="dashboard-navigation-subitem">My Loan History</div>
                   <div class="dashboard-navigation-subitem">Repayment</div>
                 </div>
@@ -119,8 +119,14 @@
             </div>
             <div class="row-half master right">
               <div class="product-type-row">
-                <div class="product-type"></div>
-                <div class="product-type"></div>
+                <div class="product-type">
+                  <div class="small-text">PRODUCT</div>
+                  <div class="large-text">Loan</div>
+                </div>
+                <div class="product-type">
+                  <div class="small-text">PRODUCT</div>
+                  <div class="large-text">Investment</div>
+                </div>
               </div>
               <div class="transaction-history">
                 <div class="transaction-history-header">My Transaction History</div>
@@ -132,12 +138,38 @@
                         Application date: Mar 03, 2019
                       </div>
                     </div>
+                    <div class="transaction-type">
+                      <div>
+                        Loan Products: <span class="accented-text">Rent Loans</span>
+                      </div>
+                      <div class="small-text">
+                        You have been debited with 2.5% from your withdrawal
+                      </div>
+                    </div>
                     <div class="status">
-
+                      <img src="images/check.svg" alt="Approved.">
+                      Approved
                     </div>
                   </div>
                   <div class="transaction-history-entry declined">
-
+                    <div class="details">
+                      <div class="medium-text">₦70,000</div>
+                      <div class="small-text">
+                        Application date: Mar 03, 2019
+                      </div>
+                    </div>
+                    <div class="transaction-type">
+                      <div>
+                        Loan Products: <span class="accented-text">Rent Loans</span>
+                      </div>
+                      <div class="small-text">
+                        You have been debited with 2.5% from your withdrawal
+                      </div>
+                    </div>
+                    <div class="status">
+                      <img src="images/cancel.svg" alt="Declined.">
+                      Declined
+                    </div>
                   </div>
                 </div>
               </div>
