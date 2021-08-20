@@ -8,6 +8,14 @@ main {
   max-width: unset;
 }
 
+.row-half {
+  .main-image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
 #home-banner-section-wrapper {
   max-width: unset;
 
@@ -30,30 +38,31 @@ main {
       overflow: hidden;
   
       %banner-position {
-        background-size: cover;
-        background-position: center;
+        background-size: auto 50%;
+        background-position: 90%;
+        background-repeat: no-repeat;
       }
 
       [data-slide="0"] {
         @extend %banner-position;
-        background-image: url(/assets/banner1.png);
+        background-image: url(../images/banner.png);
       }
 
       [data-slide="1"] {
         @extend %banner-position;
-        background-image: url(/assets/banner2.png);
+        background-image: url(../images/banner.png);
       }
 
       [data-slide="2"] {
         @extend %banner-position;
-        background-image: url(/assets/banner3.png);
+        background-image: url(../images/banner.png);
       }
 
       .banner-slide-container {
         width: 100vw;
         height: 100%;
-        background-size: cover;
-        background-position: center;
+        // background-size: cover;
+        // background-position: center;
   
         .banner-slide {
           min-width: 100vw;
@@ -182,6 +191,19 @@ main {
   }
 }
 
+#about-us-section {
+  padding-top: 0;
+
+  // .left {
+  //   .main-image {
+  //     img {
+
+  //       width: 100%;
+  //     }
+  //   }
+  // }
+}
+
 
 #engagements-section{
   .engagement-steps {
@@ -201,9 +223,15 @@ main {
         width: 100%;
 
         img {
-          width: 100%;
-          height: auto;
+          width: auto;
+          height: 20rem;
         }
+      }
+
+      .engagement-text {
+        text-align: center;
+        padding: 0.5rem 2rem;
+        font-weight: bold;
       }
     }
 

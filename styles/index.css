@@ -944,6 +944,10 @@ main {
   max-width: unset;
 }
 
+.row-half .main-image img {
+  width: 100%;
+}
+
 #home-banner-section-wrapper {
   max-width: unset;
 }
@@ -972,27 +976,26 @@ main {
 }
 
 #home-banner-section-wrapper #banner-section .banner-slides-container .banner-slides [data-slide="0"], #home-banner-section-wrapper #banner-section .banner-slides-container .banner-slides [data-slide="1"], #home-banner-section-wrapper #banner-section .banner-slides-container .banner-slides [data-slide="2"] {
-  background-size: cover;
-  background-position: center;
+  background-size: auto 50%;
+  background-position: 90%;
+  background-repeat: no-repeat;
 }
 
 #home-banner-section-wrapper #banner-section .banner-slides-container .banner-slides [data-slide="0"] {
-  background-image: url(/assets/banner1.png);
+  background-image: url(../images/banner.png);
 }
 
 #home-banner-section-wrapper #banner-section .banner-slides-container .banner-slides [data-slide="1"] {
-  background-image: url(/assets/banner2.png);
+  background-image: url(../images/banner.png);
 }
 
 #home-banner-section-wrapper #banner-section .banner-slides-container .banner-slides [data-slide="2"] {
-  background-image: url(/assets/banner3.png);
+  background-image: url(../images/banner.png);
 }
 
 #home-banner-section-wrapper #banner-section .banner-slides-container .banner-slides .banner-slide-container {
   width: 100vw;
   height: 100%;
-  background-size: cover;
-  background-position: center;
 }
 
 #home-banner-section-wrapper #banner-section .banner-slides-container .banner-slides .banner-slide-container .banner-slide {
@@ -1161,6 +1164,10 @@ main {
   background: #51C272;
 }
 
+#about-us-section {
+  padding-top: 0;
+}
+
 #engagements-section .engagement-steps {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1193,8 +1200,14 @@ main {
 }
 
 #engagements-section .engagement-steps .engagement-step .engagement-image img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 20rem;
+}
+
+#engagements-section .engagement-steps .engagement-step .engagement-text {
+  text-align: center;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 760px) {
