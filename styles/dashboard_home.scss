@@ -39,7 +39,7 @@
   
           &:last-child {
             margin: 0;
-          }   
+          }    
 
           @include minWidth($breakpoint-desktop) {
             height: 20rem;
