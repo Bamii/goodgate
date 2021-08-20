@@ -820,7 +820,7 @@ section.split-row .right {
 .modal {
   display: none;
   z-index: 10000;
-  position: relative;
+  overflow: scroll;
 }
 
 .modal.visible {
@@ -835,53 +835,52 @@ section.split-row .right {
   background: rgba(16, 17, 20, 0.8);
 }
 
-.modal .modal-close {
-  position: absolute;
-  padding: 0.5rem;
-  background: #51C272;
-  top: 1rem;
-  right: 1rem;
-  color: #fff;
-  border-radius: 0.25rem;
-  cursor: pointer;
-}
-
 .modal .mask {
   width: 100%;
-  height: 100%;
+  margin: 0 auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 6rem 2rem 2rem 2rem;
 }
 
 .modal .mask .mask-close {
-  right: 2rem;
-  top: 6.5rem;
-  color: #fff;
+  right: 3rem;
+  top: 3rem;
+  color: white;
   font-size: 1.5rem;
   cursor: pointer;
   position: absolute;
 }
 
 @media screen and (min-width: 760px) {
+  .modal .mask {
+    padding: 10rem 0 0 0;
+    padding: 6rem 4rem;
+  }
   .modal .mask .mask-close {
-    top: 7.5rem;
-    right: 3rem;
+    right: 5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .modal .mask .mask-close {
-    right: 15rem;
-    top: 8.5rem;
+  .modal .mask {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    padding: 6rem;
   }
+  .modal .mask .mask-close {
+    right: 7rem;
+  }
+}
+
+.modal .mask .mask-contents {
+  background-color: white;
+  border-radius: 4px;
+  padding: 2rem;
 }
 
 .nav-item img {
@@ -1762,7 +1761,7 @@ section.split-row .right {
 .modal {
   display: none;
   z-index: 10000;
-  position: relative;
+  overflow: scroll;
 }
 
 .modal.visible {
@@ -1777,53 +1776,52 @@ section.split-row .right {
   background: rgba(16, 17, 20, 0.8);
 }
 
-.modal .modal-close {
-  position: absolute;
-  padding: 0.5rem;
-  background: #51C272;
-  top: 1rem;
-  right: 1rem;
-  color: #fff;
-  border-radius: 0.25rem;
-  cursor: pointer;
-}
-
 .modal .mask {
   width: 100%;
-  height: 100%;
+  margin: 0 auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 6rem 2rem 2rem 2rem;
 }
 
 .modal .mask .mask-close {
-  right: 2rem;
-  top: 6.5rem;
-  color: #fff;
+  right: 3rem;
+  top: 3rem;
+  color: white;
   font-size: 1.5rem;
   cursor: pointer;
   position: absolute;
 }
 
 @media screen and (min-width: 760px) {
+  .modal .mask {
+    padding: 10rem 0 0 0;
+    padding: 6rem 4rem;
+  }
   .modal .mask .mask-close {
-    top: 7.5rem;
-    right: 3rem;
+    right: 5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .modal .mask .mask-close {
-    right: 15rem;
-    top: 8.5rem;
+  .modal .mask {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    padding: 6rem;
   }
+  .modal .mask .mask-close {
+    right: 7rem;
+  }
+}
+
+.modal .mask .mask-contents {
+  background-color: white;
+  border-radius: 4px;
+  padding: 2rem;
 }
 
 .nav-item img {
@@ -2184,5 +2182,22 @@ main {
 
 .dashboard-contents .action button {
   width: 100%;
+}
+
+.mask-contents {
+  text-align: center;
+}
+
+.mask-contents .icon {
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid #51C272;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+
+.mask-contents .cta {
+  margin-top: 2rem;
+  padding: 1.3rem 5rem;
 }
 /*# sourceMappingURL=product-page.css.map */

@@ -78,3 +78,20 @@
   }
 }
               
+
+.mask-contents {
+  .icon {
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid $secondary-color;
+    border-radius: 50%;
+    margin: 1rem auto;
+  }
+
+  .cta {
+    margin-top: 2rem;
+    padding: 1.3rem 5rem;
+  }
+
+  text-align: center;
+}

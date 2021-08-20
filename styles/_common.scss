@@ -287,10 +287,11 @@ section.split-row {
   }
 }
 
+
 .modal {
   display: none;
   z-index: 10000;
-  position: relative;
+  overflow: scroll;
 
   &.visible {
     display: flex;
@@ -299,45 +300,48 @@ section.split-row {
     top: 0;
     height: 100vh;
     width: 100%;
-    background: $transluscent-black;
+    background: rgba(16, 17, 20, 0.8);
   }
 
-  .modal-close {
-    position: absolute;
-    padding: 0.5rem;
-    background: $secondary-color;
-    top: 1rem;
-    right: 1rem;
-    color: $white;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
-  
   .mask {
     width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    height: max-content;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 6rem 2rem 2rem 2rem;
   
     .mask-close {
-      right: 2rem;
-      top: 6.5rem;
-      color: $white;
+      right: 3rem;
+      top: 3rem;
+      color: white;
       font-size: 1.5rem;
       cursor: pointer;
       position: absolute;
-  
-      @include minWidth($breakpoint-tablet) {
-        top: 7.5rem;
-        right: 3rem;
+    }
+
+    @include minWidth(760px) {
+      padding: 10rem 0 0 0;
+      padding: 6rem 4rem;
+
+      .mask-close {
+        right: 5rem;
       }
+    }
   
-      @include minWidth($breakpoint-desktop) {
-        right: 15rem;
-        top: 8.5rem;
+    @include minWidth(1024px) {
+      display: flex;
+      width: 50%;
+      padding: 6rem;
+
+      .mask-close {
+        right: 7rem;
       }
+    }
+
+    .mask-contents {
+      background-color: white;
+      border-radius: 4px;
+      padding: 2rem;
     }
   }
 }
