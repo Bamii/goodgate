@@ -384,7 +384,13 @@ button.cta {
     width: 100%;
     padding: 2.1rem 1rem 1rem;
     border: none;
-    border-radius: 5px;
-    font-size: 0.8rem
+    border-radius: 10px;
+    font-size: 0.8rem;
+    
+    &:focus {
+      outline: dotted #00000010;
+      border-left: 5px solid $secondary-color;
+      border-radius: 0 10px 10px 0;
+    }
   }
 }

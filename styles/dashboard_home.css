@@ -930,8 +930,14 @@ button.cta {
   width: 100%;
   padding: 2.1rem 1rem 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 0.8rem;
+}
+
+.auth-input-container input:focus {
+  outline: dotted #00000010;
+  border-left: 5px solid #51C272;
+  border-radius: 0 10px 10px 0;
 }
 
 header {
@@ -1866,8 +1872,14 @@ button.cta {
   width: 100%;
   padding: 2.1rem 1rem 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 0.8rem;
+}
+
+.auth-input-container input:focus {
+  outline: dotted #00000010;
+  border-left: 5px solid #51C272;
+  border-radius: 0 10px 10px 0;
 }
 
 main {
