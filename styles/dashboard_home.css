@@ -2038,8 +2038,6 @@ main {
 #dashboard-container #dashboard-content-container .top-strip .alerts .icon, #dashboard-container #dashboard-content-container .top-strip .notifications .icon {
   height: 2rem;
   width: 2rem;
-  border: 1px solid #51C272;
-  border-radius: 50%;
 }
 
 #dashboard-container #dashboard-content-container .top-strip .account {
