@@ -902,6 +902,7 @@ button.cta.secondary {
   position: relative;
   -webkit-box-shadow: 0px 3px 15px 6px #00000010;
           box-shadow: 0px 3px 15px 6px #00000010;
+  border-radius: 5px;
 }
 
 .input-container label {
@@ -927,7 +928,7 @@ button.cta.secondary {
   width: 100%;
   padding: 2.1rem 1rem 1rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 0.8rem;
 }
 

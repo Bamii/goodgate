@@ -76,6 +76,10 @@ main {
 
     @include minWidth($breakpoint-mobile) {
       display: block;
+      background-image: url(../images/auth_background.png);
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
     }
     background-color: black;
   }
