@@ -131,6 +131,51 @@ main {
         width: 2rem;
       }
 
+      .notifications {
+        position: relative;
+
+        .notifications-list {
+          position: absolute;
+          display: none;
+          top: 3rem;
+          right: 0;
+          width: 20rem;
+          border-radius: 5px;
+          background: white;
+          z-index: 1000;
+          box-shadow: 0px 2px 10px #00000027;
+
+          &.show {
+            display: block;
+          }
+
+          .notifications-header,
+          .see-all {
+            padding: 1rem 0;
+            text-align: center;
+          }
+
+          .notifications-body {
+            .notification {
+              background: #D0EFD9;
+              padding: 0.6rem 3rem;
+              
+              .notification-title {
+                font-weight: bold;
+              }
+
+              .notification-details {
+                font-size: 0.8rem;
+              }
+              
+              &:nth-child(1) {
+                background: #FAFAFA;
+              }
+            }
+          }
+        }
+      }
+
       .account {
         border: 1px solid $secondary-color;
         border-radius: 50%;
@@ -139,7 +184,7 @@ main {
       }
     }
 
-    #notification {
+    #alert {
       display: none;
       width: 100%;
       text-align: center;
@@ -153,7 +198,7 @@ main {
         display: block;
       }
 
-      #notification-close {
+      #alert-close {
         position: absolute;
         right: 1rem;
         top: 0.1rem;
@@ -161,7 +206,6 @@ main {
         cursor: pointer;
       }
     }
-
 
     .welcome-message {
       padding: 1rem 2rem;

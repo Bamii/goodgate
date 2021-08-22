@@ -15,7 +15,12 @@
     }
   })
 
-  document.getElementById('notification-close').onclick = function () {
-    document.getElementById('notification').classList.remove('active')
+
+  document.querySelector('[data-notifications-open]').onclick = function() {
+    document.querySelector('[data-notifications]').classList.toggle('show')
+  }
+  
+  document.getElementById('alert-close').onclick = function () {
+    document.getElementById('alert').classList.remove('active')
   }
 })()
