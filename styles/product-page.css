@@ -2228,15 +2228,35 @@ main {
   cursor: pointer;
 }
 
+.dashboard-contents .product-details-section .requirements-list .requirement .icon {
+  width: 5rem;
+  height: 5rem;
+  color: #51C272;
+  fill: white;
+}
+
+.dashboard-contents .product-details-section .requirements-list .requirement .icon .stroke {
+  fill: #51C272;
+}
+
 .dashboard-contents .product-details-section .requirements-list .requirement .text {
   border-top: 1px solid gray;
   padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 .dashboard-contents .product-details-section .requirements-list .requirement:hover, .dashboard-contents .product-details-section .requirements-list .requirement.selected {
   background: #51C272;
   color: white;
   border: none;
+}
+
+.dashboard-contents .product-details-section .requirements-list .requirement:hover .icon, .dashboard-contents .product-details-section .requirements-list .requirement.selected .icon {
+  color: white;
+}
+
+.dashboard-contents .product-details-section .requirements-list .requirement:hover .icon .stroke, .dashboard-contents .product-details-section .requirements-list .requirement.selected .icon .stroke {
+  fill: white;
 }
 
 .dashboard-contents .product-details-section .requirements-list .requirement:hover .text, .dashboard-contents .product-details-section .requirements-list .requirement.selected .text {
