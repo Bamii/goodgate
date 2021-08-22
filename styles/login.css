@@ -73,7 +73,7 @@ header #top-strip-container #top-strip #logo img {
     width: auto;
   }
   header #top-strip-container #top-strip #logo img {
-    height: 7rem;
+    height: 5rem;
   }
 }
 
@@ -117,7 +117,7 @@ header #top-strip-container #top-strip #navigation-wrapper .menu-links {
 }
 
 header #top-strip-container #top-strip #navigation-wrapper .menu-links .menu-link {
-  padding: 2.5rem 1.2rem;
+  padding: 2em 1.2rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -202,6 +202,9 @@ header #top-strip-container #top-strip #navigation-wrapper .extra-menu-links-wra
 @media screen and (min-width: 760px) {
   header #top-strip-container {
     padding: 0 6rem;
+  }
+  header #top-strip-container #logo {
+    padding-top: 0.8rem;
   }
 }
 
@@ -801,22 +804,6 @@ section.split-row .right {
   color: #333431;
 }
 
-.input-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1.5rem 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.input-container svg, .input-container img {
-  height: 2.5rem;
-  width: 2.5rem;
-  margin-right: 0.5rem;
-}
-
 .modal {
   display: none;
   z-index: 10000;
@@ -901,15 +888,23 @@ button.cta {
   border-radius: 4px;
   border: 0;
   font-size: 1rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  cursor: pointer;
 }
 
-.auth-input-container {
+button.cta.secondary {
+  background: #484848;
+}
+
+.input-container {
   position: relative;
   -webkit-box-shadow: 0px 3px 15px 6px #00000010;
           box-shadow: 0px 3px 15px 6px #00000010;
 }
 
-.auth-input-container label {
+.input-container label {
   position: absolute;
   top: 0.5rem;
   padding: 0 1rem;
@@ -925,7 +920,10 @@ button.cta {
   font-size: 0.85rem;
 }
 
-.auth-input-container input {
+.input-container div,
+.input-container select,
+.input-container textarea,
+.input-container input {
   width: 100%;
   padding: 2.1rem 1rem 1rem;
   border: none;
@@ -933,7 +931,10 @@ button.cta {
   font-size: 0.8rem;
 }
 
-.auth-input-container input:focus {
+.input-container div:focus,
+.input-container select:focus,
+.input-container textarea:focus,
+.input-container input:focus {
   outline: dotted #00000010;
   border-left: 5px solid #51C272;
   border-radius: 0 10px 10px 0;
@@ -978,7 +979,7 @@ main {
   margin-bottom: 1rem;
 }
 
-#auth-section .left .row-contents .auth-input-container {
+#auth-section .left .row-contents .input-container {
   margin: 1rem 0;
 }
 
@@ -1012,7 +1013,7 @@ main {
     width: 50%;
   }
   #auth-section .left {
-    padding: 5rem 0;
+    padding: 9rem 0 5rem 0;
   }
 }
 

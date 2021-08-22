@@ -14,7 +14,7 @@
         <div id="dashboard-navigation-container" class="row-half left">
           <div class="dashboard-navigation">
             <div class="logo">
-
+              <img src="images/GoodGate-Finance-Limited-Logo.png" alt="">
             </div>
             <div class="dashboard-navigation-items">
               <div class="dashboard-navigation-item">
@@ -37,14 +37,14 @@
                 </div>
               </div>
               <div class="dashboard-navigation-item">
-                <div class="tag">My Documents</div>
+                <a class="tag" href="my_documents.html">My Documents</a>
               </div>
               <div class="dashboard-navigation-item">
                 <div class="tag">Terms and Conditions</div>
               </div>
             </div>
             <div class="logout">
-              <button class="cta">
+              <button class="cta secondary">
                 Logout
               </button>
             </div>
@@ -66,83 +66,285 @@
             <span id="notification-close">x</span>
           </div>
 
-          <div class="welcome-message">
-            Ready to apply for a loan? Please fill the form
+          <div data-application-step="main" class="selected">
+            <div class="welcome-message">
+              Ready to apply for a loan? Please fill the form
+            </div>
+  
+            <div class="dashboard-contents">
+              <div class="product-banner">
+                Car Loan
+              </div>
+  
+              <div class="product-details-section product-brief">
+                <div class="header">Product Brief</div>
+                <div class="body">
+                  Car Loan is a personal loan that helps you meet your automobile needs for your dream car. We consistently supports small and large scale businesses including individuals with loans, investment opportunities to meet their growing needs
+                </div>
+              </div>
+  
+              <div class="product-details-section requirements">
+                <div class="header">Requirements</div>
+                <div class="requirements-list">
+                  <div data-application-open="personal-information" class="requirement selected">
+                    <div class="icon"></div>
+                    <div class="text">
+                      Personal Information
+                    </div>
+                  </div>
+                  <div data-application-open="personal-information" class="requirement">
+                    <div class="icon"></div>
+                    <div class="text">
+                      Educational Information
+                    </div>
+                  </div>
+                  <div data-application-open="personal-information" class="requirement">
+                    <div class="icon"></div>
+                    <div class="text">
+                      Employment Information
+                    </div>
+                  </div>
+                  <div data-application-open="personal-information" class="requirement">
+                    <div class="icon"></div>
+                    <div class="text">
+                      Address Details
+                    </div>
+                  </div>
+                  <div data-application-open="bank-and-card" class="requirement">
+                    <div class="icon"></div>
+                    <div class="text">
+                      Bank Details
+                    </div>
+                  </div>
+                  <div data-application-open="loan" class="requirement">
+                    <div class="icon"></div>
+                    <div class="text">
+                      Loan Details
+                    </div>
+                  </div>
+                  <div data-application-open="personal-information" class="requirement">
+                    <div class="icon"></div>
+                    <div class="text">
+                     Upload Documents
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="action">
+                <button class="cta">
+                  Apply
+                </button>
+              </div>
+            </div>
           </div>
 
-          <div class="dashboard-contents">
-            <div class="product-banner">
-              Car Loan
+          <div data-application-step="personal-information" class="">
+            <div class="welcome-message">
+              Ready to apply for a loan? Please fill the form
+              <span data-application-open="main" class="accented-text">BACK</span>
             </div>
 
-            <div class="product-details-section product-brief">
-              <div class="header">Product Brief</div>
-              <div class="body">
-                Car Loan is a personal loan that helps you meet your automobile needs for your dream car. We consistently supports small and large scale businesses including individuals with loans, investment opportunities to meet their growing needs
+            <div class="application-contents">
+              <div class="header medium-text">
+                Personal Information
+              </div>
+              <div class="split-row">
+                <div class="left">
+                  <div class="image-upload-container">
+                    <div class="label">Passport</div>
+                    <div class="image"></div>  <!-- <img src="" alt="User Image."> -->
+                    <div class="image-upload-input">
+                      <input type="file" name="passportupload" id="passportupload">
+                      <label class="label" for="passportupload">click here</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="right master">
+                  <div class="row">
+                    <div class="input-container">
+                      <label for="name"><span>fullname</span></label>
+                      <input name="name" type="text" placeholder="John Doe">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container">
+                      <label for="email"><span>Email Address</span></label>
+                      <input name="email" type="text" placeholder="a@g.com">
+                    </div>
+                    <div class="input-container">
+                      <label for="bvn"><span>bvn</span></label>
+                      <input name="bvn" type="text" placeholder="----------------">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container">
+                      <label for="dob"><span>Date of Birth</span></label>
+                      <input name="dob" type="text">
+                    </div>
+                    <div class="input-container">
+                      <label for="identification"><span>Means of identification</span></label>
+                      <select name="identification" id="">
+                        <option selected value="---------">------</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container">
+                      <label for="email"><span>Phone Number</span></label>
+                      <input name="email" type="text" placeholder="+2341234567634">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container full-width">
+                      <label for="email"><span>Home address</span></label>
+                      <textarea name="email" type="text"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="action">
+                <button class="cta">
+                  SUBMIT PERSONAL INFORMATION
+                </button>
               </div>
             </div>
+          </div>
 
-            <div class="product-details-section requirements">
-              <div class="header">Requirements</div>
-              <div class="requirements-list">
-                <div class="requirement selected">
-                  <div class="icon"></div>
-                  <div class="text">
-                    Personal Information
-                  </div>
+          <div data-application-step="bank-and-card" class="">
+            <div class="welcome-message">
+              Ready to apply for a loan? Please fill the form
+              <span data-application-open="main" class="accented-text">BACK</span>
+            </div>
+
+            <div class="application-contents">
+              <div class="header medium-text">
+                Bank and Card Details
+              </div>
+              <div class="row">
+                <div class="input-container">
+                  <label for="identification"><span>Bank name</span></label>
+                  <select name="identification" id="">
+                    <option selected value="---------"> ------ </option>
+                  </select>
                 </div>
-                <div class="requirement">
-                  <div class="icon"></div>
-                  <div class="text">
-                    Educational Information
-                  </div>
+                <div class="input-container">
+                  <label for="dob"><span>account number</span></label>
+                  <input name="dob" type="text">
                 </div>
-                <div class="requirement">
-                  <div class="icon"></div>
-                  <div class="text">
-                    Employment Information
-                  </div>
+                <button class="cta secondary">CHECK</button>
+              </div>
+              <div class="row">
+                <div class="input-container shaded">
+                  <label><span>Account Name</span></label>
+                  <div>Emerson Joseph Ogechukwu</div>
                 </div>
-                <div class="requirement">
-                  <div class="icon"></div>
-                  <div class="text">
-                    Address Details
-                  </div>
+                <div class="input-container">
+                  <label for="identification"><span>Acount Instruction</span></label>
+                  <select name="identification" id="">
+                    <option selected value="---------"> ------ </option>
+                  </select>
                 </div>
-                <div class="requirement">
-                  <div class="icon"></div>
-                  <div class="text">
-                    Bank Details
-                  </div>
+                <button class="cta">ADD</button>
+              </div>
+              <div class="bank-table table">
+                <div class="table-header">
+                  <div class="">S/N</div>
+                  <div class="">BANK</div>
+                  <div class="">ACCOUNT NUMBER</div>
+                  <div class="">ACCOUNT INSTRUCTION</div>
+                  <div class="">ACTION</div>
                 </div>
-                <div class="requirement">
-                  <div class="icon"></div>
-                  <div class="text">
-                    Loan Details
+                <div class="table-body">
+                  <div class="table-entry">
+                    <div class="">1</div>
+                    <div class="">Access Bank</div>
+                    <div class="">0110000023</div>
+                    <div class="accented-text">Credit</div>
+                    <div class="">osh</div>
                   </div>
-                </div>
-                <div class="requirement">
-                  <div class="icon"></div>
-                  <div class="text">
-                   Upload Documents
+                  <div class="table-entry">
+                    <div class="">2</div>
+                    <div class="">Access Bank</div>
+                    <div class="">0110000023</div>
+                    <div class="accented-text">Credit</div>
+                    <div class="">osh</div>
                   </div>
                 </div>
               </div>
+              <div class="action">
+                <button class="cta">
+                  SUBMIT BANK AND CARD DETAILS
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div data-application-step="loan" class="">
+            <div class="welcome-message">
+              Ready to apply for a loan? Please fill the form
+              <span data-application-open="main" class="accented-text">BACK</span>
             </div>
 
-            <div class="action">
-              <button class="cta">
-                Apply
-              </button>
+            <div class="application-contents">
+              <div class="header medium-text">
+                Loan Details
+              </div>
+              <div class="row">
+                <div class="input-container shaded">
+                  <label for="identification"><span>Loan Product</span></label>
+                  <div>Car Loan</div>
+                </div>
+                <div class="input-container">
+                  <label for="amount"><span>How much do you want</span></label>
+                  <input name="amount" type="text" placeholder="₦">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-container">
+                  <label for="identification"><span>Loan Reason</span></label>
+                  <select name="identification" id="">
+                    <option selected value="---------"> ------ </option>
+                  </select>
+                </div>
+                <div class="input-container">
+                  <label for="dob"><span>Bank Statement</span></label>
+                  <input name="dob" type="text" placeholder="Upload">
+                </div>
+              </div>
+              <div class="loan-table table">
+                <div class="table-header">
+                  <div class="">S/N</div>
+                  <div class="">Document Name</div>
+                  <div class="">ACTION</div>
+                </div>
+                <div class="table-body">
+                  <div class="table-entry">
+                    <div class="">1</div>
+                    <div class="">Apr 2019 to Aug 2019 Statement</div>
+                    <div class="">osh</div>
+                  </div>
+                  <div class="table-entry">
+                    <div class="">2</div>
+                    <div class="">Apr 2019 to Aug 2019 Statement</div>
+                    <div class="">osh</div>
+                  </div>
+                </div>
+              </div>
+              <div class="action">
+                <button class="cta">
+                  SUBMIT LOAN DETAILS
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div data-modal-target="application-final-modal" class="modal visible">
+        <div data-modal-target="application-final-modal" class="modal">
           <div class="mask">
             <div class="mask-contents">
               <div class="">
-                <div class="icon"></div>
+                <img class="icon" src="images/Smile Completed.svg" alt="Completed">
                 <div class="large-text">Application Completed</div>
                 <div class="small-text">
                   Thank you for applying for our <span class="accented-text">Car Loan</span>. We are processing your application and will give a feedback soon
@@ -158,5 +360,6 @@
   </main>
   <script src="js/dashboard.js"></script>
   <script src="js/modals.js"></script>
+  <script src="js/applications.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     tag.onclick = function({ target }) {
       const tagTarget = target.dataset.navTag;
       if (prev == tagTarget) {
-        document.querySelector(`[data-nav-tag-target=${tagTarget}`).classList.remove('expanded')
+        document.querySelector(`[data-nav-tag-target=${tagTarget}`).classList.toggle('expanded')
         return
       }
       if (prev) document.querySelector(`[data-nav-tag-target=${prev}`).classList.remove('expanded')

@@ -36,8 +36,12 @@ main {
       flex-direction: column;
 
       .logo {
-        padding: 3rem;
+        padding: 1rem 3rem;
         border-bottom: 1px solid #D0EFD9;
+
+        img {
+          width: 100%;
+        }
       }
 
       .dashboard-navigation-items{
@@ -100,7 +104,6 @@ main {
         margin-top: auto;
         .cta {
           width: 100%;
-          background: #484848;
         }
       }
     }
@@ -180,6 +183,12 @@ main {
 
     #dashboard-navigation-container {
       display: block;
+
+      .dashboard-navigation {
+        .logo {
+          padding: 1rem 2rem;
+        }
+      }
     }
 
     #dashboard-content-container {
@@ -187,10 +196,24 @@ main {
 
       .welcome-message {
         padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
       }
 
       .dashboard-contents {
         padding: 0;
+      }
+    }
+  }
+
+  @include minWidth($breakpoint-desktop) {
+    #dashboard-navigation-container {
+      .dashboard-navigation {
+        .logo {
+          padding: 1rem 3rem;
+        }
       }
     }
   }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/product-page.css">
+  <title>My Documents</title>
+</head>
+<body>
+  <main>
+    <div class="section-wrapper">
+      <section id="dashboard-container" class="split-row">
+        <div id="dashboard-navigation-container" class="row-half left">
+          <div class="dashboard-navigation">
+            <div class="logo">
+              <img src="images/GoodGate-Finance-Limited-Logo.png" alt="">
+            </div>
+            <div class="dashboard-navigation-items">
+              <div class="dashboard-navigation-item">
+                <a class="tag" href="dashboard.html">Dashboard</a>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div data-nav-tag="loan" class="tag">Loan <span>+</span></div>
+                <div data-nav-tag-target="loan" class="dashboard-navigation-subitems">
+                  <a href="products.html" class="dashboard-navigation-subitem">Loan Product</a>
+                  <div class="dashboard-navigation-subitem">My Loan History</div>
+                  <div class="dashboard-navigation-subitem">Repayment</div>
+                </div>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div data-nav-tag="investment" class="tag">Investment <span>+</span></div>
+                <div data-nav-tag-target="investment" class="dashboard-navigation-subitems">
+                  <a href="products.html" class="dashboard-navigation-subitem">Loan Product</a>
+                  <div class="dashboard-navigation-subitem">My Loan History</div>
+                  <div class="dashboard-navigation-subitem">Repayment</div>
+                </div>
+              </div>
+              <div class="dashboard-navigation-item selected">
+                <a class="tag" href="my_documents.html">My Documents</a>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div class="tag">Terms and Conditions</div>
+              </div>
+            </div>
+            <div class="logout">
+              <button class="cta secondary">
+                Logout
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="dashboard-content-container" class="row-half right master">
+          <div class="top-strip">
+            <div class="alerts">
+              <div class="icon"></div>
+            </div>
+            <div class="notifications">
+              <div class="icon"></div>
+            </div>
+            <div class="account"></div>
+          </div>
+
+          <div id="notification" class="">
+            We noticed you haven't verified your email address. Please kindly visit your email box to verify or click to resend link
+            <span id="notification-close">x</span>
+          </div>
+
+          <div class="welcome-message">
+            My Documents
+          </div>
+
+          <div class="dashboard-contents">
+            <div class="product-details-section requirements">
+              <div class="requirements-list">
+                <div class="requirement">
+                  <div class="icon"></div>
+                  <div class="text">
+                    Personal Information
+                  </div>
+                </div>
+                <div class="requirement">
+                  <div class="icon"></div>
+                  <div class="text">
+                    Educational Information
+                  </div>
+                </div>
+                <div class="requirement">
+                  <div class="icon"></div>
+                  <div class="text">
+                    Employment Information
+                  </div>
+                </div>
+                <div class="requirement">
+                  <div class="icon"></div>
+                  <div class="text">
+                    Address Details
+                  </div>
+                </div>
+                <div class="requirement">
+                  <div class="icon"></div>
+                  <div class="text">
+                    Bank Details
+                  </div>
+                </div>
+                <div class="requirement">
+                  <div class="icon"></div>
+                  <div class="text">
+                    Loan Details
+                  </div>
+                </div>
+                <div class="requirement">
+                  <div class="icon"></div>
+                  <div class="text">
+                   Upload Documents
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="js/dashboard.js"></script>
+  <script src="js/modals.js"></script>
+</body>
+</html>
