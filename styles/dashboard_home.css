@@ -335,7 +335,15 @@ footer {
 }
 
 .footer-container .main-footer .logo img {
-  height: 10rem;
+  height: 5rem;
+}
+
+.footer-container .main-footer .company-details {
+  margin-top: 1rem;
+}
+
+.footer-container .main-footer .company-details div {
+  margin: 0.2rem 0;
 }
 
 .footer-container .main-footer .footer-links-section {
@@ -1280,7 +1288,15 @@ footer {
 }
 
 .footer-container .main-footer .logo img {
-  height: 10rem;
+  height: 5rem;
+}
+
+.footer-container .main-footer .company-details {
+  margin-top: 1rem;
+}
+
+.footer-container .main-footer .company-details div {
+  margin: 0.2rem 0;
 }
 
 .footer-container .main-footer .footer-links-section {
