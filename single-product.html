@@ -330,57 +330,107 @@
               <div class="header medium-text">
                 Bank and Card Details
               </div>
-              <div class="row">
-                <div class="input-container">
-                  <label for="identification"><span>Bank name</span></label>
-                  <select name="identification" id="">
-                    <option selected value="---------"> ------ </option>
-                  </select>
-                </div>
-                <div class="input-container">
-                  <label for="dob"><span>account number</span></label>
-                  <input name="dob" type="text">
-                </div>
-                <button class="cta secondary">CHECK</button>
-              </div>
-              <div class="row">
-                <div class="input-container shaded">
-                  <label><span>Account Name</span></label>
-                  <div>Emerson Joseph Ogechukwu</div>
-                </div>
-                <div class="input-container">
-                  <label for="identification"><span>Acount Instruction</span></label>
-                  <select name="identification" id="">
-                    <option selected value="---------"> ------ </option>
-                  </select>
-                </div>
-                <button class="cta">ADD</button>
-              </div>
-              <div class="bank-table table">
-                <div class="table-header">
-                  <div class="">S/N</div>
-                  <div class="">BANK</div>
-                  <div class="">ACCOUNT NUMBER</div>
-                  <div class="">ACCOUNT INSTRUCTION</div>
-                  <div class="">ACTION</div>
-                </div>
-                <div class="table-body">
-                  <div class="table-entry">
-                    <div class="">1</div>
-                    <div class="">Access Bank</div>
-                    <div class="">0110000023</div>
-                    <div class="accented-text">Credit</div>
-                    <div class="">osh</div>
+              <div class="application-content-section">
+                <div class="row">
+                  <div class="input-container">
+                    <label for="identification"><span>Bank name</span></label>
+                    <select name="identification" id="">
+                      <option selected value="---------"> ------ </option>
+                    </select>
                   </div>
-                  <div class="table-entry">
-                    <div class="">2</div>
-                    <div class="">Access Bank</div>
-                    <div class="">0110000023</div>
-                    <div class="accented-text">Credit</div>
-                    <div class="">osh</div>
+                  <div class="input-container">
+                    <label for="dob"><span>account number</span></label>
+                    <input name="dob" type="text">
+                  </div>
+                  <button class="cta secondary">CHECK</button>
+                </div>
+                <div class="row">
+                  <div class="input-container shaded">
+                    <label><span>Account Name</span></label>
+                    <div>Emerson Joseph Ogechukwu</div>
+                  </div>
+                  <div class="input-container">
+                    <label for="identification"><span>Acount Instruction</span></label>
+                    <select name="identification" id="">
+                      <option selected value="---------"> ------ </option>
+                    </select>
+                  </div>
+                  <button class="cta">ADD</button>
+                </div>
+                <div class="bank-table table">
+                  <div class="table-header">
+                    <div class="">S/N</div>
+                    <div class="">BANK</div>
+                    <div class="">ACCOUNT NUMBER</div>
+                    <div class="">ACCOUNT INSTRUCTION</div>
+                    <div class="">ACTION</div>
+                  </div>
+                  <div class="table-body">
+                    <div class="table-entry">
+                      <div class="">1</div>
+                      <div class="">Access Bank</div>
+                      <div class="">0110000023</div>
+                      <div class="accented-text">Credit</div>
+                      <div class="">osh</div>
+                    </div>
+                    <div class="table-entry">
+                      <div class="">2</div>
+                      <div class="">Access Bank</div>
+                      <div class="">0110000023</div>
+                      <div class="accented-text">Credit</div>
+                      <div class="">osh</div>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <div class="application-content-section">
+                <div class="row">
+                  <div class="input-container">
+                    <label for="identification"><span>Card Type</span></label>
+                    <select name="identification" id="">
+                      <option selected value="---------"> ------ </option>
+                    </select>
+                  </div>
+                  <div class="input-container">
+                    <label for="dob"><span>card number</span></label>
+                    <input name="dob" type="text" placeholder="0000 0000 0000 0000">
+                  </div>
+                  <div class="input-container">
+                    <label for="dob"><span>card expiry</span></label>
+                    <input name="dob" type="text" placeholder="--/--">
+                  </div>
+                  <div class="input-container">
+                    <label for="dob"><span>cvv</span></label>
+                    <input name="dob" type="text" placeholder="123">
+                  </div>
+
+                  <button class="cta">Add</button>
+                </div>
+                <div class="card-table table">
+                  <div class="table-header">
+                    <div class="">S/N</div>
+                    <div class="">CARD TYPE</div>
+                    <div class="">CARD NUMBER</div>
+                    <div class="">ACTION</div>
+                  </div>
+                  <div class="table-body">
+                    <div class="table-entry">
+                      <div class="">1</div>
+                      <div class="">Visa</div>
+                      <div class="">0110000023</div>
+                      <div class="">osh</div>
+                    </div>
+                    <div class="table-entry">
+                      <div class="">2</div>
+                      <div class="">Visa</div>
+                      <div class="">0110000023</div>
+                      <div class="">osh</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="action">
                 <button class="cta">
                   SUBMIT BANK AND CARD DETAILS
@@ -399,44 +449,80 @@
               <div class="header medium-text">
                 Loan Details
               </div>
-              <div class="row">
-                <div class="input-container shaded">
-                  <label for="identification"><span>Loan Product</span></label>
-                  <div>Car Loan</div>
-                </div>
-                <div class="input-container">
-                  <label for="amount"><span>How much do you want</span></label>
-                  <input name="amount" type="text" placeholder="₦">
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-container">
-                  <label for="identification"><span>Loan Reason</span></label>
-                  <select name="identification" id="">
-                    <option selected value="---------"> ------ </option>
-                  </select>
-                </div>
-                <div class="input-container">
-                  <label for="dob"><span>Bank Statement</span></label>
-                  <input name="dob" type="text" placeholder="Upload">
-                </div>
-              </div>
-              <div class="loan-table table">
-                <div class="table-header">
-                  <div class="">S/N</div>
-                  <div class="">Document Name</div>
-                  <div class="">ACTION</div>
-                </div>
-                <div class="table-body">
-                  <div class="table-entry">
-                    <div class="">1</div>
-                    <div class="">Apr 2019 to Aug 2019 Statement</div>
-                    <div class="">osh</div>
+              <div class="application-content-section">
+                <div class="row">
+                  <div class="input-container shaded">
+                    <label for="identification"><span>Loan Product</span></label>
+                    <div>Car Loan</div>
                   </div>
-                  <div class="table-entry">
-                    <div class="">2</div>
-                    <div class="">Apr 2019 to Aug 2019 Statement</div>
-                    <div class="">osh</div>
+                  <div class="input-container">
+                    <label for="amount"><span>How much do you want</span></label>
+                    <input name="amount" type="text" placeholder="₦">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-container">
+                    <label for="identification"><span>Loan Reason</span></label>
+                    <select name="identification" id="">
+                      <option selected value="---------"> ------ </option>
+                    </select>
+                  </div>
+                  <div class="input-container">
+                    <label for="dob"><span>Bank Statement</span></label>
+                    <input name="dob" type="text" placeholder="Upload">
+                  </div>
+                </div>
+                <div class="loan-table table">
+                  <div class="table-header">
+                    <div class="">S/N</div>
+                    <div class="">Document Name</div>
+                    <div class="">ACTION</div>
+                  </div>
+                  <div class="table-body">
+                    <div class="table-entry">
+                      <div class="">1</div>
+                      <div class="">Apr 2019 to Aug 2019 Statement</div>
+                      <div class="">osh</div>
+                    </div>
+                    <div class="table-entry">
+                      <div class="">2</div>
+                      <div class="">Apr 2019 to Aug 2019 Statement</div>
+                      <div class="">osh</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="application-content-section">
+                <div class="row">
+                  <div class="input-container shaded">
+                    <label for="identification"><span>Upload Collateral</span></label>
+                    <input name="amount" type="text" placeholder="Upload">
+                  </div>
+                  <div class="input-container">
+                    <label for="amount"><span>SERIAL NUMBER/ID NUMBER</span></label>
+                    <input name="amount" type="text" placeholder="QC234671820">
+                  </div>
+                </div>
+                <div class="loan-document-table table">
+                  <div class="table-header">
+                    <div class="">S/N</div>
+                    <div class="">Document Name</div>
+                    <div class="">Document Number</div>
+                    <div class="">ACTION</div>
+                  </div>
+                  <div class="table-body">
+                    <div class="table-entry">
+                      <div class="">1</div>
+                      <div class="">Apr 2019 to Aug 2019 Statement</div>
+                      <div class="">QC23458959</div>
+                      <div class="">osh</div>
+                    </div>
+                    <div class="table-entry">
+                      <div class="">2</div>
+                      <div class="">Apr 2019 to Aug 2019 Statement</div>
+                      <div class="">QC23458959</div>
+                      <div class="">osh</div>
+                    </div>
                   </div>
                 </div>
               </div>

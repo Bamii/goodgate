@@ -2127,6 +2127,88 @@ main {
   padding: 0 2rem;
 }
 
+#dashboard-container #dashboard-content-container .application-contents {
+  background: #F7F7F7;
+  padding: 1.3rem;
+  overflow: scroll;
+  width: 100%;
+  height: calc(100vh - 10rem);
+}
+
+#dashboard-container #dashboard-content-container .application-contents .application-content-section {
+  margin-bottom: 8rem;
+}
+
+#dashboard-container #dashboard-content-container .application-contents .application-content-section:last-of-type {
+  margin-bottom: 0;
+}
+
+#dashboard-container #dashboard-content-container .application-contents .header {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#dashboard-container #dashboard-content-container .application-contents .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+#dashboard-container #dashboard-content-container .application-contents .row button {
+  margin-bottom: 1rem;
+}
+
+#dashboard-container #dashboard-content-container .application-contents .row .input-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 1rem 1rem 0;
+  max-width: 20rem;
+  min-width: 10rem;
+}
+
+#dashboard-container #dashboard-content-container .application-contents .row .input-container.full-width {
+  max-width: 100%;
+}
+
+#dashboard-container #dashboard-content-container .application-contents .row .input-container.shaded {
+  background: #D0EFD9;
+}
+
+#dashboard-container #dashboard-content-container .application-contents .table {
+  background: white;
+  border-radius: 5px;
+  padding: 1.3rem;
+  max-height: 50rem;
+  overflow-y: scroll;
+}
+
+#dashboard-container #dashboard-content-container .application-contents .table .table-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+#dashboard-container #dashboard-content-container .application-contents .table .table-entry {
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #B8B8B8;
+}
+
+#dashboard-container #dashboard-content-container .application-contents .table .table-entry:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#dashboard-container #dashboard-content-container .application-contents .table .table-header, #dashboard-container #dashboard-content-container .application-contents .table .table-entry {
+  display: -ms-grid;
+  display: grid;
+}
+
 @media screen and (min-width: 760px) {
   #dashboard-container {
     height: 100vh;
@@ -2166,6 +2248,23 @@ main {
   #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo {
     padding: 1rem 3rem;
   }
+}
+
+.mask-contents {
+  text-align: center;
+}
+
+.mask-contents .icon {
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid #51C272;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+
+.mask-contents .cta {
+  margin-top: 2rem;
+  padding: 1.3rem 5rem;
 }
 
 .dashboard-contents .product-list {

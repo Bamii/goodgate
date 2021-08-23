@@ -217,6 +217,82 @@ main {
     .dashboard-contents {
       padding: 0 2rem;
     }
+
+    .application-contents {
+      background: #F7F7F7;
+      padding: 1.3rem;
+      overflow: scroll;
+      width: 100%;
+      height: calc(100vh - 10rem);
+    
+      .application-content-section {
+        margin-bottom: 8rem;
+    
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    
+      .header {
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    
+        button {
+          margin-bottom: 1rem;
+        }
+         
+        .input-container {
+          flex: 1;
+          margin: 0 1rem 1rem 0;
+          max-width: 20rem;
+          min-width: 10rem;
+    
+          &.full-width {
+            max-width: 100%;
+          }
+    
+          &.shaded {
+            background: #D0EFD9;
+          }
+        }
+      }
+    
+      .table {
+        background: white;
+        border-radius: 5px;
+        padding: 1.3rem;
+        max-height: 50rem;
+        overflow-y: scroll;
+    
+        .table-header {
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 0.9rem;
+          letter-spacing: 0.5px;
+        }
+    
+        .table-entry {
+          padding: 0.5rem 0;
+          margin: 0.5rem 0;
+          border-bottom: 1px solid #B8B8B8;
+
+          &:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+          }
+        }
+    
+        .table-header,.table-entry {
+          display: grid;
+        }
+      }
+    }
   }
 
   @include minWidth($breakpoint-tablet) {
@@ -259,4 +335,21 @@ main {
       }
     }
   }
+}
+
+.mask-contents {
+  .icon {
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid $secondary-color;
+    border-radius: 50%;
+    margin: 1rem auto;
+  }
+
+  .cta {
+    margin-top: 2rem;
+    padding: 1.3rem 5rem;
+  }
+
+  text-align: center;
 }
