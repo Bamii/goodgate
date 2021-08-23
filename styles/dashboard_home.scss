@@ -157,6 +157,15 @@
         border-radius: 5px;
         text-align: center;
         color: white;
+        font-weight: bold;
+      }
+
+      .action-row {
+        display: flex;
+        .withdraw {
+          color: #464646;
+          background: transparent;
+        }
       }
 
       @include minWidth($breakpoint-tablet) {

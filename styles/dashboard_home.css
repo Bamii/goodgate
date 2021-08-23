@@ -2532,6 +2532,18 @@ main {
   border-radius: 5px;
   text-align: center;
   color: white;
+  font-weight: bold;
+}
+
+#dashboard-content-container .dashboard-contents .dashboard-product-card .action-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#dashboard-content-container .dashboard-contents .dashboard-product-card .action-row .withdraw {
+  color: #464646;
+  background: transparent;
 }
 
 @media screen and (min-width: 760px) {
