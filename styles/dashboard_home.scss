@@ -78,12 +78,11 @@
         }
   
         .transaction-history-list {
-  
           .transaction-history-entry {
             border:1px solid #D0EFD9;
             border-radius: 5px;
             padding: 0.6rem 1rem;
-            margin: 1rem 0;
+            margin: 0.5rem 0;
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
             column-gap: 0.3rem;
