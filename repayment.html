@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/repayment.css">
+  <title>Products</title>
+</head>
+<body>
+  <main>
+    <div class="section-wrapper">
+      <section id="dashboard-container" class="split-row">
+        <div id="dashboard-navigation-container" class="row-half left">
+          <div class="dashboard-navigation">
+            <div class="logo">
+              <img src="images/GoodGate-Finance-Limited-Logo.png" alt="">
+            </div>
+            <div class="dashboard-navigation-items">
+              <div class="dashboard-navigation-item">
+                <a class="tag" href="dashboard.html">Dashboard</a>
+              </div>
+              <div class="dashboard-navigation-item selected">
+                <div data-nav-tag="loan" class="tag">Loan <span>+</span></div>
+                <div data-nav-tag-target="loan" class="dashboard-navigation-subitems">
+                  <a href="products.html" class="dashboard-navigation-subitem">Loan Product</a>
+                  <div class="dashboard-navigation-subitem">My Loan History</div>
+                  <div class="dashboard-navigation-subitem">Repayment</div>
+                </div>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div data-nav-tag="investment" class="tag">Investment <span>+</span></div>
+                <div data-nav-tag-target="investment" class="dashboard-navigation-subitems">
+                  <a href="products.html" class="dashboard-navigation-subitem">Loan Product</a>
+                  <div class="dashboard-navigation-subitem">My Loan History</div>
+                  <div class="dashboard-navigation-subitem">Repayment</div>
+                </div>
+              </div>
+              <div class="dashboard-navigation-item">
+                <a class="tag" href="my_documents.html">My Documents</a>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div class="tag">Terms and Conditions</div>
+              </div>
+            </div>
+            <div class="logout">
+              <button class="cta secondary">
+                Logout
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="dashboard-content-container" class="row-half right master">
+          <div class="top-strip">
+            <div class="alerts">
+             <img src="images/alarm.svg" alt="Alert." class="icon">
+            </div>
+            <div class="notifications">
+             <img data-notifications-open src="images/notification.svg" alt="Notification." class="icon">
+             <div data-notifications class="notifications-list">
+               <div class="notifications-header">Notifications</div>
+               <div class="notifications-body">
+                 <div class="notification">
+                   <div class="notification-title">
+                    Loan Application
+                   </div>
+                   <div class="notification-details">
+                    Joseph Emerson applied for a loan.....
+                   </div>
+                 </div>
+                 <div class="notification">
+                  <div class="notification-title">
+                   Loan Application
+                  </div>
+                  <div class="notification-details">
+                   Joseph Emerson applied for a loan.....
+                  </div>
+                </div>
+               </div>
+               <div class="see-all">
+                <a href="#">
+                  See All
+                </a> 
+               </div>
+             </div>
+            </div>
+            <div class="account"></div>
+          </div>
+
+          <div id="alert" class="active">
+            We noticed you haven't verified your email address. Please kindly visit your email box to verify or click to resend link
+            <span id="alert-close">x</span>
+          </div>
+
+          <div class="welcome-message">
+            Check out our list of loan products.
+          </div>
+
+          <div class="application-contents">
+            <div class="header medium-text">
+              Repayment
+
+              <div class="accented-text">Others</div>
+            </div>
+
+            <div class="row">
+              <div class="input-container shaded">
+                <label for="identification"><span>Loan Type</span></label>
+                <div>Car Loan</div>
+              </div>
+              <div class="input-container">
+                <label for="dob"><span>repayment amount</span></label>
+                <input name="dob" type="text" placeholder="25000">
+              </div>
+              <button class="cta secondary" data-modal="repayment-modal">PAY</button>
+            </div>
+
+            <div class="repayment-table table">
+              <div class="table-header">
+                <div class="">Month</div>
+                <div class="">Outstanding<span class="accented-text">₦</span></div>
+                <div class="">Interest<span class="accented-text">₦</span></div>
+                <div class="">Total Due<span class="accented-text">₦</span></div>
+                <div class="">Due Date</div>
+                <div class="">Payment Date</div>
+                <div class="">Payment Status</div>
+                <div class="">Action</div>
+              </div>
+              <div class="table-body">
+                <div class="table-entry">
+                  <div class="">1</div>
+                  <div class="">500,000</div>
+                  <div class="">4,166</div>
+                  <div class="">102,513</div>
+                  <div class="">11/02/21</div>
+                  <div class="">11/03/21</div>
+                  <div class="accented-text">Paid</div>
+                  <div class=""></div>
+                </div>
+                <div class="table-entry">
+                  <div class="">1</div>
+                  <div class="">500,000</div>
+                  <div class="">4,166</div>
+                  <div class="">102,513</div>
+                  <div class="">11/02/21</div>
+                  <div class="">11/03/21</div>
+                  <div class="accented-text">Paid</div>
+                  <div class=""></div>
+                </div>
+                <div id="total-entry" class="table-entry">
+                  <div class=""></div>
+                  <div class=""></div>
+                  <div class=""></div>
+                  <div class=""></div>
+                  <div class=""></div>
+                  <div class=""></div>
+                  <div class="total">TOTAL: 320,000</div>
+                  <div class=""><input type="radio" name="" id=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="repayment-modal" data-modal-target="repayment-modal" class="modal">
+          <div class="mask">
+            <div class="mask-contents">
+              <div class="">
+                <div class="header">
+                  You are paying:
+                  <span class="large-text amount">₦25,000</span>
+                  <span data-modal="repayment-modal" class="accented-text change">Change</span>
+                </div>
+                <div class="tabs">
+                  <div class="tab selected" data-tab="card">Card Payment</div>
+                  <div class="tab" data-tab="bank">Bank Payment</div>
+                  <div class="tab" data-tab="transfer">Transfer</div>
+                </div>
+                <div class="tabs-targets">
+                  <div data-tab-target="card" class="selected tab-target">
+                    <div class="card-table table">
+                      <div class="table-header">
+                        <div class="">S/N</div>
+                        <div class="">CARD TYPE</div>
+                        <div class="">CARD NUMBER</div>
+                        <div class="">ACTION</div>
+                      </div>
+                      <div class="table-body">
+                        <div class="table-entry">
+                          <div class="">1</div>
+                          <div class="">Visa</div>
+                          <div class="">0110000023</div>
+                          <div class="">osh</div>
+                        </div>
+                        <div class="table-entry">
+                          <div class="">2</div>
+                          <div class="">Visa</div>
+                          <div class="">0110000023</div>
+                          <div class="">osh</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-target" data-tab-target="bank">
+                    <div class="tab-subheader">Bank deposit information</div>
+                    <div class="tab-header">GOODGATE BANK INFORMATION</div>
+                    <div class="bank-details">
+                      <div class="bank-detail-entry">
+                        <div class="type">Bank Name</div>
+                        <div class="value">Zenith Bank</div>
+                      </div>
+                      <div class="bank-detail-entry">
+                        <div class="type">Account Number</div>
+                        <div class="value">1234010023</div>
+                      </div>
+                      <div class="bank-detail-entry">
+                        <div class="type">Account Name</div>
+                        <div class="value">GoodGate Finance Limited</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-target" data-tab-target="transfer">
+                    <div class="tab-subheader">Bank deposit information</div>
+                    <div class="tab-header">GOODGATE BANK INFORMATION</div>
+                    <div class="bank-details">
+                      <div class="bank-detail-entry">
+                        <div class="type">Bank Name</div>
+                        <div class="value">Zenith Bank</div>
+                      </div>
+                      <div class="bank-detail-entry">
+                        <div class="type">Account Number</div>
+                        <div class="value">1234010023</div>
+                      </div>
+                      <div class="bank-detail-entry">
+                        <div class="type">Account Name</div>
+                        <div class="value">GoodGate Finance Limited</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="small-text text">
+                  You are about to make a repayment for your car loan, please make you the repayment amount is what you intend to pay
+                </div>
+                <div class="action">
+                  <button class="cta">PAY</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="loan-calculator-modal" data-modal-target="loan-calculator-modal"  class="modal visible">
+          <div class="mask">
+            <div data-modal="loan-calculator-modal" class="mask-close">(x) close</div>
+            <div class="mask-contents">
+              <div class="split-row">
+                <div class="row-half">
+                  <div class="eligibility negative">You Are Not Eligible</div>
+                  <div class="disclaimer">
+                    <div class="disclaimer-title">Why?</div>
+                    <div class="disclaimer-text">
+                      Your monthly repayment on loan request made to our bank cannot exceed one-third of your monthly income.
+                    </div>
+                  </div>
+                  <div class="disclaimer">
+                    <div class="disclaimer-title">Disclaimer</div>
+                    <div class="disclaimer-text">
+                      Does not include Upfront Charges (Commitment Fee, Service Charge
+                      & Management Fee). This is also assumed that the interest rate
+                      remains the same.
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="row-half master">
+                  <div class="mask-header">
+                    <div class="small-text">Monthly Payments</div>
+                    <div class="monthly-payments">
+                      <img src="/assets/naira.svg" alt="" />
+                      <span class="accented-text">₦</span>
+                      525,000.45
+                    </div>
+                  </div>
+                  <div class="calculator-table">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>Total Principal Paid</td>
+                          <td><img src="/assets/naira.svg" alt="" />
+                            <span class="accented-text">₦</span>
+                            10,000,000.00
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Total Interest Paid</td>
+                          <td>
+                            <img src="/assets/naira.svg" alt="" />
+                            <span class="accented-text">₦</span>
+                            625,000.75
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td>Total Repayment</td>
+                          <td>
+                            <img src="/assets/naira.svg" alt="" />
+                            <span class="accented-text">₦</span>
+                            10,625,000.75
+                          </td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                  <div class="calculator-table-extra-details">
+                    <div class="calculator-table-extra-detail">Interest Rate: <span>24%</span></div>
+                    <div class="calculator-table-extra-detail">Tenor: <span>12 Months</span></div>
+                  </div>
+                  <div class="calculator-table-extra-details">
+                    <div class="calculator-table-extra-detail">PDF: <span>Print</span></div>
+                    <div class="calculator-table-extra-detail">Monthly Income: <span class="accented-text">₦</span>250,000</div>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator-details-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>period</th>
+                      <th>outstanding</th>
+                      <th>principal(P)</th>
+                      <th>interest(I)</th>
+                      <th>P+I</th>
+                      <th>mgt fee</th>
+                      <th>total due</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>6,000,000</td>
+                      <td>1,045.80</td>
+                      <td>90, 000</td>
+                      <td>91,045.80</td>
+                      <td>0</td>
+                      <td>91,045.80</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>6,000,000</td>
+                      <td>1,045.80</td>
+                      <td>90, 000</td>
+                      <td>91,045.80</td>
+                      <td>0</td>
+                      <td>91,045.80</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>6,000,000</td>
+                      <td>1,045.80</td>
+                      <td>90, 000</td>
+                      <td>91,045.80</td>
+                      <td>0</td>
+                      <td>91,045.80</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="js/dashboard.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/modals.js"></script>
+</body>
+</html>

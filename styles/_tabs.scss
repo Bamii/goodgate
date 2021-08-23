@@ -1,0 +1,12 @@
+
+[data-tab] {
+  cursor: pointer;
+}
+
+[data-tab-target] {
+  display: none;
+
+  &.selected {
+    display: block;
+  }
+}

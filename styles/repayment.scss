@@ -1,0 +1,310 @@
+@import "header";
+@import "footer";
+@import "variables";
+@import "common";
+@import "tabs";
+@import "dashboard";
+
+.application-contents {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .repayment-table {
+    .table-header,.table-entry {
+      grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr; 
+    }
+
+    #total-entry {
+      border-bottom: 0 !important;
+
+      .total {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#repayment-modal {
+  .mask-contents {
+    background: #F7F7F7;
+    padding: 2rem 0;
+    color: #4B1F51;
+
+    .header,.action,.text {
+      text-align: center;
+      padding: 0 3rem;
+    }
+    
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span.amount {
+        margin: 0 1rem;
+      }
+
+      .change {
+        cursor: pointer;
+      }
+    }
+
+    .tabs {
+      display: flex;
+      width: 100%;
+
+      .tab {
+        flex: 1;
+        padding: 1rem 2rem;
+        background: #E9E9E9;
+        border: 1px solid $secondary-color;
+        text-align: center;
+        &.selected {
+          background: $secondary-color;
+        }
+      }
+    }
+
+    .action {
+      margin-top: 1rem;
+      .cta {
+        padding: 1.3rem 8rem;
+      }
+    }
+
+    .tabs-targets {
+      padding: 1rem;
+      background: white;
+      border-radius: 5px;
+      margin: 2rem 5rem;
+
+      .tab-target {
+
+        .table {
+          padding: 0;
+
+          &.card-table {
+            .table-header,.table-entry {
+              grid-template-columns: 1fr 2fr 2fr 1fr;
+            }
+          }
+        }
+
+        .tab-subheader {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+        }
+
+        .tab-header {
+          text-transform: uppercase;
+          color: $secondary-color;
+          margin: 0rem 0 1.1rem 0;
+          font-weight: bold;
+        }
+
+        .bank-details {
+          width: max-content;
+
+          .bank-detail-entry {
+            font-size: 0.9rem;
+            padding: 0.5rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .type {
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#loan-calculator-modal {
+  .mask {
+    .mask-contents {
+      width: 100%;
+      align-items: flex-start;
+
+      @include minWidth($breakpoint-tablet) {
+        padding: 3rem 2rem;
+      }
+
+
+      @include minWidth($breakpoint-desktop) {
+        padding: 5rem 2rem;
+      }
+
+      .split-row {
+        .row-half {
+          div {
+            img {
+              width: 20px;
+            }
+          }
+          
+          td {
+            img {
+              width: 15px;
+            }
+          }
+    
+          .mask-header {
+            text-align: center;
+    
+            .small-text {
+              font-size: 0.9rem;
+            }
+    
+            .monthly-payments {
+              font-size: 2.3rem;
+              font-weight: bold;
+    
+              @include minWidth($breakpoint-desktop) {
+                font-size: 2.5rem;
+              }
+            }
+          }
+    
+          .calculator-table {
+            padding: 1rem 0;
+            width: 100%;
+    
+            table {
+              width: 100%;
+    
+              tbody {
+                tr:nth-child(1) {
+                  td {
+                    border-bottom: 1px solid #70707080;
+                  }
+                }
+              }
+    
+              tbody,
+              tfoot {
+                td {
+                  padding: 0.5rem 0;
+                }
+    
+                td:nth-child(2) {
+                  text-align: right;
+                }
+              }
+    
+              tfoot {
+                font-size: 1.2rem;
+    
+                @include minWidth($breakpoint-desktop) {
+                  font-size: 1.5rem;
+                }
+              }
+            }
+          }
+    
+          .calculator-table-extra-details {
+            padding: 0.5rem 0;
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 0.8rem;
+            font-size: 0.8rem;
+
+            .calculator-table-extra-detail {
+              padding-right: 0.8rem;
+    
+              span {
+                color: $secondary-color;
+              }
+            }
+          }
+  
+          .eligibility {
+            font-family: $header-font;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+  
+            &.positive {
+              color: green;
+            }
+  
+            &.negative {
+              color: #ED2228;
+            }
+          }
+          
+          .disclaimer {
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+  
+            .disclaimer-title {
+              color: $secondary-color;
+              padding: 0.3rem 0;
+            }
+          }
+        }
+      }
+
+      .calculator-details-table {
+        width: 100%;
+        overflow: scroll;
+
+        table {
+          width: 100%;
+          margin: 0;
+
+          tr {
+            background: $gray-bg;
+          }
+
+          th, td {
+            margin: 0.5rem 0;
+            font-size: 0.7rem;
+            border-radius: 4px;
+            padding: 0.3rem 0.5rem;
+            border-collapse: collapse;
+            text-align: left;
+          }
+
+          thead {
+            th {
+              text-transform: uppercase;
+              font-family: $emphasis-font;
+            }
+          }
+
+          tbody {            
+            tr:nth-child(even) {
+              background: $gray-bg;
+            }
+
+            tr:nth-child(odd) {
+              background-color: $secondary-color;
+              color: white;
+            }
+          }
+
+          @include minWidth($breakpoint-tablet) {
+            margin: 1rem;
+
+            th, td {
+              padding: 0.8rem;
+              font-size: 1rem;
+            }
+          }
+
+          @include minWidth($breakpoint-desktop) {
+            // margin: 2rem;
+
+            th, td {
+              padding: 0.8rem 0rem 0.8rem 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
