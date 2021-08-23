@@ -73,7 +73,8 @@
           color: white;
           border-radius: 5px;
           background: $secondary-color;
-  
+          display: flex;
+          justify-content: space-between;
         }
   
         .transaction-history-list {

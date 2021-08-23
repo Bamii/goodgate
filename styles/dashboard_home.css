@@ -2433,6 +2433,12 @@ main {
   color: white;
   border-radius: 5px;
   background: #51C272;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry {
