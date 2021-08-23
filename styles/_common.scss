@@ -377,7 +377,6 @@ button.cta {
 
 .input-container {
   position: relative;
-  box-shadow: 0px 3px 15px 6px #00000010;
   border-radius: 5px;
 
   label {
@@ -403,6 +402,7 @@ button.cta {
     font-size: 0.8rem;
     
     &:focus {
+      box-shadow: 0px 3px 15px 6px #00000010;
       outline: dotted #00000010;
       border-left: 5px solid $secondary-color;
       border-radius: 0 10px 10px 0;
