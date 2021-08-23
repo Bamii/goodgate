@@ -856,7 +856,9 @@ section.split-row .right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 6rem;
   }
   .modal .mask .mask-close {

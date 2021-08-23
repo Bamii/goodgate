@@ -856,7 +856,9 @@ section.split-row .right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 6rem;
   }
   .modal .mask .mask-close {
@@ -1799,7 +1801,9 @@ section.split-row .right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 6rem;
   }
   .modal .mask .mask-close {
@@ -2178,37 +2182,6 @@ main {
   background: #D0EFD9;
 }
 
-#dashboard-container #dashboard-content-container .application-contents .table {
-  background: white;
-  border-radius: 5px;
-  padding: 1.3rem;
-  max-height: 50rem;
-  overflow-y: scroll;
-}
-
-#dashboard-container #dashboard-content-container .application-contents .table .table-header {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-}
-
-#dashboard-container #dashboard-content-container .application-contents .table .table-entry {
-  padding: 0.5rem 0;
-  margin: 0.5rem 0;
-  border-bottom: 1px solid #B8B8B8;
-}
-
-#dashboard-container #dashboard-content-container .application-contents .table .table-entry:last-child {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-#dashboard-container #dashboard-content-container .application-contents .table .table-header, #dashboard-container #dashboard-content-container .application-contents .table .table-entry {
-  display: -ms-grid;
-  display: grid;
-}
-
 @media screen and (min-width: 760px) {
   #dashboard-container {
     height: 100vh;
@@ -2250,21 +2223,35 @@ main {
   }
 }
 
-.mask-contents {
-  text-align: center;
+.table {
+  background: white;
+  border-radius: 5px;
+  padding: 1.3rem;
+  max-height: 50rem;
+  overflow-y: scroll;
 }
 
-.mask-contents .icon {
-  height: 10rem;
-  width: 10rem;
-  border: 1px solid #51C272;
-  border-radius: 50%;
-  margin: 1rem auto;
+.table .table-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
 }
 
-.mask-contents .cta {
-  margin-top: 2rem;
-  padding: 1.3rem 5rem;
+.table .table-entry {
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #B8B8B8;
+}
+
+.table .table-entry:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.table .table-header, .table .table-entry {
+  display: -ms-grid;
+  display: grid;
 }
 
 .dashboard-contents {
@@ -2454,6 +2441,23 @@ main {
 .application-contents .image-upload-container .image-upload-input label {
   color: #51C272;
   font-size: 0.9rem;
+}
+
+.mask-contents {
+  text-align: center;
+}
+
+.mask-contents .icon {
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid #51C272;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+
+.mask-contents .cta {
+  margin-top: 2rem;
+  padding: 1.3rem 5rem;
 }
 
 [data-application-step] {

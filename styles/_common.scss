@@ -330,7 +330,8 @@ section.split-row {
   
     @include minWidth(1024px) {
       display: flex;
-      width: 50%;
+      // width: 50%;
+      justify-content: center;
       padding: 6rem;
 
       .mask-close {

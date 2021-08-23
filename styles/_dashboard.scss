@@ -262,36 +262,6 @@ main {
           }
         }
       }
-    
-      .table {
-        background: white;
-        border-radius: 5px;
-        padding: 1.3rem;
-        max-height: 50rem;
-        overflow-y: scroll;
-    
-        .table-header {
-          text-transform: uppercase;
-          font-weight: bold;
-          font-size: 0.9rem;
-          letter-spacing: 0.5px;
-        }
-    
-        .table-entry {
-          padding: 0.5rem 0;
-          margin: 0.5rem 0;
-          border-bottom: 1px solid #B8B8B8;
-
-          &:last-child {
-            padding-bottom: 0;
-            margin-bottom: 0;
-          }
-        }
-    
-        .table-header,.table-entry {
-          display: grid;
-        }
-      }
     }
   }
 
@@ -337,19 +307,32 @@ main {
   }
 }
 
-.mask-contents {
-  .icon {
-    height: 10rem;
-    width: 10rem;
-    border: 1px solid $secondary-color;
-    border-radius: 50%;
-    margin: 1rem auto;
+.table {
+  background: white;
+  border-radius: 5px;
+  padding: 1.3rem;
+  max-height: 50rem;
+  overflow-y: scroll;
+
+  .table-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
   }
 
-  .cta {
-    margin-top: 2rem;
-    padding: 1.3rem 5rem;
+  .table-entry {
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    border-bottom: 1px solid #B8B8B8;
+
+    &:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
   }
 
-  text-align: center;
+  .table-header,.table-entry {
+    display: grid;
+  }
 }
