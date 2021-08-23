@@ -2379,6 +2379,10 @@ main {
   font-weight: 600;
 }
 
+.dashboard-contents .product-list .product-card .body .name-row a {
+  font-weight: bold;
+}
+
 .dashboard-contents .product-list .product-card .body .details-row {
   padding: 1rem 0;
   color: #464646;
@@ -2390,5 +2394,9 @@ main {
 
 .dashboard-contents .product-list .product-card .body .duration-row {
   font-size: 0.8rem;
+}
+
+.dashboard-contents .product-list .product-card .body .duration-row span {
+  font-weight: bold;
 }
 /*# sourceMappingURL=products.css.map */
