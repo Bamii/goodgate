@@ -18,6 +18,8 @@ main {
 
 #home-banner-section-wrapper {
   max-width: unset;
+  z-index: 500;
+  position: relative;
 
   #banner-section {
    position: relative;
@@ -162,8 +164,7 @@ main {
     .banner-slide-controls-container {
       position: absolute;
       right: 3vw;
-      bottom: 0;
-      height: 100vh;
+      bottom: 4rem;
       display: flex;
       align-items: center;
   
@@ -172,11 +173,12 @@ main {
       }
   
       #banner-slide-controls {
+        display: flex;
         .slide-dot {
           height: 1rem;
           width: 1rem;
           background: white;
-          border: 1px solid $gray-bg;
+          border: 1px solid black;
           margin: 1rem;
           cursor: pointer;
           border-radius: 50%;
@@ -194,14 +196,14 @@ main {
 #about-us-section {
   padding-top: 0;
 
-  // .left {
-  //   .main-image {
-  //     img {
+  .left {
+    align-self: flex-start;
 
-  //       width: 100%;
-  //     }
-  //   }
-  // }
+    img {
+      position: relative;
+      top: -5px;
+    }
+  }
 }
 
 

@@ -995,6 +995,8 @@ main {
 
 #home-banner-section-wrapper {
   max-width: unset;
+  z-index: 500;
+  position: relative;
 }
 
 #home-banner-section-wrapper #banner-section {
@@ -1178,8 +1180,7 @@ main {
 #home-banner-section-wrapper #banner-section .banner-slides-container .banner-slide-controls-container {
   position: absolute;
   right: 3vw;
-  bottom: 0;
-  height: 100vh;
+  bottom: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1194,11 +1195,17 @@ main {
   }
 }
 
+#home-banner-section-wrapper #banner-section .banner-slides-container .banner-slide-controls-container #banner-slide-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #home-banner-section-wrapper #banner-section .banner-slides-container .banner-slide-controls-container #banner-slide-controls .slide-dot {
   height: 1rem;
   width: 1rem;
   background: white;
-  border: 1px solid #F0EFEF;
+  border: 1px solid black;
   margin: 1rem;
   cursor: pointer;
   border-radius: 50%;
@@ -1210,6 +1217,16 @@ main {
 
 #about-us-section {
   padding-top: 0;
+}
+
+#about-us-section .left {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#about-us-section .left img {
+  position: relative;
+  top: -5px;
 }
 
 #engagements-section .engagement-steps {
