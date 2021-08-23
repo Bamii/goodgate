@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/loans.css">
   <title>GoodGate</title>
 </head>
 <body>
   <header>
-    <div id="top-strip-container" class="transparent">
+    <div id="top-strip-container" class="">
       <div id="top-strip" class="section-container">
         <div id="logo">
           <a class="main" href="/index.html"
@@ -91,28 +91,97 @@
   </header>
 
   <main>
+    <section id="banner-container" class="top">
+      <div class="banner">
+        <div class="banner-text">Loans</div>
+      </div>
+    </section>
+
     <div class="section-wrapper">
-      <section id="about-us-section" class="split-row section-container">
-        <div class="row-half left master">
-          <div class="main-image">
-            <img src="images/about.png" alt="About Us">
+      <section id="loans-section" class="split-row section-container">
+        <div class="row-half left">
+          <div class="tabs">
+            <div class="selected tab" data-tab-group="loans" data-tab="personal">Personal Loans</div>
+            <div class="tab" data-tab-group="loans" data-tab="business">Business Loans</div>
           </div>
         </div>
-        <div class="row-half right">
-          <div class="row-contents">
-            <span class="small-text">
-              ABOUT US GOODGATE LIMITED
-            </span>
-            <span class="large-text ">
-              The one-stop financial house
-            </span>
-            <span class="sub-text">
-              We consistently supports small and large scale businesses including individuals with loans, investment opportunities to meet their growing needs
-            </span>
-            <div class="action-button">
-              <button class="cta">
-                <a class="" href="#">Learn More.</a>
-              </button>
+        <div class="row-half right master">
+          <div class="tabs-targets">
+            <div class="tab-target selected" data-tab-target="personal" data-tab-group="loans">
+              <div class="list">
+                <div class="card">
+                  <div class="image">
+  
+                  </div>
+                  <div class="overlay">
+                    <div class="medium-text accented-text">Rent Loan</div>
+                    <div class="small-text">view</div>
+                  </div>
+                </div>
+  
+                <div class="card">
+                  <div class="image">
+  
+                  </div>
+                  <div class="overlay">
+                    <div class="medium-text accented-text">Rent Loan</div>
+                    <div class="small-text">view</div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="image">
+  
+                  </div>
+                  <div class="overlay">
+                    <div class="medium-text accented-text">Rent Loan</div>
+                    <div class="small-text">view</div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="image">
+  
+                  </div>
+                  <div class="overlay">
+                    <div class="medium-text accented-text">Rent Loan</div>
+                    <div class="small-text">view</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-target" data-tab-target="business" data-tab-group="loans">
+              <div class="list">
+                <div class="card">
+                  <div class="image">
+  
+                  </div>
+                  <div class="overlay">
+                    <div class="medium-text accented-text">Rent Loan</div>
+                    <div class="small-text">view</div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="image">
+  
+                  </div>
+                  <div class="overlay">
+                    <div class="medium-text accented-text">Rent Loan</div>
+                    <div class="small-text">view</div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="image">
+  
+                  </div>
+                  <div class="overlay">
+                    <div class="medium-text accented-text">Rent Loan</div>
+                    <div class="small-text">view</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -174,7 +243,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/index.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/tabs.js"></script>
 </body>
 </html>

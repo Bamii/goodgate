@@ -409,3 +409,31 @@ button.cta {
     }
   }
 }
+
+.card {
+  width: 100%;
+  min-width: 15rem;
+  margin: 0 1rem 1rem 0;
+  border-bottom: 5px solid $secondary-color;
+
+  .image {
+    width: auto;
+    min-height: 15rem;
+    border: 1px solid $secondary-color;
+  }
+
+  .overlay {
+    text-align: center;
+    padding: 1rem 1rem;
+    background: #E9E9E9;
+  }
+
+  @include minWidth($breakpoint-tablet) {
+    width: 10rem;
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}

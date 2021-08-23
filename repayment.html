@@ -25,7 +25,7 @@
                 <div data-nav-tag-target="loan" class="dashboard-navigation-subitems">
                   <a href="products.html" class="dashboard-navigation-subitem">Loan Product</a>
                   <div class="dashboard-navigation-subitem">My Loan History</div>
-                  <div class="dashboard-navigation-subitem">Repayment</div>
+                  <a class="dashboard-navigation-subitem" href="repayment.html">Repayment</a>
                 </div>
               </div>
               <div class="dashboard-navigation-item">
@@ -33,7 +33,7 @@
                 <div data-nav-tag-target="investment" class="dashboard-navigation-subitems">
                   <a href="products.html" class="dashboard-navigation-subitem">Loan Product</a>
                   <div class="dashboard-navigation-subitem">My Loan History</div>
-                  <div class="dashboard-navigation-subitem">Repayment</div>
+                  <a class="dashboard-navigation-subitem" href="repayment.html">Repayment</a>
                 </div>
               </div>
               <div class="dashboard-navigation-item">
@@ -172,12 +172,12 @@
                   <span data-modal="repayment-modal" class="accented-text change">Change</span>
                 </div>
                 <div class="tabs">
-                  <div class="tab selected" data-tab="card">Card Payment</div>
-                  <div class="tab" data-tab="bank">Bank Payment</div>
-                  <div class="tab" data-tab="transfer">Transfer</div>
+                  <div data-tab="card" data-tab-group="payment" class="tab selected" >Card Payment</div>
+                  <div data-tab="bank" data-tab-group="payment" class="tab" >Bank Payment</div>
+                  <div data-tab="transfer" data-tab-group="payment" class="tab" >Transfer</div>
                 </div>
                 <div class="tabs-targets">
-                  <div data-tab-target="card" class="selected tab-target">
+                  <div data-tab-group="payment" data-tab-target="card" class="selected tab-target">
                     <div class="card-table table">
                       <div class="table-header">
                         <div class="">S/N</div>
@@ -201,7 +201,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-target" data-tab-target="bank">
+                  <div data-tab-group="payment" class="tab-target" data-tab-target="bank">
                     <div class="tab-subheader">Bank deposit information</div>
                     <div class="tab-header">GOODGATE BANK INFORMATION</div>
                     <div class="bank-details">
@@ -219,7 +219,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-target" data-tab-target="transfer">
+                  <div data-tab-group="payment" class="tab-target" data-tab-target="transfer">
                     <div class="tab-subheader">Bank deposit information</div>
                     <div class="tab-header">GOODGATE BANK INFORMATION</div>
                     <div class="bank-details">

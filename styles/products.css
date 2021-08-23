@@ -13,7 +13,7 @@ header #top-strip-container {
           justify-content: center;
   padding: 0 2rem;
   color: black;
-  background: #F0EFEFB5;
+  background: #F0EFEF;
   position: fixed;
 }
 
@@ -949,6 +949,39 @@ button.cta.secondary {
   outline: dotted #00000010;
   border-left: 5px solid #51C272;
   border-radius: 0 10px 10px 0;
+}
+
+.card {
+  width: 100%;
+  min-width: 15rem;
+  margin: 0 1rem 1rem 0;
+  border-bottom: 5px solid #51C272;
+}
+
+.card .image {
+  width: auto;
+  min-height: 15rem;
+  border: 1px solid #51C272;
+}
+
+.card .overlay {
+  text-align: center;
+  padding: 1rem 1rem;
+  background: #E9E9E9;
+}
+
+@media screen and (min-width: 760px) {
+  .card {
+    width: 10rem;
+  }
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 header {
@@ -966,7 +999,7 @@ header #top-strip-container {
           justify-content: center;
   padding: 0 2rem;
   color: black;
-  background: #F0EFEFB5;
+  background: #F0EFEF;
   position: fixed;
 }
 
@@ -1902,6 +1935,39 @@ button.cta.secondary {
   outline: dotted #00000010;
   border-left: 5px solid #51C272;
   border-radius: 0 10px 10px 0;
+}
+
+.card {
+  width: 100%;
+  min-width: 15rem;
+  margin: 0 1rem 1rem 0;
+  border-bottom: 5px solid #51C272;
+}
+
+.card .image {
+  width: auto;
+  min-height: 15rem;
+  border: 1px solid #51C272;
+}
+
+.card .overlay {
+  text-align: center;
+  padding: 1rem 1rem;
+  background: #E9E9E9;
+}
+
+@media screen and (min-width: 760px) {
+  .card {
+    width: 10rem;
+  }
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main {
