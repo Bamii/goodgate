@@ -1,0 +1,47 @@
+@import "header";
+@import "footer";
+@import "variables";
+@import "common";
+@import "tabs";
+
+#loans-section {
+  align-items: flex-start;
+  .left {
+    width: 100%;
+  }
+
+  .tabs {
+    background: #F7F7F7;
+    padding: 2rem 0;
+    border-top: 5px solid $secondary-color;
+    width: 100%;
+    text-align: center;
+
+    .tab {
+      padding: 0.5rem 2rem;
+      cursor: pointer;
+      margin: 0.5rem 0;
+      font-weight: bold;
+
+      &.selected {
+        background: #D0EFD9;
+        color: $secondary-color;
+        border-left: 5px solid $secondary-color;
+      }
+    }
+  }
+
+  @include minWidth($breakpoint-tablet) {
+    .left {
+      max-width: 20rem;
+    }
+
+    .right {
+      padding: 0;
+    }
+
+    .tab {
+      text-align: left;
+    }
+  }
+}
