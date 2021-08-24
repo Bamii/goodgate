@@ -2752,10 +2752,24 @@ main {
 .page-contents .table-pages .table-page {
   height: 2rem;
   width: 2rem;
-  border: 1px solid #51C272;
-  text-align: center;
-  vertical-align: middle;
+  border: 1px solid #E8E9EC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 5px;
   margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+.page-contents .table-pages .table-page.selected, .page-contents .table-pages .table-page:hover {
+  background: #51C272;
+  color: white;
+  cursor: pointer;
 }
 /*# sourceMappingURL=loan_applicants.css.map */

@@ -69,11 +69,20 @@
     .table-page {
       height: 2rem;
       width: 2rem;
-      border: 1px solid $secondary-color;
-      text-align: center;
-      vertical-align: middle;
+      border: 1px solid #E8E9EC;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border-radius: 5px;
       margin-right: 0.3rem;
+      cursor: pointer;
+
+      &.selected,
+      &:hover {
+        background: $secondary-color;
+        color: white;
+        cursor: pointer;
+      }
     }
   }
 }
