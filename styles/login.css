@@ -64,7 +64,7 @@ header #top-strip-container #top-strip #logo .icon {
 }
 
 header #top-strip-container #top-strip #logo img {
-  height: 4rem;
+  height: 3rem;
   width: auto;
 }
 
@@ -547,7 +547,7 @@ main {
 #banner-container .banner {
   height: 25rem;
   width: 100%;
-  background-image: url(/assets/banner.png);
+  background-image: url(../images/banner_bg.png);
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -905,6 +905,11 @@ button.cta {
 
 button.cta.secondary {
   background: #484848;
+}
+
+button.cta.transparent {
+  color: #464646;
+  background: transparent;
 }
 
 .input-container {

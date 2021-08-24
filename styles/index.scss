@@ -39,34 +39,41 @@ main {
       height: 100%;
       overflow: hidden;
   
-      %banner-position {
-        background-size: auto 20%;
-        background-position: 90% 90%;
-        background-repeat: no-repeat;
-        
-        @include minWidth($breakpoint-tablet) {
-          background-position: 95%;
-          background-size: auto 30%;
+
+      // [data-slide] {
+      //   background-image: none;
+      // }
+
+      @include minWidth($breakpoint-tablet) {
+        %banner-position {
+          background-size: auto 20%;
+          background-position: 90% 90%;
+          background-repeat: no-repeat;
+          
+          @include minWidth($breakpoint-tablet) {
+            background-position: 95%;
+            background-size: auto 30%;
+          }
+  
+          @include minWidth($breakpoint-desktop) {
+            background-size: auto 50%;
+          }
         }
 
-        @include minWidth($breakpoint-desktop) {
-          background-size: auto 50%;
+        [data-slide="0"] {
+          @extend %banner-position;
+          background-image: url(../images/banner.png);
         }
-      }
-
-      [data-slide="0"] {
-        @extend %banner-position;
-        background-image: url(../images/banner.png);
-      }
-
-      [data-slide="1"] {
-        @extend %banner-position;
-        background-image: url(../images/banner.png);
-      }
-
-      [data-slide="2"] {
-        @extend %banner-position;
-        background-image: url(../images/banner.png);
+  
+        [data-slide="1"] {
+          @extend %banner-position;
+          background-image: url(../images/banner.png);
+        }
+  
+        [data-slide="2"] {
+          @extend %banner-position;
+          background-image: url(../images/banner.png);
+        }
       }
 
       .banner-slide-container {

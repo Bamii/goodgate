@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/admin/dashboard.css">
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <main>
+    <div class="section-wrapper">
+      <section id="dashboard-container" class="split-row">
+        <div id="dashboard-navigation-container" class="row-half left">
+          <div class="dashboard-navigation">
+            <div class="logo">
+              <img src="../images/GoodGate-Finance-Limited-Logo.png" alt="">
+            </div>
+            <div class="dashboard-navigation-items">
+              <div class="dashboard-navigation-item selected">
+                <a class="tag" href="index.html">Dashboard</a>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div data-nav-tag="loan" class="tag">Loan <span>+</span></div>
+                <div data-nav-tag-target="loan" class="dashboard-navigation-subitems">
+                  <a href="loan_applicants.html" class="dashboard-navigation-subitem">Loan Applicant</a>
+                  <a class="dashboard-navigation-subitem" href="loan_products.html">Loan Product</a>
+                  <div class="dashboard-navigation-subitem">My Loan History</div>
+                </div>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div data-nav-tag="investment" class="tag">Investment <span>+</span></div>
+                <div data-nav-tag-target="investment" class="dashboard-navigation-subitems">
+                  <a href="products.html" class="dashboard-navigation-subitem">Loan Product</a>
+                  <div class="dashboard-navigation-subitem">My Loan History</div>
+                  <a class="dashboard-navigation-subitem" href="repayment.html">Repayment</a>
+                </div>
+              </div>
+              <div class="dashboard-navigation-item">
+                <a href="repayment.html" class="tag">Repayment</a>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div class="tag">Transaction History</div>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div data-nav-tag="settings" class="tag">Settings <span>+</span></div>
+                <div data-nav-tag-target="settings" class="dashboard-navigation-subitems">
+                  <div class="dashboard-navigation-subitem">Settings</div>
+                </div>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div class="tag">Report</div>
+              </div>
+            </div>
+            <div class="logout">
+              <button class="cta secondary">
+                Logout
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="dashboard-content-container" class="row-half right master">
+          <div class="top-strip">
+            <div class="alerts">
+             <img src="../images/alarm.svg" alt="Alert." class="icon">
+            </div>
+            <div class="notifications">
+             <img data-notifications-open src="../images/notification.svg" alt="Notification." class="icon">
+             <div data-notifications class="notifications-list">
+               <div class="notifications-header">Notifications</div>
+               <div class="notifications-body">
+                 <div class="notification">
+                   <div class="notification-title">
+                    Loan Application
+                   </div>
+                   <div class="notification-details">
+                    Joseph Emerson applied for a loan.....
+                   </div>
+                 </div>
+                 <div class="notification">
+                  <div class="notification-title">
+                   Loan Application
+                  </div>
+                  <div class="notification-details">
+                   Joseph Emerson applied for a loan.....
+                  </div>
+                </div>
+               </div>
+               <div class="see-all">
+                <a href="#">
+                  See All
+                </a> 
+               </div>
+             </div>
+            </div>
+            <div class="account"></div>
+          </div>
+
+          <div id="alert" class="active">
+            We noticed you haven't verified your email address. Please kindly visit your email box to verify or click to resend link
+            <span id="alert-close">x</span>
+          </div>
+
+          <div class="welcome-message">
+            Overview
+          </div>
+
+          <div class="dashboard-contents split-row">
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>
