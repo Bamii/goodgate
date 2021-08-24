@@ -331,14 +331,97 @@
 
     <!-- testimonials -->
     <div class="section-wrapper">
-      <section id="loan-calculator-section" class="section-container split-row">
-        <div class="row-half">
-
+      <section id="loan-calculator-section" class="section-container">
+        <div class="loan-calculator-header large-text">
+          Ready to calculate?
+          <div class="fill-space"></div>
+          <div class="loan-nav-buttons">
+            <div data-tab-group="loan-calc" data-tab="investment" class="loan-nav-button"><img src="images/arrow-left.svg" alt="Left Arrow."></div>
+            <div data-tab-group="loan-calc" data-tab="loan" class="loan-nav-button"><img src="images/arrow-right.svg" alt="Right Arrow."></div>
+          </div>
         </div>
-        <div class="row-half">
-          <div class="large-text">Loan Calculator</div>
-          <div class="medium-text">
-            Our investment scheme is designed to allow potential investors access to our various investment schemes and enjoy ROI of up to 30 % annually
+
+        <div data-tab-group="loan-calc" data-tab-target="investment" class="selected">
+          <div class="split-row">
+            <div class="row-half">
+              <div class="investment-calculator">
+                <div class="row">
+                  <div class="input-container select">
+                    <label for="investment_duration"><span>Investment duration</span></label>
+                    <select name="investment_duration" id="">
+                      <option value="a">---------</option>
+                    </select>
+                  </div>
+                  <div class="input-container shaded">
+                    <label for="password"><span>Interest Rate</span></label>
+                    <div>10%</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-container">
+                    <label for="password"><span>HOW MUCH DO YOU WANT TO INVEST?</span></label>
+                    <input name="password" type="text">
+                  </div>
+                </div>
+                <div class="action-row">
+                  <button class="cta secondary">
+                    Reset
+                  </button>
+                  <button class="cta">Calculate</button>
+                </div>
+              </div>
+            </div>
+            <div class="row-half">
+              <div class="large-text">Investment Calculator</div>
+              <div class="medium-text">
+                Our investment scheme is designed to allow potential investors access to our various investment schemes and enjoy ROI of up to 30 % annually
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-tab-group="loan-calc" data-tab-target="loan" class="">
+          <div class="split-row">
+            <div class="row-half">
+              <div class="loan-calculator">
+                <div class="row">
+                  <div class="input-container shaded">
+                    <label for="password"><span>Interest Rate</span></label>
+                    <div>10%</div>
+                  </div>
+                  <div class="input-container select">
+                    <label for="investment_duration"><span>Investment duration</span></label>
+                    <select name="investment_duration" id="">
+                      <option value="a">---------</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-container">
+                    <label for="invest_amount"><span>HOW MUCH DO YOU WANT TO INVEST?</span></label>
+                    <input name="invest_amount" type="text">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-container">
+                    <label for="monthly_income"><span>WHAT IS YOUR MONTHLY INCOME?</span></label>
+                    <input name="monthly_income" type="number">
+                  </div>
+                </div>
+                <div class="action-row">
+                  <button class="cta secondary">
+                    Reset
+                  </button>
+                  <button class="cta">Calculate</button>
+                </div>
+              </div>
+            </div>
+            <div class="row-half">
+              <div class="large-text">Loan Calculator</div>
+              <div class="medium-text">
+                Our investment scheme is designed to allow potential investors access to our various investment schemes and enjoy ROI of up to 30 % annually
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -401,5 +484,6 @@
   </footer>
   <script src="js/index.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/tabs.js"></script>
 </body>
 </html>

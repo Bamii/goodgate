@@ -2,6 +2,7 @@
 @import "footer";
 @import "variables";
 @import "common";
+@import "tabs";
 
 main {
   padding: 0;
@@ -240,6 +241,7 @@ main {
 
       .engagement-image {
         width: 100%;
+        text-align: center;
 
         img {
           width: auto;
@@ -254,7 +256,7 @@ main {
       }
     }
 
-    @include minWidth($breakpoint-tablet) {
+    @include minWidth($breakpoint-desktop) {
       flex-direction: row;
       width: auto;
       flex: 1;

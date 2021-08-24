@@ -8,6 +8,11 @@
   .product-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
+    @include minWidth($breakpoint-tablet) {
+      justify-content: flex-start;
+    }
 
     .product-card {
       width: 16rem;

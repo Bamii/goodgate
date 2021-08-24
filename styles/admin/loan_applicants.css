@@ -544,6 +544,80 @@ main {
   padding: 5.5rem 0 5rem 0;
 }
 
+#loan-calculator-section .loan-calculator-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+#loan-calculator-section .loan-calculator-header .fill-space {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 0.1px;
+  border: 1px solid #484848;
+  margin: 0 1rem;
+}
+
+#loan-calculator-section .loan-calculator-header .loan-nav-buttons {
+  display: inline flex;
+}
+
+#loan-calculator-section .loan-calculator-header .loan-nav-buttons .loan-nav-button {
+  height: 3rem;
+  width: 3rem;
+  background: black;
+  color: white;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#loan-calculator-section .loan-calculator-header .loan-nav-buttons .loan-nav-button:hover {
+  background: #51C272;
+}
+
+#loan-calculator-section .investment-calculator {
+  background: #E3ECDB;
+}
+
+#loan-calculator-section .loan-calculator {
+  background: #FFF2E3;
+}
+
+#loan-calculator-section .investment-calculator,
+#loan-calculator-section .loan-calculator {
+  padding: 4rem 2rem;
+}
+
+#loan-calculator-section .investment-calculator .action-row,
+#loan-calculator-section .loan-calculator .action-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#loan-calculator-section .investment-calculator .action-row .cta,
+#loan-calculator-section .loan-calculator .action-row .cta {
+  margin-left: 0.5rem;
+}
+
 #banner-container .banner {
   height: 25rem;
   width: 100%;
@@ -749,7 +823,6 @@ section.split-row .right {
   }
 }
 
-.select,
 .input {
   width: 100%;
   border: none;
@@ -955,6 +1028,66 @@ button.cta.transparent {
   border-radius: 0 10px 10px 0;
 }
 
+.input-container.full-width {
+  max-width: 100%;
+}
+
+.input-container.shaded {
+  background: #D0EFD9;
+}
+
+.input-container.date {
+  position: relative;
+}
+
+.input-container.date input {
+  padding-right: 3.5rem;
+}
+
+.input-container.date::after {
+  position: absolute;
+  right: 2.5rem;
+  top: 1rem;
+  content: url(../images/calendar.svg);
+  width: 0.8em;
+  height: 0.5em;
+  justify-self: flex-end;
+}
+
+.input-container.select {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "select";
+}
+
+.input-container.select select, .input-container.select:after {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: select;
+}
+
+.input-container.select select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-right: 3.5rem;
+}
+
+.input-container.select::after {
+  content: "";
+  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  margin-right: 1rem;
+  width: 0.8em;
+  height: 0.5em;
+  justify-self: flex-end;
+  background: #51C272;
+}
+
 .card {
   width: 100%;
   min-width: 15rem;
@@ -986,6 +1119,69 @@ button.cta.transparent {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.table {
+  background: white;
+  border-radius: 5px;
+  padding: 1rem;
+  max-height: 50rem;
+  overflow-y: scroll;
+  display: table;
+}
+
+.table .table-entry, .table .table-header {
+  display: table-row;
+}
+
+.table .table-entry .cell, .table .table-header .cell {
+  display: table-cell;
+  padding: 0.8rem 1rem;
+}
+
+.table .table-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.table .table-body {
+  display: table-row-group;
+}
+
+.table .table-body .table-entry {
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #B8B8B8;
+  font-size: 0.9rem;
+}
+
+.table .table-body .table-entry:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.row button {
+  margin-bottom: 1rem;
+}
+
+.row .input-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 1rem 1rem 0;
+  max-width: 20rem;
+  min-width: 10rem;
 }
 
 header {
@@ -1534,6 +1730,80 @@ main {
   padding: 5.5rem 0 5rem 0;
 }
 
+#loan-calculator-section .loan-calculator-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+#loan-calculator-section .loan-calculator-header .fill-space {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 0.1px;
+  border: 1px solid #484848;
+  margin: 0 1rem;
+}
+
+#loan-calculator-section .loan-calculator-header .loan-nav-buttons {
+  display: inline flex;
+}
+
+#loan-calculator-section .loan-calculator-header .loan-nav-buttons .loan-nav-button {
+  height: 3rem;
+  width: 3rem;
+  background: black;
+  color: white;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#loan-calculator-section .loan-calculator-header .loan-nav-buttons .loan-nav-button:hover {
+  background: #51C272;
+}
+
+#loan-calculator-section .investment-calculator {
+  background: #E3ECDB;
+}
+
+#loan-calculator-section .loan-calculator {
+  background: #FFF2E3;
+}
+
+#loan-calculator-section .investment-calculator,
+#loan-calculator-section .loan-calculator {
+  padding: 4rem 2rem;
+}
+
+#loan-calculator-section .investment-calculator .action-row,
+#loan-calculator-section .loan-calculator .action-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#loan-calculator-section .investment-calculator .action-row .cta,
+#loan-calculator-section .loan-calculator .action-row .cta {
+  margin-left: 0.5rem;
+}
+
 #banner-container .banner {
   height: 25rem;
   width: 100%;
@@ -1739,7 +2009,6 @@ section.split-row .right {
   }
 }
 
-.select,
 .input {
   width: 100%;
   border: none;
@@ -1945,6 +2214,66 @@ button.cta.transparent {
   border-radius: 0 10px 10px 0;
 }
 
+.input-container.full-width {
+  max-width: 100%;
+}
+
+.input-container.shaded {
+  background: #D0EFD9;
+}
+
+.input-container.date {
+  position: relative;
+}
+
+.input-container.date input {
+  padding-right: 3.5rem;
+}
+
+.input-container.date::after {
+  position: absolute;
+  right: 2.5rem;
+  top: 1rem;
+  content: url(../images/calendar.svg);
+  width: 0.8em;
+  height: 0.5em;
+  justify-self: flex-end;
+}
+
+.input-container.select {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "select";
+}
+
+.input-container.select select, .input-container.select:after {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: select;
+}
+
+.input-container.select select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-right: 3.5rem;
+}
+
+.input-container.select::after {
+  content: "";
+  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  margin-right: 1rem;
+  width: 0.8em;
+  height: 0.5em;
+  justify-self: flex-end;
+  background: #51C272;
+}
+
 .card {
   width: 100%;
   min-width: 15rem;
@@ -1976,6 +2305,69 @@ button.cta.transparent {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.table {
+  background: white;
+  border-radius: 5px;
+  padding: 1rem;
+  max-height: 50rem;
+  overflow-y: scroll;
+  display: table;
+}
+
+.table .table-entry, .table .table-header {
+  display: table-row;
+}
+
+.table .table-entry .cell, .table .table-header .cell {
+  display: table-cell;
+  padding: 0.8rem 1rem;
+}
+
+.table .table-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.table .table-body {
+  display: table-row-group;
+}
+
+.table .table-body .table-entry {
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #B8B8B8;
+  font-size: 0.9rem;
+}
+
+.table .table-body .table-entry:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.row button {
+  margin-bottom: 1rem;
+}
+
+.row .input-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 1rem 1rem 0;
+  max-width: 20rem;
+  min-width: 10rem;
 }
 
 main {
@@ -2013,7 +2405,6 @@ main {
           flex: none;
   background: #F7F7F7;
   display: none;
-  overflow-y: scroll;
 }
 
 #dashboard-container #dashboard-navigation-container .dashboard-navigation {
@@ -2256,41 +2647,6 @@ main {
   font-weight: bold;
 }
 
-#dashboard-container #dashboard-content-container .page-contents .row,
-#dashboard-container #dashboard-content-container .application-contents .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-
-#dashboard-container #dashboard-content-container .page-contents .row button,
-#dashboard-container #dashboard-content-container .application-contents .row button {
-  margin-bottom: 1rem;
-}
-
-#dashboard-container #dashboard-content-container .page-contents .row .input-container,
-#dashboard-container #dashboard-content-container .application-contents .row .input-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin: 0 1rem 1rem 0;
-  max-width: 20rem;
-  min-width: 10rem;
-}
-
-#dashboard-container #dashboard-content-container .page-contents .row .input-container.full-width,
-#dashboard-container #dashboard-content-container .application-contents .row .input-container.full-width {
-  max-width: 100%;
-}
-
-#dashboard-container #dashboard-content-container .page-contents .row .input-container.shaded,
-#dashboard-container #dashboard-content-container .application-contents .row .input-container.shaded {
-  background: #D0EFD9;
-}
-
 @media screen and (min-width: 760px) {
   #dashboard-container {
     height: 100vh;
@@ -2321,47 +2677,6 @@ main {
   #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo {
     padding: 1rem 3rem;
   }
-}
-
-.table {
-  background: white;
-  border-radius: 5px;
-  padding: 1rem;
-  max-height: 50rem;
-  overflow-y: scroll;
-  display: table;
-}
-
-.table .table-entry, .table .table-header {
-  display: table-row;
-}
-
-.table .table-entry .cell, .table .table-header .cell {
-  display: table-cell;
-  padding: 0.8rem 1rem;
-}
-
-.table .table-header {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.9rem;
-  letter-spacing: 0.5px;
-}
-
-.table .table-body {
-  display: table-row-group;
-}
-
-.table .table-body .table-entry {
-  padding: 0.5rem 0;
-  margin: 0.5rem 0;
-  border-bottom: 1px solid #B8B8B8;
-  font-size: 0.9rem;
-}
-
-.table .table-body .table-entry:last-child {
-  padding-bottom: 0;
-  margin-bottom: 0;
 }
 
 .page-contents .row {

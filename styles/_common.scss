@@ -73,6 +73,65 @@ main {
   padding: 5.5rem 0 5rem 0;
 }
 
+
+#loan-calculator-section {
+  .loan-calculator-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    .fill-space {
+      width: 100%;
+      flex: 1;
+      height: 0.1px;
+      border: 1px solid #484848;
+      margin: 0 1rem;
+    }
+
+    .loan-nav-buttons {
+      display: inline flex;
+
+      .loan-nav-button {
+        height: 3rem;
+        width: 3rem;
+        background: black;
+        color: white;
+        margin: 0 0.5rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background: $secondary-color;
+        }
+      }
+    }
+  }
+
+  
+  .investment-calculator {
+    background: #E3ECDB;
+  }
+
+  .loan-calculator {
+    background: #FFF2E3;
+  }
+
+  .investment-calculator,
+  .loan-calculator {
+    padding: 4rem 2rem;
+
+    .action-row {
+      display: flex;
+      justify-content: flex-end;
+      .cta {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
 #banner-container {
   .banner {
     height: 25rem;
@@ -210,7 +269,6 @@ section.split-row {
   }
 }
 
-.select,
 .input {
   width: 100%;
   border: none;
@@ -273,19 +331,6 @@ section.split-row {
     color: $font-color
   }
 }
-
-// .input-container {
-//   display: flex;
-//   padding: 1.5rem 0;
-//   justify-content: center;
-
-//   svg,img {
-//     height: 2.5rem;
-//     width: 2.5rem;
-//     margin-right: 0.5rem;
-//   }
-// }
-
 
 .modal {
   display: none;
@@ -412,6 +457,59 @@ button.cta {
       border-radius: 0 10px 10px 0;
     }
   }
+
+  &.full-width {
+    max-width: 100%;
+  }
+
+  &.shaded {
+    background: #D0EFD9;
+  }
+
+  &.date {
+    position: relative;
+
+    input {
+      padding-right: 3.5rem;
+    }
+    
+    &::after {
+      position: absolute;
+      right: 2.5rem;
+      top: 1rem;
+      content: url(../images/calendar.svg);
+      width: 0.8em;
+      height: 0.5em;
+      justify-self: flex-end;
+    }
+  }
+
+  &.select {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-areas: "select";
+
+    select,
+    &:after {
+      grid-area: select;
+    }
+    
+    select {
+      appearance: none;
+      padding-right: 3.5rem;
+    }
+    
+    &::after {
+      content: "";
+      clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+      margin-right: 1rem;
+      width: 0.8em;
+      height: 0.5em;
+      justify-self: flex-end;
+      background: $secondary-color;
+    }
+  }
 }
 
 .card {
@@ -440,4 +538,63 @@ button.cta {
 .list {
   display: flex;
   flex-wrap: wrap;
+}
+
+
+.table {
+  background: white;
+  border-radius: 5px;
+  padding: 1rem;
+  max-height: 50rem;
+  overflow-y: scroll;
+  display: table;
+
+  .table-entry,.table-header {
+    display: table-row;
+
+    .cell {
+      display: table-cell;
+      padding: 0.8rem 1rem;
+    }
+  }
+
+  .table-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
+
+  .table-body {
+    display: table-row-group;
+
+    .table-entry {
+      padding: 0.5rem 0;
+      margin: 0.5rem 0;
+      border-bottom: 1px solid #B8B8B8;
+      font-size: 0.9rem;
+  
+      &:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+
+  button {
+    margin-bottom: 1rem;
+  }
+   
+  .input-container {
+    flex: 1;
+    margin: 0 1rem 1rem 0;
+    max-width: 20rem;
+    min-width: 10rem;
+  }
 }

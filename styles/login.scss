@@ -38,6 +38,16 @@ main {
   
       .auth-btn-row {
         text-align: right;
+
+        span {
+          display: flex;
+          align-items: center;
+
+          img {
+            height: 2rem;
+            margin-left: 0.5rem;
+          }
+        }
       }
 
       .otp-container {
