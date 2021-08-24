@@ -2398,8 +2398,8 @@ main {
 
 #dashboard-container #dashboard-navigation-container {
   padding: 0;
-  width: 20%;
-  max-width: 25rem;
+  width: 100%;
+  z-index: 10000;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -2419,13 +2419,23 @@ main {
           flex-direction: column;
 }
 
-#dashboard-container #dashboard-navigation-container .dashboard-navigation .logo {
+#dashboard-container #dashboard-navigation-container .dashboard-navigation .logo-container {
   padding: 1rem 3rem;
   border-bottom: 1px solid #D0EFD9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#dashboard-container #dashboard-navigation-container .dashboard-navigation .logo img {
-  width: 100%;
+#dashboard-container #dashboard-navigation-container .dashboard-navigation .logo-container img.logo {
+  width: auto;
+  height: 4rem;
 }
 
 #dashboard-container #dashboard-navigation-container .dashboard-navigation .dashboard-navigation-items {
@@ -2498,6 +2508,32 @@ main {
   width: 100%;
 }
 
+#dashboard-container #dashboard-navigation-container.menu-open {
+  display: block;
+  position: fixed;
+  left: 0;
+  -webkit-animation: move 1s ease-in-out;
+          animation: move 1s ease-in-out;
+}
+
+@-webkit-keyframes move {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes move {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0;
+  }
+}
+
 #dashboard-container #dashboard-content-container {
   padding: 0;
   overflow: scroll;
@@ -2508,15 +2544,28 @@ main {
   width: 100%;
   padding: 1rem;
   background: #F7F7F7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto auto auto;
+      grid-template-columns: 1fr auto auto auto;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#dashboard-container #dashboard-content-container .top-strip .mobile-dashboard-nav-container .mobile-dashboard-nav {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+@media screen and (min-width: 1024px) {
+  #dashboard-container #dashboard-content-container .top-strip .mobile-dashboard-nav-container .mobile-dashboard-nav {
+    display: none;
+  }
 }
 
 #dashboard-container #dashboard-content-container .top-strip .alerts, #dashboard-container #dashboard-content-container .top-strip .notifications, #dashboard-container #dashboard-content-container .top-strip .account {
@@ -2656,26 +2705,36 @@ main {
             flex-direction: row;
   }
   #dashboard-container #dashboard-navigation-container {
-    display: block;
+    width: 20rem;
+    max-width: 25rem;
   }
-  #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo {
+  #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo-container {
     padding: 1rem 2rem;
   }
-  #dashboard-container #dashboard-content-container {
-    padding: 0 0 0 2rem;
+  #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo-container .mobile-dash-nav-close {
+    display: none;
   }
   #dashboard-container #dashboard-content-container .welcome-message {
     padding: 1rem;
     width: 100%;
   }
-  #dashboard-container #dashboard-content-container .dashboard-contents {
-    padding: 0;
-  }
 }
 
 @media screen and (min-width: 1024px) {
-  #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo {
+  #dashboard-container #dashboard-navigation-container {
+    display: block;
+  }
+  #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo-container {
     padding: 1rem 3rem;
+  }
+  #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo-container .mobile-dashboard-nav {
+    display: none;
+  }
+  #dashboard-container #dashboard-content-container {
+    padding: 0 0 0 2rem;
+  }
+  #dashboard-container #dashboard-content-container .dashboard-contents {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=dashboard.css.map */

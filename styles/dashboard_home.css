@@ -2398,8 +2398,8 @@ main {
 
 #dashboard-container #dashboard-navigation-container {
   padding: 0;
-  width: 20%;
-  max-width: 25rem;
+  width: 100%;
+  z-index: 10000;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -2419,13 +2419,23 @@ main {
           flex-direction: column;
 }
 
-#dashboard-container #dashboard-navigation-container .dashboard-navigation .logo {
+#dashboard-container #dashboard-navigation-container .dashboard-navigation .logo-container {
   padding: 1rem 3rem;
   border-bottom: 1px solid #D0EFD9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#dashboard-container #dashboard-navigation-container .dashboard-navigation .logo img {
-  width: 100%;
+#dashboard-container #dashboard-navigation-container .dashboard-navigation .logo-container img.logo {
+  width: auto;
+  height: 4rem;
 }
 
 #dashboard-container #dashboard-navigation-container .dashboard-navigation .dashboard-navigation-items {
@@ -2498,6 +2508,32 @@ main {
   width: 100%;
 }
 
+#dashboard-container #dashboard-navigation-container.menu-open {
+  display: block;
+  position: fixed;
+  left: 0;
+  -webkit-animation: move 1s ease-in-out;
+          animation: move 1s ease-in-out;
+}
+
+@-webkit-keyframes move {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes move {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0;
+  }
+}
+
 #dashboard-container #dashboard-content-container {
   padding: 0;
   overflow: scroll;
@@ -2508,15 +2544,28 @@ main {
   width: 100%;
   padding: 1rem;
   background: #F7F7F7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto auto auto;
+      grid-template-columns: 1fr auto auto auto;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#dashboard-container #dashboard-content-container .top-strip .mobile-dashboard-nav-container .mobile-dashboard-nav {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+@media screen and (min-width: 1024px) {
+  #dashboard-container #dashboard-content-container .top-strip .mobile-dashboard-nav-container .mobile-dashboard-nav {
+    display: none;
+  }
 }
 
 #dashboard-container #dashboard-content-container .top-strip .alerts, #dashboard-container #dashboard-content-container .top-strip .notifications, #dashboard-container #dashboard-content-container .top-strip .account {
@@ -2656,26 +2705,36 @@ main {
             flex-direction: row;
   }
   #dashboard-container #dashboard-navigation-container {
-    display: block;
+    width: 20rem;
+    max-width: 25rem;
   }
-  #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo {
+  #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo-container {
     padding: 1rem 2rem;
   }
-  #dashboard-container #dashboard-content-container {
-    padding: 0 0 0 2rem;
+  #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo-container .mobile-dash-nav-close {
+    display: none;
   }
   #dashboard-container #dashboard-content-container .welcome-message {
     padding: 1rem;
     width: 100%;
   }
-  #dashboard-container #dashboard-content-container .dashboard-contents {
-    padding: 0;
-  }
 }
 
 @media screen and (min-width: 1024px) {
-  #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo {
+  #dashboard-container #dashboard-navigation-container {
+    display: block;
+  }
+  #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo-container {
     padding: 1rem 3rem;
+  }
+  #dashboard-container #dashboard-navigation-container .dashboard-navigation .logo-container .mobile-dashboard-nav {
+    display: none;
+  }
+  #dashboard-container #dashboard-content-container {
+    padding: 0 0 0 2rem;
+  }
+  #dashboard-container #dashboard-content-container .dashboard-contents {
+    padding: 0;
   }
 }
 
@@ -2686,7 +2745,6 @@ main {
 }
 
 #dashboard-content-container .dashboard-contents .left {
-  padding: 0;
   width: 100%;
 }
 
@@ -2714,16 +2772,15 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   margin-bottom: 1rem;
 }
 
 #dashboard-content-container .dashboard-contents .right .product-type-row .product-type {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   width: 100%;
   border-radius: 5px;
   border: 2px solid #D0EFD9;
@@ -2746,6 +2803,7 @@ main {
   line-height: 1;
   background-position: center;
   background-size: 110% auto;
+  background-repeat: no-repeat;
   color: white;
 }
 
@@ -2761,9 +2819,12 @@ main {
   margin: 0;
 }
 
-@media screen and (min-width: 1024px) {
-  #dashboard-content-container .dashboard-contents .right .product-type-row .product-type {
-    height: 20rem;
+@media screen and (min-width: 760px) {
+  #dashboard-content-container .dashboard-contents .right .product-type-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -2818,14 +2879,19 @@ main {
           justify-content: space-between;
 }
 
+#dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry .details {
+  font-size: 1.3rem;
+}
+
 #dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry .small-text {
   color: #A6B1C0;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   text-transform: none;
 }
 
 #dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry .transaction-type {
   text-align: center;
+  font-size: 0.9rem;
 }
 
 #dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry .status {
@@ -2838,6 +2904,12 @@ main {
 #dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry .status img {
   height: 2rem;
   width: 2rem;
+}
+
+@media screen and (min-width: 760px) {
+  #dashboard-content-container .dashboard-contents .right .transaction-history .transaction-history-list .transaction-history-entry .small-text {
+    font-size: 0.7rem;
+  }
 }
 
 #dashboard-content-container .dashboard-contents .dashboard-product-card {

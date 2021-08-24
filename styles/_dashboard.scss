@@ -23,8 +23,8 @@ main {
 
   #dashboard-navigation-container {
     padding: 0;
-    width: 20%;
-    max-width: 25rem;
+    width: 100%;
+    z-index: 10000;
     flex: none;
     background: #F7F7F7;
     display: none;
@@ -35,12 +35,16 @@ main {
       display: flex;
       flex-direction: column;
 
-      .logo {
+      .logo-container {
         padding: 1rem 3rem;
         border-bottom: 1px solid #D0EFD9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-        img {
-          width: 100%;
+        img.logo {
+          width: auto;
+          height: 4rem;
         }
       }
 
@@ -107,6 +111,23 @@ main {
         }
       }
     }
+
+    &.menu-open {
+      display: block;
+      position: fixed;
+      left: 0;
+      animation: move 1s ease-in-out;
+
+      @keyframes move {
+        from {
+          left: -100vw;
+        }
+
+        to {
+          left: 0;
+        }
+      }
+    }
   }
 
   #dashboard-content-container {
@@ -118,9 +139,20 @@ main {
       width: 100%;
       padding: 1rem;
       background: #F7F7F7;
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr auto auto auto;
       justify-content: flex-end;
       align-items: center;
+
+      .mobile-dashboard-nav-container {
+        .mobile-dashboard-nav {
+          width: max-content;
+
+          @include minWidth($breakpoint-desktop) {
+            display: none;
+          }
+        }
+      }
 
       .alerts, .notifications, .account {
         margin: 0 0.5rem;
@@ -249,11 +281,39 @@ main {
     flex-direction: row;
 
     #dashboard-navigation-container {
+      width: 20rem;
+      max-width: 25rem;
+
+      .dashboard-navigation {
+        .logo-container {
+          padding: 1rem 2rem;
+
+          .mobile-dash-nav-close {
+            display: none;
+          }
+        }
+      }
+    }
+
+    #dashboard-content-container {
+      .welcome-message {
+        padding: 1rem;
+        width: 100%;
+      }
+    }
+  }
+
+  @include minWidth($breakpoint-desktop) {
+    #dashboard-navigation-container {
       display: block;
 
       .dashboard-navigation {
-        .logo {
-          padding: 1rem 2rem;
+        .logo-container {
+          padding: 1rem 3rem;
+          
+          .mobile-dashboard-nav{
+            display: none;   
+          }
         }
       }
     }
@@ -261,23 +321,8 @@ main {
     #dashboard-content-container {
       padding: 0 0 0 2rem;
 
-      .welcome-message {
-        padding: 1rem;
-        width: 100%;
-      }
-
       .dashboard-contents {
-        padding: 0;
-      }
-    }
-  }
-
-  @include minWidth($breakpoint-desktop) {
-    #dashboard-navigation-container {
-      .dashboard-navigation {
-        .logo {
-          padding: 1rem 3rem;
-        }
+        padding: 0; 
       }
     }
   }

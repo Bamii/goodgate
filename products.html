@@ -13,14 +13,17 @@
       <section id="dashboard-container" class="split-row">
         <div id="dashboard-navigation-container" class="row-half left">
           <div class="dashboard-navigation">
-            <div class="logo">
-              <img src="images/GoodGate-Finance-Limited-Logo.png" alt="">
+            <div class="logo-container">
+              <img class="logo" src="images/GoodGate-Finance-Limited-Logo.png" alt="GoodGate Logo.">
+              <div class="mobile-dashboard-nav" data-mobile-dashboard-nav>
+                close nav
+              </div>
             </div>
             <div class="dashboard-navigation-items">
-              <div class="dashboard-navigation-item">
+              <div class="dashboard-navigation-item selected">
                 <a class="tag" href="dashboard.html">Dashboard</a>
               </div>
-              <div class="dashboard-navigation-item selected">
+              <div class="dashboard-navigation-item">
                 <div data-nav-tag="loan" class="tag">Loan <span>+</span></div>
                 <div data-nav-tag-target="loan" class="dashboard-navigation-subitems">
                   <a href="products.html" class="dashboard-navigation-subitem">Loan Product</a>
@@ -52,6 +55,11 @@
         </div>
         <div id="dashboard-content-container" class="row-half right master">
           <div class="top-strip">
+            <div class="mobile-dashboard-nav-container">
+              <div data-mobile-dashboard-nav class="mobile-dashboard-nav">
+                open nav
+              </div>
+            </div>
             <div class="alerts">
              <img src="images/alarm.svg" alt="Alert." class="icon">
             </div>
@@ -86,6 +94,7 @@
             </div>
             <div class="account"></div>
           </div>
+
 
           <div id="alert" class="active">
             We noticed you haven't verified your email address. Please kindly visit your email box to verify or click to resend link

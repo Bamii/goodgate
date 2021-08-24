@@ -1,5 +1,6 @@
 (function(){
   const dashboardNavTag =  document.querySelectorAll('[data-nav-tag]')
+  const mobileDashboardNavBtn = document.querySelectorAll('[data-mobile-dashboard-nav]')
   let prev;
 
   Array.from(dashboardNavTag).forEach(tag => {
@@ -23,4 +24,10 @@
   document.getElementById('alert-close').onclick = function () {
     document.getElementById('alert').classList.remove('active')
   }
+
+  Array.from(mobileDashboardNavBtn).forEach(btn => {
+    btn.onclick = function() {
+      document.getElementById('dashboard-navigation-container').classList.toggle('menu-open')
+    }
+  })
 })()

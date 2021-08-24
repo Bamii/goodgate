@@ -11,7 +11,6 @@
     flex-wrap: wrap;
     
     .left {
-      padding: 0;
       width: 100%;
       
       @include minWidth($breakpoint-tablet) {
@@ -26,12 +25,12 @@
   
       .product-type-row {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
         margin-bottom: 1rem;
   
         .product-type {
-          flex: 1;
+          // flex: 1;
           width: 100%;
           border-radius: 5px;
           border: 2px solid #D0EFD9;
@@ -45,6 +44,7 @@
           line-height: 1;
           background-position: center;
           background-size: 110% auto;
+          background-repeat: no-repeat;
           color: white;
 
           &.loan {
@@ -57,11 +57,19 @@
   
           &:last-child {
             margin: 0;
-          }    
-
-          @include minWidth($breakpoint-desktop) {
-            height: 20rem;
           }
+
+          // @include minWidth($breakpoint-tablet) {
+          //   background-size: auto 100%;
+          // }
+
+          // @include minWidth($breakpoint-desktop) {
+          //   background-size: 110% auto;
+          // }
+        }
+
+        @include minWidth($breakpoint-tablet) {
+          flex-direction: row;
         }
       }
   
@@ -100,15 +108,20 @@
               flex-direction: column;
               justify-content: space-between;
             }
+
+            .details {
+              font-size: 1.3rem;
+            }
   
             .small-text {
               color: #A6B1C0;
-              font-size: 0.7rem;
+              font-size: 0.6rem;
               text-transform: none;
             }
 
             .transaction-type {
               text-align: center;
+              font-size: 0.9rem;
             }
 
             .status {
@@ -121,6 +134,11 @@
               }
             }
 
+            @include minWidth($breakpoint-tablet) {
+              .small-text {
+                font-size: 0.7rem;
+              }
+            }
           }
         }
       }
