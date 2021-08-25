@@ -24,7 +24,6 @@ main {
   #dashboard-navigation-container {
     padding: 0;
     width: 100%;
-    z-index: 10000;
     flex: none;
     background: #F7F7F7;
     display: none;
@@ -115,6 +114,7 @@ main {
     &.menu-open {
       display: block;
       position: fixed;
+      z-index: 10000;
       left: 0;
       animation: move 1s ease-in-out;
 
