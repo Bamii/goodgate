@@ -2584,9 +2584,11 @@ main {
 
 #dashboard-container #dashboard-navigation-container .dashboard-navigation .logout {
   margin-top: auto;
+  margin-bottom: 0.5rem;
 }
 
 #dashboard-container #dashboard-navigation-container .dashboard-navigation .logout .cta {
+  font-weight: bold;
   width: 100%;
 }
 
