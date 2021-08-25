@@ -2606,7 +2606,7 @@ main {
 
 #dashboard-container #dashboard-content-container {
   padding: 0;
-  overflow: scroll;
+  overflow-y: scroll;
   width: 100%;
 }
 

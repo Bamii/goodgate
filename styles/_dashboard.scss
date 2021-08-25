@@ -132,7 +132,7 @@ main {
 
   #dashboard-content-container {
     padding: 0;
-    overflow: scroll;
+    overflow-y: scroll;
     width: 100%;
     
     .top-strip {
