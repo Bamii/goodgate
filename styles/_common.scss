@@ -437,7 +437,7 @@ button.cta {
     justify-content: space-between;
     color: #464646;
     text-transform: uppercase;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
 
   div,
@@ -449,6 +449,7 @@ button.cta {
     border: none;
     border-radius: 5px;
     font-size: 0.8rem;
+    background: white;
     
     &:focus {
       box-shadow: 0px 3px 15px 6px #00000010;
@@ -459,7 +460,7 @@ button.cta {
   }
 
   &.full-width {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 
   &.shaded {
@@ -540,7 +541,6 @@ button.cta {
   flex-wrap: wrap;
 }
 
-
 .table {
   background: white;
   border-radius: 5px;
@@ -555,6 +555,26 @@ button.cta {
     .cell {
       display: table-cell;
       padding: 0.8rem 1rem;
+
+      .action-checkbox {
+        height: 1.3rem;
+        width: 1.3rem;
+        padding: 0.2rem;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+
+        .checkbox-inside {
+          width: 100%;
+          height: 100%;
+          border-radius: 3px;
+        }
+        
+        &.checked {
+          .checkbox-inside {
+            background: black;
+          }
+        }
+      }
     }
   }
 
@@ -584,7 +604,7 @@ button.cta {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-bottom: 1rem;
 
   button {
@@ -594,7 +614,12 @@ button.cta {
   .input-container {
     flex: 1;
     margin: 0 1rem 1rem 0;
-    max-width: 20rem;
+    max-width: 15rem;
     min-width: 10rem;
+  }
+
+  @include minWidth($breakpoint-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

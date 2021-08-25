@@ -1003,7 +1003,7 @@ button.cta.transparent {
           justify-content: space-between;
   color: #464646;
   text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 
 .input-container div,
@@ -1015,6 +1015,7 @@ button.cta.transparent {
   border: none;
   border-radius: 5px;
   font-size: 0.8rem;
+  background: white;
 }
 
 .input-container div:focus,
@@ -1029,7 +1030,7 @@ button.cta.transparent {
 }
 
 .input-container.full-width {
-  max-width: 100%;
+  max-width: 100% !important;
 }
 
 .input-container.shaded {
@@ -1139,6 +1140,24 @@ button.cta.transparent {
   padding: 0.8rem 1rem;
 }
 
+.table .table-entry .cell .action-checkbox, .table .table-header .cell .action-checkbox {
+  height: 1.3rem;
+  width: 1.3rem;
+  padding: 0.2rem;
+  border: 1px solid #51C272;
+  border-radius: 5px;
+}
+
+.table .table-entry .cell .action-checkbox .checkbox-inside, .table .table-header .cell .action-checkbox .checkbox-inside {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+
+.table .table-entry .cell .action-checkbox.checked .checkbox-inside, .table .table-header .cell .action-checkbox.checked .checkbox-inside {
+  background: black;
+}
+
 .table .table-header {
   text-transform: uppercase;
   font-weight: bold;
@@ -1166,8 +1185,10 @@ button.cta.transparent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 1rem;
 }
 
@@ -1180,8 +1201,19 @@ button.cta.transparent {
       -ms-flex: 1;
           flex: 1;
   margin: 0 1rem 1rem 0;
-  max-width: 20rem;
+  max-width: 15rem;
   min-width: 10rem;
+}
+
+@media screen and (min-width: 760px) {
+  .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 main {

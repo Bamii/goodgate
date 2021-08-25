@@ -165,7 +165,7 @@
                       Educational Information
                     </div>
                   </div>
-                  <div data-application-open="personal-information" class="requirement">
+                  <div data-application-open="employment" class="requirement">
                     <svg class="icon" data-name="Group 210" xmlns="http://www.w3.org/2000/svg" width="90.235" height="90.555" viewBox="0 0 90.235 90.555">
                       <g>
                         <ellipse class="stroke" data-name="Ellipse 299" cx="1" cy="1.5" rx="1" ry="1.5" transform="translate(37.935 20.331)" fill="#3aa65a"/>
@@ -181,8 +181,6 @@
                         <path class="stroke" data-name="Path 3736" d="M5,55H19.606v2.921H5Z" transform="translate(0.842 23.871)" fill="#3aa65a"/>
                       </g>
                     </svg>
-                    
-                    
                     <div class="text">
                       Employment Information
                     </div>
@@ -278,21 +276,17 @@
                     </div>
                   </div>
                 </div>
-                <div class="right master">
+                <div class="right">
                   <div class="row">
                     <div class="input-container">
                       <label for="name"><span>fullname</span></label>
                       <input name="name" type="text" placeholder="John Doe">
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-container">
-                      <label for="email"><span>Email Address</span></label>
-                      <input name="email" type="text" placeholder="a@g.com">
-                    </div>
-                    <div class="input-container">
-                      <label for="bvn"><span>bvn</span></label>
-                      <input name="bvn" type="text" placeholder="----------------">
+                    <div class="input-container select">
+                      <label for="marital_status"><span>marital status</span></label>
+                      <select name="marital_status" id="">
+                        <option value="">---------</option>
+                      </select>
                     </div>
                   </div>
                   <div class="row">
@@ -300,23 +294,90 @@
                       <label for="dob"><span>Date of Birth</span></label>
                       <input name="dob" type="date">
                     </div>
+                    <div class="input-container">
+                      <label for="bvn"><span>bvn</span></label>
+                      <input name="bvn" type="text" placeholder="----------------">
+                    </div>
                     <div class="input-container select">
-                      <label for="identification"><span>Means of identification</span></label>
-                      <select name="identification" id="">
-                        <option selected value="---------">------</option>
+                      <label for="gender"><span>gender</span></label>
+                      <select name="gender" id="">
+                        <option value="">---------</option>
                       </select>
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-container">
-                      <label for="email"><span>Phone Number</span></label>
-                      <input name="email" type="text" placeholder="+2341234567634">
+                      <label for="email"><span>Email</span></label>
+                      <input name="email" type="type">
+                    </div>
+                    <div class="input-container select">
+                      <label for="no_of_children"><span>Number of children</span></label>
+                      <select name="no_of_children" id="">
+                        <option value="">-----</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container select">
+                      <label for="identification"><span>identification type</span></label>
+                      <select name="identification" id="">
+                        <option value="">-----</option>
+                      </select>
+                    </div>
+                    <div class="input-container">
+                      <label for="identification_nos"><span>identification nos</span></label>
+                      <input name="identification_nos" type="type">
+                    </div>
+
+                    <div class="input-container date">
+                      <label for="issue_date"><span>Issue Date</span></label>
+                      <input name="issue_date" type="date">
+                    </div>
+                    <div class="input-container date">
+                      <label for="expiry_date"><span>Expiry Date</span></label>
+                      <input name="expiry_date" type="date">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container">
+                      <label for="phone_number"><span>Phone Number</span></label>
+                      <input name="phone_number" type="text" placeholder="+2341234567634">
+                    </div>
+                    <div class="input-container">
+                      <label for="office_phone_number"><span>Phone Number</span></label>
+                      <input name="office_phone_number" type="text" placeholder="+2341234567634">
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-container full-width">
-                      <label for="email"><span>Home address</span></label>
-                      <textarea name="email" type="text"></textarea>
+                      <label for="address"><span>Home address</span></label>
+                      <textarea name="address" type="text"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container select">
+                      <label for="landmart"><span>nearest landmark</span></label>
+                      <select name="landmart" id="">
+                        <option value="">-----</option>
+                      </select>
+                    </div>
+                    <div class="input-container select">
+                      <label for="lga"><span>local government area</span></label>
+                      <select name="lga" id="">
+                        <option value="">-----</option>
+                      </select>
+                    </div>
+                    <div class="input-container select">
+                      <label for="state"><span>state</span></label>
+                      <select name="state" id="">
+                        <option value="">-----</option>
+                      </select>
+                    </div>
+                    <div class="input-container select">
+                      <label for="residential_status"><span>residential status</span></label>
+                      <select name="residential_status" id="">
+                        <option value="">-----</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -324,6 +385,85 @@
               <div class="action">
                 <button class="cta">
                   SUBMIT PERSONAL INFORMATION
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div data-application-step="employment" class="">
+            <div class="welcome-message">
+              Ready to apply for a loan? Please fill the form
+              <span data-application-open="main" class="accented-text">BACK</span>
+            </div>
+
+            <div class="application-contents">
+              <div class="header medium-text">
+                Employment & Education Details
+              </div>
+              <div class="application-content-section">
+                <div class="row">
+                  <div class="input-container">
+                    <label for="employer_name"><span>Employer Name</span></label>
+                    <input name="employer_name" type="text">
+                  </div>
+                  <div class="input-container select">
+                    <label for="education_status"><span>Education Status</span></label>
+                    <select name="education_status" id="">
+                      <option selected value="---------"> ------ </option>
+                    </select>
+                  </div>
+                  <div class="input-container select">
+                    <label for="employment_terms"><span>Employment terms</span></label>
+                    <select name="employment_terms" id="">
+                      <option selected value="---------"> ------ </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-container date">
+                    <label for="employment_date"><span>Employment Date</span></label>
+                    <input name="employment_date" type="date">
+                  </div>
+                  <div class="input-container select">
+                    <label for="job_title"><span>Job Title</span></label>
+                    <select name="job_title" id="">
+                      <option selected value="---------"> ------ </option>
+                    </select>
+                  </div>
+                  <div class="input-container select">
+                    <label for="industry"><span>Industry</span></label>
+                    <select name="industry" id="">
+                      <option selected value="---------"> ------ </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-container">
+                    <label for="phone_number"><span>Official Phone Number</span></label>
+                    <input name="phone_number" type="tel">
+                  </div>
+                  <div class="input-container select">
+                    <label for="salary_range"><span>Salary Range</span></label>
+                    <select name="salary_range" id="">
+                      <option selected value="---------"> ------ </option>
+                    </select>
+                  </div>
+                  <div class="input-container date">
+                    <label for="pay_date"><span>Current Pay Date</span></label>
+                    <input name="pay_date" type="date">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-container full-width">
+                    <label for="office_address"><span>Office address</span></label>
+                    <textarea name="office_address" type="text"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="action">
+                <button class="cta">
+                  SUBMIT BANK AND CARD DETAILS
                 </button>
               </div>
             </div>
@@ -376,18 +516,26 @@
                   </div>
                   <div class="table-body">
                     <div class="table-entry">
-                      <div class="cell ">1</div>
-                      <div class="cell ">Access Bank</div>
-                      <div class="cell ">0110000023</div>
+                      <div class="cell">1</div>
+                      <div class="cell">Access Bank</div>
+                      <div class="cell">0110000023</div>
                       <div class="cell accented-text">Credit</div>
-                      <div class="cell ">osh</div>
+                      <div class="cell">
+                        <div class="action-checkbox">
+                          <div class="checkbox-inside"></div>
+                        </div>
+                      </div>
                     </div>
                     <div class="table-entry">
-                      <div class="cell ">2</div>
-                      <div class="cell ">Access Bank</div>
-                      <div class="cell ">0110000023</div>
+                      <div class="cell">2</div>
+                      <div class="cell">Access Bank</div>
+                      <div class="cell">0110000023</div>
                       <div class="cell accented-text">Credit</div>
-                      <div class="cell ">osh</div>
+                      <div class="cell">
+                        <div class="action-checkbox">
+                          <div class="checkbox-inside"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -428,13 +576,21 @@
                       <div class="cell">1</div>
                       <div class="cell">Visa</div>
                       <div class="cell">0110000023</div>
-                      <div class="cell">osh</div>
+                      <div class="cell">
+                        <div class="action-checkbox">
+                          <div class="checkbox-inside"></div>
+                        </div>
+                      </div>
                     </div>
                     <div class="table-entry">
                       <div class="cell">2</div>
                       <div class="cell">Visa</div>
                       <div class="cell">0110000023</div>
-                      <div class="cell">osh</div>
+                      <div class="cell">
+                        <div class="action-checkbox">
+                          <div class="checkbox-inside"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -461,7 +617,7 @@
               <div class="application-content-section">
                 <div class="row">
                   <div class="input-container shaded">
-                    <label for="identification"><span>Loan Product</span></label>
+                    <label for=""><span>Loan Product</span></label>
                     <div>Car Loan</div>
                   </div>
                   <div class="input-container">
@@ -471,14 +627,14 @@
                 </div>
                 <div class="row">
                   <div class="input-container select">
-                    <label for="identification"><span>Loan Reason</span></label>
-                    <select name="identification" id="">
+                    <label for="loan_reason"><span>Loan Reason</span></label>
+                    <select name="loan_reason" id="">
                       <option selected value="---------"> ------ </option>
                     </select>
                   </div>
                   <div class="input-container">
-                    <label for="dob"><span>Bank Statement</span></label>
-                    <input name="dob" type="text" placeholder="Upload">
+                    <label for="bank_statement"><span>Bank Statement</span></label>
+                    <input name="bank_statement" type="text" placeholder="Upload">
                   </div>
                 </div>
                 <div class="loan-table table">
@@ -500,16 +656,33 @@
                     </div>
                   </div>
                 </div>
+                <div class="row">
+                  <div class="input-container select">
+                    <label for="has_existing_loan"><span>do you have an existing loan?</span></label>
+                    <select name="has_existing_loan" id="">
+                      <option selected value="---------"> ------ </option>
+                    </select>
+                  </div>
+                  <div>
+                    If YES, Please specify below.
+                  </div>
+                  <div class="input-container select">
+                    <label for="existing_loan"><span>Existing Loan</span></label>
+                    <select name="existing_loan" id="">
+                      <option selected value="---------"> ------ </option>
+                    </select>
+                  </div>
+                </div>
               </div>
               <div class="application-content-section">
                 <div class="row">
-                  <div class="input-container shaded">
-                    <label for="identification"><span>Upload Collateral</span></label>
-                    <input name="amount" type="text" placeholder="Upload">
+                  <div class="input-container">
+                    <label for="collateral"><span>Upload Collateral</span></label>
+                    <input name="collateral" type="text" placeholder="Upload">
                   </div>
                   <div class="input-container">
-                    <label for="amount"><span>SERIAL NUMBER/ID NUMBER</span></label>
-                    <input name="amount" type="text" placeholder="QC234671820">
+                    <label for="serial_number"><span>SERIAL NUMBER/ID NUMBER</span></label>
+                    <input name="serial_number" type="text" placeholder="QC234671820">
                   </div>
                 </div>
                 <div class="loan-document-table table">
@@ -524,13 +697,21 @@
                       <div class="cell">1</div>
                       <div class="cell">Apr 2019 to Aug 2019 Statement</div>
                       <div class="cell">QC23458959</div>
-                      <div class="cell">osh</div>
+                      <div class="cell">
+                        <div class="action-checkbox">
+                          <div class="checkbox-inside"></div>
+                        </div>
+                      </div>
                     </div>
                     <div class="table-entry">
                       <div class="cell">2</div>
                       <div class="cell">Apr 2019 to Aug 2019 Statement</div>
                       <div class="cell">QC23458959</div>
-                      <div class="cell">osh</div>
+                      <div class="cell">
+                        <div class="action-checkbox">
+                          <div class="checkbox-inside"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

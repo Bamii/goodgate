@@ -30,4 +30,10 @@
       document.getElementById('dashboard-navigation-container').classList.toggle('menu-open')
     }
   })
+
+  Array.from(document.getElementsByClassName('action-checkbox')).forEach(el => {
+    el.onclick = function() {
+      this.classList.toggle('checked')
+    }
+  })
 })()

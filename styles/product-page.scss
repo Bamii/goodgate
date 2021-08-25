@@ -102,6 +102,15 @@
 }
 
 .application-contents {
+  .right {
+    width: 100%;
+    margin-top: 2rem;
+
+    @include  minWidth($breakpoint-tablet) {
+      margin-top: 0;
+    }
+  }
+  
   .split-row {
     align-items: flex-start;
 
@@ -141,6 +150,7 @@
   .image-upload-container {
     display: flex;
     flex-direction: column;
+    width: max-content;
     max-width: 15rem;
     background: white;
     padding: 1rem 1.5rem 2rem;
