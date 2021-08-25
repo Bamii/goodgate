@@ -193,6 +193,10 @@
       @include minWidth($breakpoint-desktop) {
         width: 18rem;
       }
+
+      &:hover {
+        box-shadow: 0px 15px 25px #00000026;
+      }
     }
   }
 }
