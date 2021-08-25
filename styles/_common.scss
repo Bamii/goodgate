@@ -540,6 +540,41 @@ button.cta {
   flex-wrap: wrap;
 }
 
+.table-page-row {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0 1rem;
+
+  span {
+    margin: 0 0.3rem;
+  }
+}
+
+.table-pages {
+  display: flex;
+  margin-top: 1rem;
+
+  .table-page {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid #E8E9EC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-right: 0.3rem;
+    cursor: pointer;
+
+    &.selected,
+    &:hover {
+      background: $secondary-color;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
 .table {
   background: white;
   border-radius: 5px;
@@ -599,6 +634,22 @@ button.cta {
       }
     }
   }
+
+  &.history-table {
+    padding: 0;
+    width: 100%;
+
+    .table-header {
+      background: #D0EFD9;
+    }
+
+    .table-entry {
+      .cell {
+        vertical-align: middle;
+        border-bottom: 1px solid #F7F7F7;
+      }
+    }
+  }
 }
 
 .row {
@@ -620,5 +671,25 @@ button.cta {
   @include minWidth($breakpoint-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+.history-search-row {
+  input {
+    height: 4rem;
+    padding: 1rem;
+    border: 1px solid $secondary-color;
+    border-radius: 5px;
+    margin-right: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    @include minWidth($breakpoint-tablet) {
+      margin-bottom: 0;
+      width: unset;
+    }
+  }
+  .cta {
+    padding: 1.4rem 3rem;
   }
 }

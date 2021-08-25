@@ -5,10 +5,7 @@
 
 @import "../dashboard";
 
-.page-contents {
-  .row {
-    margin-bottom: 1rem !important;
-  }
+.page-contents {  
   .search-row {
     input {
       height: 4rem;
@@ -33,56 +30,9 @@
     padding: 1.3rem 5rem;
   }
 
-  .table-page-row {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 0 1rem;
-
-    span {
-      margin: 0 0.3rem;
-    }
-  }
-
-  .applicants-table {
-    padding: 0;
-    width: 100%;
-
-    .table-header {
-      background: #D0EFD9;
-    }
-    .table-entry {
-      .cell {
-        vertical-align: middle;
-        border-bottom: 1px solid #F7F7F7;
-      }
-    }
+  .history-table {
     .table-header,.table-entry {
       grid-template-columns: 1fr 3fr 1fr 3fr 2fr 1fr 1fr 1fr 1fr;
-    }
-  }
-
-  .table-pages {
-    display: flex;
-    margin-top: 1rem;
-
-    .table-page {
-      height: 2rem;
-      width: 2rem;
-      border: 1px solid #E8E9EC;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
-      margin-right: 0.3rem;
-      cursor: pointer;
-
-      &.selected,
-      &:hover {
-        background: $secondary-color;
-        color: white;
-        cursor: pointer;
-      }
     }
   }
 }
