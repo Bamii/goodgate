@@ -220,6 +220,7 @@
 
         <div id="repayment-modal" data-modal-target="repayment-modal" class="modal">
           <div class="mask">
+            <div data-modal="repayment-modal" class="mask-close">(x) close</div>
             <div class="mask-contents">
               <div class="">
                 <div class="header">
@@ -236,23 +237,31 @@
                   <div data-tab-group="payment" data-tab-target="card" class="selected tab-target">
                     <div class="card-table table">
                       <div class="table-header">
-                        <div class="">S/N</div>
-                        <div class="">CARD TYPE</div>
-                        <div class="">CARD NUMBER</div>
-                        <div class="">ACTION</div>
+                        <div class="cell">S/N</div>
+                        <div class="cell">CARD TYPE</div>
+                        <div class="cell">CARD NUMBER</div>
+                        <div class="cell">ACTION</div>
                       </div>
                       <div class="table-body">
                         <div class="table-entry">
-                          <div class="">1</div>
-                          <div class="">Visa</div>
-                          <div class="">0110000023</div>
-                          <div class="">osh</div>
+                          <div class="cell">1</div>
+                          <div class="cell">Visa</div>
+                          <div class="cell">0110000023</div>
+                          <div class="cell">
+                            <div class="action-checkbox">
+                              <div class="checkbox-inside"></div>
+                            </div>
+                          </div>
                         </div>
                         <div class="table-entry">
-                          <div class="">2</div>
-                          <div class="">Visa</div>
-                          <div class="">0110000023</div>
-                          <div class="">osh</div>
+                          <div class="cell">2</div>
+                          <div class="cell">Visa</div>
+                          <div class="cell">0110000023</div>
+                          <div class="cell">
+                            <div class="action-checkbox">
+                              <div class="checkbox-inside"></div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -300,126 +309,6 @@
                 <div class="action">
                   <button class="cta">PAY</button>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="loan-calculator-modal" data-modal-target="loan-calculator-modal"  class="modal visible">
-          <div class="mask">
-            <div data-modal="loan-calculator-modal" class="mask-close">(x) close</div>
-            <div class="mask-contents">
-              <div class="split-row">
-                <div class="row-half">
-                  <div class="eligibility negative">You Are Not Eligible</div>
-                  <div class="disclaimer">
-                    <div class="disclaimer-title">Why?</div>
-                    <div class="disclaimer-text">
-                      Your monthly repayment on loan request made to our bank cannot exceed one-third of your monthly income.
-                    </div>
-                  </div>
-                  <div class="disclaimer">
-                    <div class="disclaimer-title">Disclaimer</div>
-                    <div class="disclaimer-text">
-                      Does not include Upfront Charges (Commitment Fee, Service Charge
-                      & Management Fee). This is also assumed that the interest rate
-                      remains the same.
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="row-half master">
-                  <div class="mask-header">
-                    <div class="small-text">Monthly Payments</div>
-                    <div class="monthly-payments">
-                      <img src="/assets/naira.svg" alt="" />
-                      <span class="accented-text">₦</span>
-                      525,000.45
-                    </div>
-                  </div>
-                  <div class="calculator-table">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>Total Principal Paid</td>
-                          <td><img src="/assets/naira.svg" alt="" />
-                            <span class="accented-text">₦</span>
-                            10,000,000.00
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Total Interest Paid</td>
-                          <td>
-                            <img src="/assets/naira.svg" alt="" />
-                            <span class="accented-text">₦</span>
-                            625,000.75
-                          </td>
-                        </tr>
-                      </tbody>
-                      <tfoot>
-                        <tr>
-                          <td>Total Repayment</td>
-                          <td>
-                            <img src="/assets/naira.svg" alt="" />
-                            <span class="accented-text">₦</span>
-                            10,625,000.75
-                          </td>
-                        </tr>
-                      </tfoot>
-                    </table>
-                  </div>
-                  <div class="calculator-table-extra-details">
-                    <div class="calculator-table-extra-detail">Interest Rate: <span>24%</span></div>
-                    <div class="calculator-table-extra-detail">Tenor: <span>12 Months</span></div>
-                  </div>
-                  <div class="calculator-table-extra-details">
-                    <div class="calculator-table-extra-detail">PDF: <span>Print</span></div>
-                    <div class="calculator-table-extra-detail">Monthly Income: <span class="accented-text">₦</span>250,000</div>
-                  </div>
-                </div>
-              </div>
-              <div class="calculator-details-table">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>period</th>
-                      <th>outstanding</th>
-                      <th>principal(P)</th>
-                      <th>interest(I)</th>
-                      <th>P+I</th>
-                      <th>mgt fee</th>
-                      <th>total due</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>6,000,000</td>
-                      <td>1,045.80</td>
-                      <td>90, 000</td>
-                      <td>91,045.80</td>
-                      <td>0</td>
-                      <td>91,045.80</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>6,000,000</td>
-                      <td>1,045.80</td>
-                      <td>90, 000</td>
-                      <td>91,045.80</td>
-                      <td>0</td>
-                      <td>91,045.80</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>6,000,000</td>
-                      <td>1,045.80</td>
-                      <td>90, 000</td>
-                      <td>91,045.80</td>
-                      <td>0</td>
-                      <td>91,045.80</td>
-                    </tr>
-                  </tbody>
-                </table>
               </div>
             </div>
           </div>
