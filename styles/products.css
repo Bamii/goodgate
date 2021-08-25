@@ -2743,6 +2743,10 @@ main {
   width: 100%;
 }
 
+#dashboard-container #dashboard-content-container .welcome-message span {
+  cursor: pointer;
+}
+
 #dashboard-container #dashboard-content-container .dashboard-contents {
   padding: 0 2rem;
 }
@@ -2887,10 +2891,5 @@ main {
 
 .dashboard-contents .product-list .product-card .body .duration-row span {
   font-weight: bold;
-}
-
-.dashboard-contents .product-list .product-card:hover {
-  -webkit-box-shadow: 0px 15px 25px #00000026;
-          box-shadow: 0px 15px 25px #00000026;
 }
 /*# sourceMappingURL=products.css.map */
