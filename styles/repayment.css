@@ -402,6 +402,7 @@ footer {
 .footer-container .main-footer .footer-links-section .links-column-container .links-column .link-row-header {
   color: #484848;
   padding: 0.3rem 0;
+  font-weight: bold;
 }
 
 .footer-container .main-footer .footer-links-section .links-column-container .links-column .link-row-header span {
@@ -565,7 +566,9 @@ main {
 }
 
 #loan-calculator-section .loan-calculator-header .loan-nav-buttons {
-  display: inline flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #loan-calculator-section .loan-calculator-header .loan-nav-buttons .loan-nav-button {
@@ -591,11 +594,11 @@ main {
 }
 
 #loan-calculator-section .investment-calculator {
-  background: #E3ECDB;
+  background: #FFF2E3;
 }
 
 #loan-calculator-section .loan-calculator {
-  background: #FFF2E3;
+  background: #E3ECDB;
 }
 
 #loan-calculator-section .investment-calculator,
@@ -1633,6 +1636,7 @@ footer {
 .footer-container .main-footer .footer-links-section .links-column-container .links-column .link-row-header {
   color: #484848;
   padding: 0.3rem 0;
+  font-weight: bold;
 }
 
 .footer-container .main-footer .footer-links-section .links-column-container .links-column .link-row-header span {
@@ -1796,7 +1800,9 @@ main {
 }
 
 #loan-calculator-section .loan-calculator-header .loan-nav-buttons {
-  display: inline flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #loan-calculator-section .loan-calculator-header .loan-nav-buttons .loan-nav-button {
@@ -1822,11 +1828,11 @@ main {
 }
 
 #loan-calculator-section .investment-calculator {
-  background: #E3ECDB;
+  background: #FFF2E3;
 }
 
 #loan-calculator-section .loan-calculator {
-  background: #FFF2E3;
+  background: #E3ECDB;
 }
 
 #loan-calculator-section .investment-calculator,

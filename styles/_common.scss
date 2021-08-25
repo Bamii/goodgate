@@ -73,7 +73,6 @@ main {
   padding: 5.5rem 0 5rem 0;
 }
 
-
 #loan-calculator-section {
   .loan-calculator-header {
     display: flex;
@@ -89,7 +88,7 @@ main {
     }
 
     .loan-nav-buttons {
-      display: inline flex;
+      display: flex;
 
       .loan-nav-button {
         height: 3rem;
@@ -111,11 +110,11 @@ main {
 
   
   .investment-calculator {
-    background: #E3ECDB;
-  }
-
-  .loan-calculator {
     background: #FFF2E3;
+  }
+  
+  .loan-calculator {
+    background: #E3ECDB;
   }
 
   .investment-calculator,
