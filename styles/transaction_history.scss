@@ -1,0 +1,14 @@
+@import "header";
+@import "footer";
+@import "variables";
+@import "common";
+
+@import "dashboard";
+
+.page-contents {  
+  .history-table {
+    .table-header,.table-entry {
+      grid-template-columns: 1fr 3fr 1fr 3fr 2fr 1fr 1fr 1fr 1fr;
+    }
+  }
+} 
