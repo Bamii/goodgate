@@ -1280,7 +1280,7 @@ button.cta.transparent {
 }
 
 .history-search-row input {
-  height: 4rem;
+  height: 3.5rem;
   padding: 1rem;
   border: 1px solid #51C272;
   border-radius: 5px;
@@ -1297,7 +1297,7 @@ button.cta.transparent {
 }
 
 .history-search-row .cta {
-  padding: 1.4rem 3rem;
+  padding: 1.1rem 3rem;
 }
 
 header {
@@ -2582,7 +2582,7 @@ button.cta.transparent {
 }
 
 .history-search-row input {
-  height: 4rem;
+  height: 3.5rem;
   padding: 1rem;
   border: 1px solid #51C272;
   border-radius: 5px;
@@ -2599,7 +2599,7 @@ button.cta.transparent {
 }
 
 .history-search-row .cta {
-  padding: 1.4rem 3rem;
+  padding: 1.1rem 3rem;
 }
 
 main {
