@@ -2692,10 +2692,14 @@ main {
 }
 
 #dashboard-container #dashboard-content-container .top-strip .account {
-  border: 1px solid #51C272;
   border-radius: 50%;
   height: 3rem;
   width: 3rem;
+}
+
+#dashboard-container #dashboard-content-container .top-strip .account img {
+  width: 100%;
+  height: auto;
 }
 
 #dashboard-container #dashboard-content-container #alert {

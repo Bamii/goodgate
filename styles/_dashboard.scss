@@ -209,10 +209,14 @@ main {
       }
 
       .account {
-        border: 1px solid $secondary-color;
         border-radius: 50%;
         height: 3rem;
         width: 3rem;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
     }
 
