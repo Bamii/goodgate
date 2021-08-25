@@ -2756,6 +2756,10 @@ main {
   width: 100%;
 }
 
+#dashboard-container #dashboard-content-container .welcome-message span {
+  cursor: pointer;
+}
+
 #dashboard-container #dashboard-content-container .dashboard-contents {
   padding: 0 2rem;
 }
