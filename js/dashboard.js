@@ -33,6 +33,7 @@
 
   Array.from(document.getElementsByClassName('action-checkbox')).forEach(el => {
     el.onclick = function() {
+      this.selected = !this.classList.contains('checked')
       this.classList.toggle('checked')
     }
   })

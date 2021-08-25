@@ -14,7 +14,7 @@
         <div id="dashboard-navigation-container" class="row-half left">
           <div class="dashboard-navigation">
             <div class="logo-container">
-              <img class="logo" src="images/GoodGate-Finance-Limited-Logo.png" alt="GoodGate Logo.">
+              <img class="logo" src="images/GoodGate-Finance-Limited-Logo.svg" alt="GoodGate Logo.">
               <div class="mobile-dashboard-nav" data-mobile-dashboard-nav>
                 close nav
               </div>
@@ -637,22 +637,33 @@
                     <input name="bank_statement" type="text" placeholder="Upload">
                   </div>
                 </div>
-                <div class="loan-table table">
-                  <div class="table-header">
-                    <div class="">S/N</div>
-                    <div class="">Document Name</div>
-                    <div class="">ACTION</div>
-                  </div>
-                  <div class="table-body">
-                    <div class="table-entry">
-                      <div class="">1</div>
-                      <div class="">Apr 2019 to Aug 2019 Statement</div>
-                      <div class="">osh</div>
+                <div class="row">
+
+                  <div class="loan-table table">
+                    <div class="table-header">
+                      <div class="cell">S/N</div>
+                      <div class="cell">Document Name</div>
+                      <div class="cell">ACTION</div>
                     </div>
-                    <div class="table-entry">
-                      <div class="">2</div>
-                      <div class="">Apr 2019 to Aug 2019 Statement</div>
-                      <div class="">osh</div>
+                    <div class="table-body">
+                      <div class="table-entry">
+                        <div class="cell">1</div>
+                        <div class="cell">Apr 2019 to Aug 2019 Statement</div>
+                        <div class="cell">
+                          <div class="action-checkbox">
+                            <div class="checkbox-inside"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="table-entry">
+                        <div class="cell">2</div>
+                        <div class="cell">Apr 2019 to Aug 2019 Statement</div>
+                        <div class="cell">
+                          <div class="action-checkbox">
+                            <div class="checkbox-inside"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -663,9 +674,13 @@
                       <option selected value="---------"> ------ </option>
                     </select>
                   </div>
+                </div>
+                <div class="row">
                   <div>
                     If YES, Please specify below.
                   </div>
+                </div>
+                <div class="row">
                   <div class="input-container select">
                     <label for="existing_loan"><span>Existing Loan</span></label>
                     <select name="existing_loan" id="">
