@@ -139,7 +139,7 @@ main {
     
     .top-strip {
       width: 100%;
-      padding: 1rem;
+      padding: 1rem 1rem 1rem 1.5rem;
       background: #F7F7F7;
       display: grid;
       grid-template-columns: 1fr auto auto auto;
@@ -147,6 +147,7 @@ main {
       align-items: center;
 
       .mobile-dashboard-nav-container {
+        display: flex;
         .mobile-dashboard-nav {
           width: max-content;
 

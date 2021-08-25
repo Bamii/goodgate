@@ -2789,7 +2789,7 @@ main {
 
 #dashboard-container #dashboard-content-container .top-strip {
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 1.5rem;
   background: #F7F7F7;
   display: -ms-grid;
   display: grid;
@@ -2801,6 +2801,12 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#dashboard-container #dashboard-content-container .top-strip .mobile-dashboard-nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #dashboard-container #dashboard-content-container .top-strip .mobile-dashboard-nav-container .mobile-dashboard-nav {
