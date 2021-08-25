@@ -2660,11 +2660,11 @@ main {
   width: 2rem;
 }
 
-#dashboard-container #dashboard-content-container .top-strip .notifications {
+#dashboard-container #dashboard-content-container .top-strip .popup {
   position: relative;
 }
 
-#dashboard-container #dashboard-content-container .top-strip .notifications .notifications-list {
+#dashboard-container #dashboard-content-container .top-strip .popup .popup-list {
   position: absolute;
   display: none;
   top: 3rem;
@@ -2677,30 +2677,30 @@ main {
           box-shadow: 0px 2px 10px #00000027;
 }
 
-#dashboard-container #dashboard-content-container .top-strip .notifications .notifications-list.show {
+#dashboard-container #dashboard-content-container .top-strip .popup .popup-list.show {
   display: block;
 }
 
-#dashboard-container #dashboard-content-container .top-strip .notifications .notifications-list .notifications-header,
-#dashboard-container #dashboard-content-container .top-strip .notifications .notifications-list .see-all {
+#dashboard-container #dashboard-content-container .top-strip .popup .popup-list .popup-header,
+#dashboard-container #dashboard-content-container .top-strip .popup .popup-list .see-all {
   padding: 1rem 0;
   text-align: center;
 }
 
-#dashboard-container #dashboard-content-container .top-strip .notifications .notifications-list .notifications-body .notification {
+#dashboard-container #dashboard-content-container .top-strip .popup .popup-list .popup-body .popup-entry {
   background: #D0EFD9;
   padding: 0.6rem 3rem;
 }
 
-#dashboard-container #dashboard-content-container .top-strip .notifications .notifications-list .notifications-body .notification .notification-title {
+#dashboard-container #dashboard-content-container .top-strip .popup .popup-list .popup-body .popup-entry .popup-entry-title {
   font-weight: bold;
 }
 
-#dashboard-container #dashboard-content-container .top-strip .notifications .notifications-list .notifications-body .notification .notification-details {
+#dashboard-container #dashboard-content-container .top-strip .popup .popup-list .popup-body .popup-entry .popup-entry-details {
   font-size: 0.8rem;
 }
 
-#dashboard-container #dashboard-content-container .top-strip .notifications .notifications-list .notifications-body .notification:nth-child(1) {
+#dashboard-container #dashboard-content-container .top-strip .popup .popup-list .popup-body .popup-entry:nth-child(1) {
   background: #FAFAFA;
 }
 

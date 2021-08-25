@@ -17,9 +17,17 @@
   })
 
 
-  document.querySelector('[data-notifications-open]').onclick = function() {
-    document.querySelector('[data-notifications]').classList.toggle('show')
-  }
+  Array.from(document.querySelectorAll('[data-popup-open]')).forEach(el => {
+    el.onclick = function() {
+      const tag = this.dataset.popupOpen;
+      let current = document.querySelector('[data-popup].show');
+      if(current) {
+        current.classList.remove('show')
+        if(tag === current.dataset.popup) return
+      };
+      document.querySelector(`[data-popup=${tag}]`).classList.add('show')
+    }
+  })
   
   document.getElementById('alert-close').onclick = function () {
     document.getElementById('alert').classList.remove('active')

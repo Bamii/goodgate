@@ -163,10 +163,10 @@ main {
         width: 2rem;
       }
 
-      .notifications {
+      .popup {
         position: relative;
 
-        .notifications-list {
+        .popup-list {
           position: absolute;
           display: none;
           top: 3rem;
@@ -181,22 +181,22 @@ main {
             display: block;
           }
 
-          .notifications-header,
+          .popup-header,
           .see-all {
             padding: 1rem 0;
             text-align: center;
           }
 
-          .notifications-body {
-            .notification {
+          .popup-body {
+            .popup-entry {
               background: #D0EFD9;
               padding: 0.6rem 3rem;
               
-              .notification-title {
+              .popup-entry-title {
                 font-weight: bold;
               }
 
-              .notification-details {
+              .popup-entry-details {
                 font-size: 0.8rem;
               }
               
