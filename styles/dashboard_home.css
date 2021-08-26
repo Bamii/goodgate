@@ -2923,7 +2923,7 @@ main {
 #dashboard-container #dashboard-content-container .application-contents {
   background: #F7F7F7;
   padding: 1.3rem;
-  overflow: scroll;
+  overflow-y: scroll;
   width: 100%;
   height: calc(100vh - 10rem);
 }

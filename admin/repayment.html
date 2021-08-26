@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/admin/repayment.css">
+  <title>Repayment</title>
+</head>
+<body>
+  <main>
+    <div class="section-wrapper">
+      <section id="dashboard-container" class="split-row">
+        <div id="dashboard-navigation-container" class="row-half left">
+          <div class="dashboard-navigation">
+            <div class="logo-container">
+              <img class="logo" src="../images/GoodGate-Finance-Limited-Logo.png" alt="">
+              <div class="mobile-dashboard-nav" data-mobile-dashboard-nav>
+                close nav
+              </div>
+            </div>
+            <div class="dashboard-navigation-items">
+              <div class="dashboard-navigation-item">
+                <a class="tag" href="index.html">Dashboard</a>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div data-nav-tag="loan" class="tag">Loan <span>+</span></div>
+                <div data-nav-tag-target="loan" class="dashboard-navigation-subitems">
+                  <a href="loan_applicants.html" class="dashboard-navigation-subitem">Loan Applicant</a>
+                  <a class="dashboard-navigation-subitem" href="loan_products.html">Loan Product</a>
+                  <a href="transaction_history.html" class="dashboard-navigation-subitem">My Loan History</a>
+                </div>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div data-nav-tag="investment" class="tag">Investment <span>+</span></div>
+                <div data-nav-tag-target="investment" class="dashboard-navigation-subitems">
+                  <a href="products.html" class="dashboard-navigation-subitem">Loan Product</a>
+                  <a href="transaction_history.html" class="dashboard-navigation-subitem">My Loan History</a>
+                  <a class="dashboard-navigation-subitem" href="repayment.html">Repayment</a>
+                </div>
+              </div>
+              <div class="dashboard-navigation-item selected">
+                <a href="repayment.html" class="tag">Repayment</a>
+              </div>
+              <div class="dashboard-navigation-item">
+                <a href="transaction_history.html" class="tag">Transaction History</a>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div data-nav-tag="settings" class="tag">Settings <span>+</span></div>
+                <div data-nav-tag-target="settings" class="dashboard-navigation-subitems">
+                  <div class="dashboard-navigation-subitem">Settings</div>
+                </div>
+              </div>
+              <div class="dashboard-navigation-item">
+                <div class="tag">Report</div>
+              </div>
+            </div>
+            <div class="logout">
+              <button class="cta secondary">
+                Logout
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="dashboard-content-container" class="row-half right master">
+          <div class="top-strip">
+            <div class="mobile-dashboard-nav-container">
+              <img data-mobile-dashboard-nav class="mobile-dashboard-nav" src="images/hamburger.svg" alt="Menu.">
+            </div>
+            <div class="alerts popup">
+              <img data-popup-open="alert" src="../images/alarm.svg" alt="Alert." class="icon">
+              <div data-popup="alert" class="popup-list">
+                <div class="popup-header">Alerts</div>
+                <div class="popup-body">
+                  <div class="popup-entry">
+                    <div class="popup-entry-title">
+                     Loan Application
+                    </div>
+                    <div class="popup-entry-details">
+                     Joseph Emerson applied for a loan.....
+                    </div>
+                  </div>
+                </div>
+                <div class="see-all">
+                 <a href="#">
+                   See All
+                 </a> 
+                </div>
+              </div>
+            </div>
+            <div class="notifications popup">
+             <img data-popup-open="notification" src="../images/notification.svg" alt="Notification." class="icon">
+             <div data-popup="notification" class="popup-list">
+               <div class="popup-header">Notifications</div>
+               <div class="popup-body">
+                 <div class="popup-entry">
+                   <div class="popup-entry-title">
+                    Loan Application
+                   </div>
+                   <div class="popup-entry-details">
+                    Joseph Emerson applied for a loan.....
+                   </div>
+                 </div>
+                 <div class="popup-entry">
+                  <div class="popup-entry-title">
+                   Loan Application
+                  </div>
+                  <div class="popup-entry-details">
+                   Joseph Emerson applied for a loan.....
+                  </div>
+                </div>
+               </div>
+               <div class="see-all">
+                <a href="#">
+                  See All
+                </a> 
+               </div>
+             </div>
+            </div>
+            <div class="account popup">
+              <img data-popup-open="account" src="../images/account_pic.png" alt="Account Image.">
+              <div data-popup="account" class="popup-list">
+                <div class="popup-header">Account</div>
+                <div class="popup-body">
+                  <div class="popup-entry">
+                    <div class="popup-entry-title">
+                     Accounts
+                    </div>
+                  </div>
+                </div>
+                <div class="see-all">
+                 <a href="#">
+                   See All
+                 </a> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="alert" class="active">
+            We noticed you haven't verified your email address. Please kindly visit your email box to verify or click to resend link
+            <span id="alert-close">x</span>
+          </div>
+
+          <div class="welcome-message">
+            Repayment
+            <div class="repayment medium-text">
+              Total Amount Repaid: <span class="large-text">₦27,000,000</span>
+            </div>
+          </div>
+
+          <div class="page-contents">
+            <div class="row history-search-row">
+              <input type="text" placeholder="Search name, serial, email address, product">
+              <input type="date">
+              <input type="date">
+              <button class="cta">Search</button>
+              <button class="cta transparent">Clear</button>
+            </div>
+            <div class="row">
+              <div class="table-page-row">
+                <span class="accented-text">1</span>
+                of
+                <span>5</span>
+              </div>
+            </div>
+            <div class="history-table table">
+              <div class="table-header">
+                <div class="cell">S/N</div>
+                <div class="cell">Name</div>
+                <div class="cell">Loan Category</div>
+                <div class="cell">Loan Product</div>
+                <div class="cell">Outstanding Payment</div>
+                <div class="cell">Amount Paid</div>
+                <div class="cell">Total Loan</div>
+                <div class="cell">Detail</div>
+                <div class="cell">Due Date</div>
+              </div>
+              <div class="table-body">
+                <div class="table-entry">
+                  <div class="cell">1</div>
+                  <div class="cell">John Okafor</div>
+                  <div class="cell">Straight Line</div>
+                  <div class="cell">Student</div>
+                  <div class="cell">100000</div>
+                  <div class="cell">100</div>
+                  <div class="cell">1000000</div>
+                  <div class="cell accented-text">View</div>
+                  <div class="cell accented-text">11/01/97</div>
+                </div>
+                <div class="table-entry">
+                  <div class="cell">1</div>
+                  <div class="cell">John Okafor</div>
+                  <div class="cell">Straight Line</div>
+                  <div class="cell">Student</div>
+                  <div class="cell">100000</div>
+                  <div class="cell">100</div>
+                  <div class="cell">1000000</div>
+                  <div class="cell accented-text">View</div>
+                  <div class="cell accented-text">11/01/97</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="table-pages">
+                <div class="table-page left-arrow">
+                  <
+                </div>
+                <div class="table-page selected">1</div>
+                <div class="table-page">2</div>
+                <div class="table-page">3</div>
+                <div class="table-page">4</div>
+                <div class="table-page">5</div>
+                <div class="table-page right-arrow">
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>

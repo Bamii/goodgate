@@ -1,0 +1,7 @@
+@import "admin";
+
+.history-table {
+  .table-header,.table-entry {
+    grid-template-columns: 1fr 3fr repeat(7, 1px);
+  }
+}

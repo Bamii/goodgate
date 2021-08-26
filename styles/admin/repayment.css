@@ -2986,8 +2986,41 @@ main {
   }
 }
 
+.page-contents .search-row input {
+  height: 4rem;
+  padding: 1rem;
+  border: 1px solid #51C272;
+  border-radius: 5px;
+  margin-right: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 760px) {
+  .page-contents .search-row input {
+    margin-bottom: 0;
+    width: unset;
+  }
+}
+
+.page-contents .search-row .cta {
+  padding: 1.4rem 3rem;
+}
+
+.page-contents .welcome-message .cta {
+  padding: 1.3rem 5rem;
+}
+
 .page-contents .history-table .table-header, .page-contents .history-table .table-entry {
   -ms-grid-columns: 1fr 3fr 1fr 3fr 2fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 3fr 1fr 3fr 2fr 1fr 1fr 1fr 1fr;
 }
-/*# sourceMappingURL=transaction_history.css.map */
+
+.welcome-message .repayment {
+  margin-right: 1rem;
+}
+
+.welcome-message .repayment span {
+  color: #4B1F51;
+}
+/*# sourceMappingURL=repayment.css.map */
