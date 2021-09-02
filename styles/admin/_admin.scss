@@ -35,4 +35,52 @@
       grid-template-columns: 1fr 3fr 1fr 3fr 2fr 1fr 1fr 1fr 1fr;
     }
   }
+  .right {
+    width: 100%;
+    margin-top: 2rem;
+  
+    @include  minWidth($breakpoint-tablet) {
+      margin-top: 0;
+    }
+  }
+  
+  .split-row {
+    align-items: flex-start;
+  
+    .left {
+      margin-right: 2rem;
+    }
+  
+    .right {
+      flex: 1;
+    }
+  }
+}
+
+
+.page-contents {
+}
+
+[data-page] {
+  display: none;
+  
+  &.selected {
+    display: block;
+    width: 100%;
+  }
+}
+
+[data-page-target] {
+  cursor: pointer;
+}
+
+.back {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: url(../../images/back.svg);
+    margin-right: 0.8rem;
+  }
 }

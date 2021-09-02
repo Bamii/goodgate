@@ -263,7 +263,7 @@
                       Loan Details
                     </div>
                   </div>
-                  <div data-application-open="personal-information" class="requirement">
+                  <div data-application-open="upload" class="requirement">
                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="102.905" height="80.037" viewBox="0 0 102.905 80.037">
                       <g id="" data-name="noun_Upload_953234 (1)" transform="translate(-232.055 -28)">
                         <g id="" data-name="Group 268" transform="translate(232.055 28)">
@@ -666,13 +666,13 @@
                       <option selected value="---------"> ------ </option>
                     </select>
                   </div>
-                  <div class="input-container">
+                  <div class="input-container upload">
                     <label for="bank_statement"><span>Bank Statement</span></label>
-                    <input name="bank_statement" type="text" placeholder="Upload">
+                    <input type="file" name="bank_statement" id="bank_statement">
+                    <label for="bank_statement" class="file-input">Upload</label>
                   </div>
                 </div>
                 <div class="row">
-
                   <div class="loan-table table">
                     <div class="table-header">
                       <div class="cell">S/N</div>
@@ -725,9 +725,10 @@
               </div>
               <div class="application-content-section">
                 <div class="row">
-                  <div class="input-container">
-                    <label for="collateral"><span>Upload Collateral</span></label>
-                    <input name="collateral" type="text" placeholder="Upload">
+                  <div class="input-container upload">
+                    <label for="upload_collateral"><span>Upload Collateral</span></label>
+                    <input type="file" name="upload_collateral" id="upload_collateral">
+                    <label for="upload_collateral" class="file-input">Upload</label>
                   </div>
                   <div class="input-container">
                     <label for="serial_number"><span>SERIAL NUMBER/ID NUMBER</span></label>
@@ -769,6 +770,83 @@
                 <button class="cta">
                   SUBMIT LOAN DETAILS
                 </button>
+              </div>
+            </div>
+          </div>
+
+          <div data-application-step="upload" class="">
+            <div class="welcome-message">
+              Ready to apply for a loan? Please fill the form
+              <span data-application-open="main" class="accented-text">BACK</span>
+            </div>
+            
+            <div class="application-contents">
+              <div class="header medium-text">
+                Loan Details
+              </div>
+  
+              <div class="application-content-section">
+                <div class="row">
+                  <div class="input-container upload">
+                    <label for="residential_address"><span>Evidence of Residential Address</span></label>
+                    <input type="file" name="residential_address" id="residential_address">
+                    <label for="residential_address" class="file-input">Utility Bill/LAWMA</label>
+                  </div>
+                  <div class="input-container upload">
+                    <label for="agreement_letter"><span>Letter of Agreement</span></label>
+                    <input type="file" name="agreement_letter" id="agreement_letter">
+                    <label for="agreement_letter" class="file-input">Letter</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-container upload">
+                    <label for="means_of_identification"><span>Means of identification</span></label>
+                    <input type="file" name="means_of_identification" id="means_of_identification">
+                    <label for="means_of_identification" class="file-input">International Passport</label>
+                  </div>
+                  <div class="input-container upload">
+                    <label for="guarantor_form"><span>Guarantor's Form</span></label>
+                    <input type="file" name="guarantor_form" id="guarantor_form">
+                    <label for="guarantor_form" class="file-input">The Form</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-container upload">
+                    <label for="certificate_of_incorporation"><span>Certificate of Incorporation (CAC)</span></label>
+                    <input type="file" name="certificate_of_incorporation" id="certificate_of_incorporation">
+                    <label for="certificate_of_incorporation" class="file-input">Certificate</label>
+                  </div>
+                  <div class="input-container upload">
+                    <label for="award_letter"><span>Award Letter</span></label>
+                    <input type="file" name="award_letter" id="award_letter">
+                    <label for="award_letter" class="file-input">Goodgate Software Project</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="upload-document-table table">
+                    <div class="table-header">
+                      <div class="cell">S/N</div>
+                      <div class="cell">Document Name</div>
+                      <div class="cell">ACTION</div>
+                    </div>
+                    <div class="table-body">
+                      <div class="table-entry">
+                        <div class="cell">1</div>
+                        <div class="cell">Apr 2019 to Aug 2019 Statement</div>
+                        <div class="cell">
+                          <img src="images/delete.png" alt="Delete Icon." class="delete-icon">
+                        </div>
+                      </div>
+                      <div class="table-entry">
+                        <div class="cell">2</div>
+                        <div class="cell">Apr 2019 to Aug 2019 Statement</div>
+                        <div class="cell">
+                          <img src="images/delete.png" alt="Delete Icon." class="delete-icon">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

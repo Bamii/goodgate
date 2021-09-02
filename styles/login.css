@@ -1032,11 +1032,17 @@ button.cta.transparent {
   border-radius: 0 10px 10px 0;
 }
 
+.input-container div.plain {
+  background: none;
+  border-bottom: 1px solid gray;
+  border-radius: 0;
+}
+
 .input-container.full-width {
   max-width: 100% !important;
 }
 
-.input-container.shaded {
+.input-container.shaded div {
   background: #D0EFD9;
 }
 
@@ -1090,6 +1096,31 @@ button.cta.transparent {
   height: 0.5em;
   justify-self: flex-end;
   background: #51C272;
+}
+
+.input-container.upload input {
+  height: 0.1px;
+  width: 0.1px;
+  position: absolute;
+  padding: 0;
+}
+
+.input-container.upload label.file-input {
+  position: static;
+  width: 100%;
+  padding: 2.1rem 1rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  background: white;
+  text-transform: none;
+}
+
+.input-container.upload::after {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.2rem;
+  content: url(../images/upload.png);
 }
 
 .card {
@@ -1187,6 +1218,7 @@ button.cta.transparent {
 .table .table-entry .cell, .table .table-header .cell {
   display: table-cell;
   padding: 0.8rem 1rem;
+  text-align: center;
 }
 
 .table .table-entry .cell .action-checkbox, .table .table-header .cell .action-checkbox {
@@ -1244,6 +1276,16 @@ button.cta.transparent {
   border-bottom: 1px solid #F7F7F7;
 }
 
+@media screen and (min-width: 760px) {
+  .table {
+    min-width: 40rem;
+  }
+}
+
+.table .delete-icon {
+  cursor: pointer;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1264,7 +1306,7 @@ button.cta.transparent {
       -ms-flex: 1;
           flex: 1;
   margin: 0 1rem 1rem 0;
-  max-width: 15rem;
+  max-width: 20rem;
   min-width: 10rem;
 }
 
@@ -1298,6 +1340,60 @@ button.cta.transparent {
 
 .history-search-row .cta {
   padding: 1.1rem 3rem;
+}
+
+.image-upload-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 15rem;
+  background: white;
+  padding: 1rem 1.5rem 2rem;
+  border-radius: 5px;
+  border-bottom: 5px solid #51C272;
+}
+
+.image-upload-container .label {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.image-upload-container div.label {
+  font-size: 0.8rem;
+}
+
+.image-upload-container .image {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin: 1.5rem 0;
+}
+
+.image-upload-container .image img {
+  height: 100%;
+  width: 100%;
+}
+
+.image-upload-container .image-upload-input {
+  text-align: center;
+}
+
+.image-upload-container .image-upload-input input {
+  height: 0.1px;
+  width: 0.1px;
+}
+
+.image-upload-container .image-upload-input label {
+  color: #51C272;
+  font-size: 0.9rem;
 }
 
 main {

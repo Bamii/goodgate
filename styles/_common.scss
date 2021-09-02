@@ -458,12 +458,20 @@ button.cta {
     }
   }
 
+  div.plain {
+    background: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+  }
+
   &.full-width {
     max-width: 100% !important;
   }
 
   &.shaded {
-    background: #D0EFD9;
+    div {
+      background: #D0EFD9;
+    }
   }
 
   &.date {
@@ -508,6 +516,33 @@ button.cta {
       height: 0.5em;
       justify-self: flex-end;
       background: $secondary-color;
+    }
+  }
+
+  &.upload {
+    input {
+      height: 0.1px;
+      width: 0.1px;
+      position: absolute;
+      padding: 0;
+    }
+
+    label.file-input {
+      position: static;
+      width: 100%;
+      padding: 2.1rem 1rem 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      background: white;
+      text-transform: none;
+    }
+
+    &::after {
+      position: absolute;
+      right: 1.5rem;
+      top: 1.2rem;
+      content: url(../images/upload.png);
     }
   }
 }
@@ -589,6 +624,7 @@ button.cta {
     .cell {
       display: table-cell;
       padding: 0.8rem 1rem;
+      text-align: center;
 
       .action-checkbox {
         height: 1.3rem;
@@ -650,6 +686,14 @@ button.cta {
       }
     }
   }
+
+  @include minWidth($breakpoint-tablet) {
+    min-width: 40rem;
+  }
+
+  .delete-icon {
+    cursor: pointer;
+  }
 }
 
 .row {
@@ -664,7 +708,7 @@ button.cta {
   .input-container {
     flex: 1;
     margin: 0 1rem 1rem 0;
-    max-width: 15rem;
+    max-width: 20rem;
     min-width: 10rem;
   }
 
@@ -691,5 +735,51 @@ button.cta {
   }
   .cta {
     padding: 1.1rem 3rem;
+  }
+}
+
+.image-upload-container {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  max-width: 15rem;
+  background: white;
+  padding: 1rem 1.5rem 2rem;
+  border-radius: 5px;
+  border-bottom: 5px solid $secondary-color;
+
+  .label {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  div.label {
+    font-size: 0.8rem;
+  }
+
+  .image {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin: 1.5rem 0;
+
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .image-upload-input {
+    text-align: center;
+    input {
+      height: 0.1px;
+      width: 0.1px; 
+    }
+
+    label {
+      color: $secondary-color;
+      font-size: 0.9rem;
+    }
   }
 }

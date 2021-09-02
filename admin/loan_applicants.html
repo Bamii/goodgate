@@ -142,97 +142,302 @@
             <span id="alert-close">x</span>
           </div>
 
-          <div class="welcome-message">
-            Loan Applicants
-            <div>
-              <button class="cta">Email</button>
+          <div data-page="main" class="selected">
+            <div class="welcome-message">
+              Loan Applicants
+              <div>
+                <button class="cta">Email</button>
+              </div>
+            </div>
+  
+            <div class="page-contents">
+              <div class="row history-search-row">
+                <input type="text" placeholder="Search name, serial, email address, product">
+                <input type="date">
+                <input type="date">
+                <button class="cta">Search</button>
+                <button class="cta transparent">Clear</button>
+              </div>
+              <div class="row">
+                <div class="table-page-row">
+                  <span class="accented-text">1</span>
+                  of
+                  <span>5</span>
+                </div>
+              </div>
+              <div class="history-table table">
+                <div class="table-header">
+                  <div class="cell">S/N</div>
+                  <div class="cell">Name</div>
+                  <div class="cell">Product</div>
+                  <div class="cell">Email Address</div>
+                  <div class="cell">Phone Number</div>
+                  <div class="cell">Status</div>
+                  <div class="cell">Details</div>
+                  <div class="cell">Application Date</div>
+                  <div class="cell">
+                          <div class="action-checkbox">
+                            <div class="checkbox-inside"></div>
+                          </div>
+                        </div>
+                </div>
+                <div class="table-body">
+                  <div class="table-entry">
+                    <div class="cell">j1o287</div>
+                    <div class="cell">John Okafor</div>
+                    <div class="cell">Student</div>
+                    <div class="cell">boughview@gmail.com</div>
+                    <div class="cell">+2348087443679</div>
+                    <div class="cell">Pending</div>
+                    <div data-page-target="applicant-details" class="cell accented-text">View</div>
+                    <div class="cell accented-text">11/01/97</div>
+                    <div class="cell">
+                          <div class="action-checkbox">
+                            <div class="checkbox-inside"></div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="table-entry">
+                    <div class="cell">j1o287</div>
+                    <div class="cell">John Okafor</div>
+                    <div class="cell">Student</div>
+                    <div class="cell">boughview@gmail.com</div>
+                    <div class="cell">+2348087443679</div>
+                    <div class="cell">Pending</div>
+                    <div data-page-target="applicant-details" class="cell accented-text">View</div>
+                    <div class="cell accented-text">11/01/97</div>
+                    <div class="cell">
+                          <div class="action-checkbox">
+                            <div class="checkbox-inside"></div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="table-pages">
+                  <div class="table-page left-arrow">
+                    <
+                  </div>
+                  <div class="table-page selected">1</div>
+                  <div class="table-page">2</div>
+                  <div class="table-page">3</div>
+                  <div class="table-page">4</div>
+                  <div class="table-page">5</div>
+                  <div class="table-page right-arrow">
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="page-contents">
-            <div class="row history-search-row">
-              <input type="text" placeholder="Search name, serial, email address, product">
-              <input type="date">
-              <input type="date">
-              <button class="cta">Search</button>
-              <button class="cta transparent">Clear</button>
+          <div data-page="applicant-details" class="applicant-details-page">
+            <div class="welcome-message">
+              <div class="applicant-name">
+                <span data-page-target="main" class="accented-text back">BACK</span>
+                Emerson Joseph
+              </div>
+
+              <span class="accented-text">Print</span>
             </div>
-            <div class="row">
-              <div class="table-page-row">
-                <span class="accented-text">1</span>
-                of
-                <span>5</span>
+
+            <div class="applicant-details">
+              <div class="details-row">
+                <img src="../images/passport.png" alt="" class="icon">
+                <div class="">Personal Details</div>
+                <div data-page-target="personal-information" class="view">view</div>
+              </div>
+              <div class="details-row">
+                <img src="../images/passport.png" alt="" class="icon">
+                <div class="">Education and Employment Details</div>
+                <div class="view">view</div>
+              </div>
+              <div class="details-row">
+                <img src="../images/passport.png" alt="" class="icon">
+                <div class="">Address Details</div>
+                <div class="view">view</div>
+              </div>
+              <div class="details-row">
+                <img src="../images/passport.png" alt="" class="icon">
+                <div class="">Loan Details</div>
+                <div class="view">view</div>
+              </div>
+              <div class="details-row">
+                <img src="../images/passport.png" alt="" class="icon">
+                <div class="">Bank Details</div>
+                <div class="view">view</div>
+              </div>
+              <div class="details-row">
+                <img src="../images/passport.png" alt="" class="icon">
+                <div class="">Credit Details</div>
+                <div data-page-target="credit-check" class="view">view</div>
               </div>
             </div>
-            <div class="history-table table">
-              <div class="table-header">
-                <div class="cell">S/N</div>
-                <div class="cell">Name</div>
-                <div class="cell">Product</div>
-                <div class="cell">Email Address</div>
-                <div class="cell">Phone Number</div>
-                <div class="cell">Status</div>
-                <div class="cell">Details</div>
-                <div class="cell">Application Date</div>
-                <div class="cell">
-                        <div class="action-checkbox">
-                          <div class="checkbox-inside"></div>
-                        </div>
-                      </div>
+          </div>
+
+          <div data-page="personal-information" class="applicant-details-page">
+            <div class="welcome-message">
+              <div class="applicant-name">
+                <span data-page-target="applicant-details" class="accented-text back">BACK</span>
+                Emerson Joseph
               </div>
-              <div class="table-body">
-                <div class="table-entry">
-                  <div class="cell">j1o287</div>
-                  <div class="cell">John Okafor</div>
-                  <div class="cell">Student</div>
-                  <div class="cell">boughview@gmail.com</div>
-                  <div class="cell">+2348087443679</div>
-                  <div class="cell">Pending</div>
-                  <div class="cell accented-text">View</div>
-                  <div class="cell accented-text">11/01/97</div>
-                  <div class="cell">
-                        <div class="action-checkbox">
-                          <div class="checkbox-inside"></div>
-                        </div>
-                      </div>
+
+              <span class="accented-text">Print</span>
+            </div>
+
+            <div class="page-contents">
+              <div class="header medium-text">
+                Personal Information
+              </div>
+              <div class="split-row">
+                <div class="left">
+                  <div class="image-upload-container">
+                    <div class="image">
+                      <img src="../images/passport.png" alt="User Passport Image.">
+                    </div>  <!-- <img src="" alt="User Image."> -->
+                  </div>
                 </div>
-                <div class="table-entry">
-                  <div class="cell">j1o287</div>
-                  <div class="cell">John Okafor</div>
-                  <div class="cell">Student</div>
-                  <div class="cell">boughview@gmail.com</div>
-                  <div class="cell">+2348087443679</div>
-                  <div class="cell">Pending</div>
-                  <div class="cell accented-text">View</div>
-                  <div class="cell accented-text">11/01/97</div>
-                  <div class="cell">
-                        <div class="action-checkbox">
-                          <div class="checkbox-inside"></div>
-                        </div>
+                <div class="right">
+                  <div class="row">
+                    <div class="input-container">
+                      <label for="name"><span>fullname</span></label>
+                      <div class="plain">Joseph Emerson</div>
+                    </div>
+                    <div class="input-container">
+                      <label for="marital_status"><span>marital status</span></label>
+                      <div class="plain">Single</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container">
+                      <label for="dob"><span>Date of Birth</span></label>
+                      <div class="plain">3rd March, 1988</div>
+                    </div>
+                    <div class="input-container">
+                      <label for="gender"><span>gender</span></label>
+                      <div class="plain">Male</div>
+                    </div>
+                    <div class="input-container">
+                      <label for="gender"><span>number of children</span></label>
+                      <div class="plain">0</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container full-width">
+                      <label for="address"><span>Home address</span></label>
+                      <div class="plain">
+                        No 9, Kusa strt. Yaba, Lagos.
                       </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="table-pages">
-                <div class="table-page left-arrow">
-                  <
+          </div>
+
+          <div data-page="credit-check" class="applicant-details-page">
+            <div class="welcome-message">
+              <div class="applicant-name">
+                <span data-page-target="applicant-details" class="accented-text back">BACK</span>
+                Emerson Joseph
+              </div>
+
+              <span class="accented-text">Print</span>
+            </div>
+
+            <div class="page-contents">
+              <div class="row">
+                <div class="split-row">
+                  <div class="row-half left master ">
+                    <div class="header medium-text">
+                      Credit Check
+                    </div>
+      
+                    <div class="credit-check-sources">
+                      <div class="credit-check-source">
+                        <div class="issues accented-text"><span>1</span> issue</div>
+                        <div class="logo"></div>
+                        <div class="source-details">
+                          <div class="source-title">FirstCentral</div>
+                          <div class="accented-text">CHECK</div>
+                        </div>
+                      </div>
+                      <div class="credit-check-source">
+                        <div class="issues accented-text"><span>1</span> issue</div>
+                        <div class="logo"></div>
+                        <div class="source-details">
+                          <div class="source-title">CBC</div>
+                          <div class="accented-text">CHECK</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row-half right">
+                    <div class="header medium-text">
+                      Credit Score
+                    </div>
+                    <div class="credit-score large-text">
+                      35
+                    </div>
+                  </div>
                 </div>
-                <div class="table-page selected">1</div>
-                <div class="table-page">2</div>
-                <div class="table-page">3</div>
-                <div class="table-page">4</div>
-                <div class="table-page">5</div>
-                <div class="table-page right-arrow">
-                  >
+              </div>
+              <div class="table credit-score-table">
+                <div class="table-header">
+                  <div class="cell">ACCOUNT(S) HEALTH</div>
+                  <div class="cell">AMOUNT</div>
+                  <div class="cell">INDICATION</div>
+                </div>
+                <div class="table-body">
+                  <div class="table-entry">
+                    <div class="cell">Performing</div>
+                    <div class="cell">200,000</div>
+                    <div class="cell">
+                      <div class="indicator-container">
+                        <div class="indicator performing"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-entry">
+                    <div class="cell">Non-Performing</div>
+                    <div class="cell">3,000,000</div>
+                    <div class="cell">
+                      <div class="indicator-container">
+                        <div class="indicator non-performing"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-entry">
+                    <div class="cell">Paid-Off</div>
+                    <div class="cell">3,000,000</div>
+                    <div class="cell">
+                      <div class="indicator-container">
+                        <div class="indicator paid-off"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-entry">
+                    <div class="cell">Bad or Lost</div>
+                    <div class="cell">3,000,000</div>
+                    <div class="cell">
+                      <div class="indicator-container">
+                        <div class="indicator bad"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
       </section>
     </div>
   </main>
   <script src="../js/dashboard.js"></script>
+  <script src="../js/admin/common.js"></script>
 </body>
 </html>

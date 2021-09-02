@@ -142,85 +142,168 @@
             <span id="alert-close">x</span>
           </div>
 
-          <div class="welcome-message">
-            Repayment
-            <div class="repayment medium-text">
-              Total Amount Repaid: <span class="large-text">₦27,000,000</span>
+          <div data-page="main" class="selected">
+            <div class="welcome-message">
+              Repayment
+              <div class="repayment-title medium-text">
+                Total Amount Repaid: <span class="large-text">₦27,000,000</span>
+              </div>
+            </div>
+  
+            <div class="page-contents">
+              <div class="row history-search-row">
+                <input type="text" placeholder="Search name, serial, email address, product">
+                <input type="date">
+                <input type="date">
+                <button class="cta">Search</button>
+                <button class="cta transparent">Clear</button>
+              </div>
+              <div class="row">
+                <div class="table-page-row">
+                  <span class="accented-text">1</span>
+                  of
+                  <span>5</span>
+                </div>
+              </div>
+              <div class="history-table table">
+                <div class="table-header">
+                  <div class="cell">S/N</div>
+                  <div class="cell">Name</div>
+                  <div class="cell">Loan Category</div>
+                  <div class="cell">Loan Product</div>
+                  <div class="cell">Outstanding Payment</div>
+                  <div class="cell">Amount Paid</div>
+                  <div class="cell">Total Loan</div>
+                  <div class="cell">Detail</div>
+                  <div class="cell">Due Date</div>
+                </div>
+                <div class="table-body">
+                  <div class="table-entry">
+                    <div class="cell">1</div>
+                    <div class="cell">John Okafor</div>
+                    <div class="cell">Straight Line</div>
+                    <div class="cell">Student</div>
+                    <div class="cell">100000</div>
+                    <div class="cell">100</div>
+                    <div class="cell">1000000</div>
+                    <div data-page-target="loan-details" class="cell accented-text">View</div>
+                    <div class="cell accented-text">11/01/97</div>
+                  </div>
+                  <div class="table-entry">
+                    <div class="cell">1</div>
+                    <div class="cell">John Okafor</div>
+                    <div class="cell">Straight Line</div>
+                    <div class="cell">Student</div>
+                    <div class="cell">100000</div>
+                    <div class="cell">100</div>
+                    <div class="cell">1000000</div>
+                    <div data-page-target="loan-details" class="cell accented-text">View</div>
+                    <div class="cell accented-text">11/01/97</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="table-pages">
+                  <div class="table-page left-arrow">
+                    <
+                  </div>
+                  <div class="table-page selected">1</div>
+                  <div class="table-page">2</div>
+                  <div class="table-page">3</div>
+                  <div class="table-page">4</div>
+                  <div class="table-page">5</div>
+                  <div class="table-page right-arrow">
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="page-contents">
-            <div class="row history-search-row">
-              <input type="text" placeholder="Search name, serial, email address, product">
-              <input type="date">
-              <input type="date">
-              <button class="cta">Search</button>
-              <button class="cta transparent">Clear</button>
+          <div data-page="loan-details">
+            <div class="welcome-message">
+              Check and post payments for loan applicants.
+              <span data-page-target="main" class="accented-text">Back</span>
             </div>
-            <div class="row">
-              <div class="table-page-row">
-                <span class="accented-text">1</span>
-                of
-                <span>5</span>
+  
+            <div class="page-contents">
+              <div class="header medium-text">
+                Repayment: <span>Car Loan</span>
               </div>
-            </div>
-            <div class="history-table table">
-              <div class="table-header">
-                <div class="cell">S/N</div>
-                <div class="cell">Name</div>
-                <div class="cell">Loan Category</div>
-                <div class="cell">Loan Product</div>
-                <div class="cell">Outstanding Payment</div>
-                <div class="cell">Amount Paid</div>
-                <div class="cell">Total Loan</div>
-                <div class="cell">Detail</div>
-                <div class="cell">Due Date</div>
-              </div>
-              <div class="table-body">
-                <div class="table-entry">
-                  <div class="cell">1</div>
-                  <div class="cell">John Okafor</div>
-                  <div class="cell">Straight Line</div>
-                  <div class="cell">Student</div>
-                  <div class="cell">100000</div>
-                  <div class="cell">100</div>
-                  <div class="cell">1000000</div>
-                  <div class="cell accented-text">View</div>
-                  <div class="cell accented-text">11/01/97</div>
+
+              <div class="row">
+                <div class="input-container shaded">
+                  <label for=""><span>Product type</span></label>
+                  <div class="">Car Loan</div>
                 </div>
-                <div class="table-entry">
-                  <div class="cell">1</div>
-                  <div class="cell">John Okafor</div>
-                  <div class="cell">Straight Line</div>
-                  <div class="cell">Student</div>
-                  <div class="cell">100000</div>
-                  <div class="cell">100</div>
-                  <div class="cell">1000000</div>
-                  <div class="cell accented-text">View</div>
-                  <div class="cell accented-text">11/01/97</div>
+                <div class="input-container">
+                  <label for="repayment_amount"><span>Repayment Amount</span></label>
+                  <input name="repayment_amount" id="repayment_amount" type="text">
+                </div>
+                <button class="cta">POST</button>
+              </div>
+
+              <div class="row">
+                <div class="input-container">
+                  <label for="amount_owed"><span>Amount Owed</span></label>
+                  <input name="amount_owed" id="amount_owed" type="number" placeholder="15000">
+                </div>
+                <div class="input-container">
+                  <label for="amount_paid"><span>Amount Paid</span></label>
+                  <input name="amount_paid" id="amount_paid" type="number" placeholder="15000">
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="table-pages">
-                <div class="table-page left-arrow">
-                  <
+
+              <div class="table repayment-table">
+                <div class="table-header">
+                  <div class="cell">Month</div>
+                  <div class="cell">Outstanding</div>
+                  <div class="cell">Interest</div>
+                  <div class="cell">Total Due</div>
+                  <div class="cell">Due Date</div>
+                  <div class="cell">Payment Date</div>
+                  <div class="cell">Payment Status</div>
+                  <div class="cell">Action</div>
                 </div>
-                <div class="table-page selected">1</div>
-                <div class="table-page">2</div>
-                <div class="table-page">3</div>
-                <div class="table-page">4</div>
-                <div class="table-page">5</div>
-                <div class="table-page right-arrow">
-                  >
+                <div class="table-body">
+                  <div class="table-entry">
+                    <div class="cell">1</div>
+                    <div class="cell">500,000</div>
+                    <div class="cell">4,166</div>
+                    <div class="cell">102,000</div>
+                    <div class="cell">11/02/12</div>
+                    <div class="cell">11/02/12</div>
+                    <div class="cell accented-text">Paid</div>
+                    <div class="cell">
+                      <div class="action-checkbox">
+                        <div class="checkbox-inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-entry">
+                    <div class="cell">2</div>
+                    <div class="cell">500,000</div>
+                    <div class="cell">4,166</div>
+                    <div class="cell">102,000</div>
+                    <div class="cell">11/02/12</div>
+                    <div class="cell">11/02/12</div>
+                    <div class="cell accented-text">Overdue</div>
+                    <div class="cell">
+                      <div class="action-checkbox">
+                        <div class="checkbox-inside"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </section>
     </div>
   </main>
   <script src="../js/dashboard.js"></script>
+  <script src="../js/admin/common.js"></script>
 </body>
 </html>

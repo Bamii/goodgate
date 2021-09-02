@@ -1,10 +1,16 @@
 @import "admin";
 
 .welcome-message {
-  .repayment {
+  .repayment-title {
     margin-right: 1rem;
     span {
       color: #4B1F51;
     }
+  }
+}
+
+.repayment-table {
+  .table-header,.table-entry {
+    grid-template-columns: auto repeat(6, 1fr) auto;
   }
 }

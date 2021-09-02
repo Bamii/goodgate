@@ -147,49 +147,9 @@
     }
   }
 
-  .image-upload-container {
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-    max-width: 15rem;
-    background: white;
-    padding: 1rem 1.5rem 2rem;
-    border-radius: 5px;
-    border-bottom: 5px solid $secondary-color;
-
-    .label {
-      text-transform: uppercase;
-      font-weight: bold;
-    }
-
-    div.label {
-      font-size: 0.8rem;
-    }
-
-    .image {
-      height: 10rem;
-      width: 10rem;
-      border-radius: 50%;
-      margin: 0 auto;
-      margin: 1.5rem 0;
-
-      img{
-        height: 100%;
-        width: 100%;
-      }
-    }
-
-    .image-upload-input {
-      text-align: center;
-      input {
-        height: 0.1px;
-        width: 0.1px; 
-      }
-
-      label {
-        color: $secondary-color;
-        font-size: 0.9rem;
-      }
+  .upload-document-table {
+    .table-header,.table-entry {
+      grid-template-columns: 1fr 2fr 1fr;
     }
   }
 }
