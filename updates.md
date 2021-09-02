@@ -4,9 +4,6 @@ Changes to be committed:
 	modified:   admin/loan_applicants.html
 	modified:   admin/loan_products.html
 	modified:   admin/repayment.html
-	new file:   images/back.svg
-	new file:   images/delete.png
-	new file:   images/upload.png
 	renamed:    js/admin/loan_products.js -> js/admin/common.js
 	modified:   single-product.html
 	modified:   styles/_common.scss
@@ -46,8 +43,4 @@ Changes to be committed:
 	modified:   updates.md
 	new file:   upload.html
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	modified:   updates.md
 
