@@ -16,6 +16,7 @@
 
   .contact-details {
     flex: 1;
+    background: #F7F7F8;
 
     .contact-description {
       line-height: 1.8rem;
@@ -48,6 +49,7 @@
 
   .contact-form {
     flex: 2;
+    background: #E3ECDB;
 
     form {
       .message {
@@ -79,6 +81,16 @@
 
     .contact-form {
       padding: 5rem 2rem;
+    }
+  }
+
+  @include minWidth($breakpoint-desktop) {
+    .contact-details {
+      padding: 5rem 5rem 5rem 10rem;  
+    }
+
+    .contact-form {
+      padding: 5rem;
     }
   }
 }

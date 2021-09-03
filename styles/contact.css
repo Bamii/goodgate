@@ -1429,6 +1429,7 @@ button.cta.transparent {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  background: #F7F7F8;
 }
 
 .contact-row .contact-details .contact-description {
@@ -1464,6 +1465,7 @@ button.cta.transparent {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  background: #E3ECDB;
 }
 
 .contact-row .contact-form form .message {
@@ -1496,6 +1498,15 @@ button.cta.transparent {
   }
   .contact-row .contact-form {
     padding: 5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-row .contact-details {
+    padding: 5rem 5rem 5rem 10rem;
+  }
+  .contact-row .contact-form {
+    padding: 5rem;
   }
 }
 
