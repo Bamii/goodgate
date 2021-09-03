@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/admin/loan_products.css">
-  <title>Loan Applicants</title>
+  <link rel="stylesheet" href="../styles/admin/manage_users.css">
+  <title>Manage Users</title>
 </head>
 <body>
   <main>
@@ -23,7 +23,7 @@
               <div class="dashboard-navigation-item">
                 <a class="tag" href="index.html">Dashboard</a>
               </div>
-              <div class="dashboard-navigation-item selected">
+              <div class="dashboard-navigation-item">
                 <div data-nav-tag="loan" class="tag">Loan <span>+</span></div>
                 <div data-nav-tag-target="loan" class="dashboard-navigation-subitems">
                   <a href="loan_applicants.html" class="dashboard-navigation-subitem">Loan Applicant</a>
@@ -45,7 +45,7 @@
               <div class="dashboard-navigation-item">
                 <a href="transaction_history.html" class="tag">Transaction History</a>
               </div>
-              <div class="dashboard-navigation-item">
+              <div class="dashboard-navigation-item selected">
                 <div data-nav-tag="settings" class="tag">Settings <span>+</span></div>
                 <div data-nav-tag-target="settings" class="dashboard-navigation-subitems">
                   <a href="manage_users.html" class="dashboard-navigation-subitem">Manage Users</a>
@@ -145,12 +145,13 @@
 
           <div data-page="main" class="selected">
             <div class="welcome-message">
-              Loan Products
+              Manage Users
               <div>
                 <button class="cta secondary">Delete</button>
-                <button data-page-target="new-product" class="cta">Create</button>
+                <button data-page-target="create" class="cta">Create</button>
               </div>
             </div>
+
             <div class="page-contents">
               <div class="row history-search-row">
                 <input type="text" placeholder="Search name, serial, email address, product">
@@ -166,40 +167,42 @@
                   <span>5</span>
                 </div>
               </div>
-              <div class="history-table table">
+              <div class="users-table history-table table">
                 <div class="table-header">
                   <div class="cell">S/N</div>
                   <div class="cell">Name</div>
-                  <div class="cell">Loan Category</div>
-                  <div class="cell">Loan Product</div>
-                  <div class="cell">Interest Rate</div>
-                  <div class="cell">Loan Minimum</div>
-                  <div class="cell">Loan Maximum</div>
-                  <div class="cell">Detail</div>
+                  <div class="cell">Email</div>
+                  <div class="cell">Role</div>
+                  <div class="cell">Action</div>
                   <div class="cell">Application Date</div>
+                  <div class="cell"></div>
                 </div>
                 <div class="table-body">
                   <div class="table-entry">
                     <div class="cell">1</div>
-                    <div class="cell">Rent Loan</div>
-                    <div class="cell">Straight Line</div>
-                    <div class="cell">Student</div>
-                    <div class="cell">10</div>
-                    <div class="cell">1000</div>
-                    <div class="cell">20000</div>
-                    <div class="cell accented-text">View</div>
-                    <div class="cell accented-text">11/01/97</div>
+                    <div class="cell">Admin</div>
+                    <div class="cell">a@s.com</div>
+                    <div class="cell">Admin</div>
+                    <div class="cell accented-text">Edit</div>
+                    <div class="cell accented-text">11/02/21</div>
+                    <div class="cell">
+                      <div class="action-checkbox">
+                        <div class="checkbox-inside"></div>
+                      </div>
+                    </div>
                   </div>
                   <div class="table-entry">
-                    <div class="cell">1</div>
-                    <div class="cell">Rent Loan</div>
-                    <div class="cell">Straight Line</div>
-                    <div class="cell">Student</div>
-                    <div class="cell">10</div>
-                    <div class="cell">1000</div>
-                    <div class="cell">20000</div>
-                    <div class="cell accented-text">View</div>
-                    <div class="cell accented-text">11/01/97</div>
+                    <div class="cell">2</div>
+                    <div class="cell">Admin</div>
+                    <div class="cell">a@s.com</div>
+                    <div class="cell">Admin</div>
+                    <div class="cell accented-text">Edit</div>
+                    <div class="cell accented-text">11/02/21</div>
+                    <div class="cell">
+                      <div class="action-checkbox">
+                        <div class="checkbox-inside"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -221,70 +224,106 @@
             </div>
           </div>
 
-          <div data-page="new-product" class="">
+          <div data-page="create">
             <div class="welcome-message">
-              Create the loan of your choice.
-              <span data-page-target="main" class="accented-text">Back</span>
+              Manage and Create new Users.
+              <span class="accented-text" data-page-target="main">BACK</span>
             </div>
             <div class="page-contents">
               <div class="header medium-text">
-                Personal Information
+                Create
               </div>
-              <div class="split-row">
-                <div class="left">
-                  <div class="image-upload-container">
-                    <div class="label">Product Image</div>
-                    <div class="image">
-                      <img src="images/passport.png" alt="User Passport Image.">
-                    </div>  <!-- <img src="" alt="User Image."> -->
-                    <div class="image-upload-input">
-                      <input type="file" name="passportupload" id="passportupload">
-                      <label class="label" for="passportupload">Upload pic</label>
-                    </div>
-                  </div>
+              <div class="row">
+                <div class="input-container">
+                  <label for="name"><span>full name.</span></label>
+                  <input id="name" name="name" type="text" placeholder="John Doe">
                 </div>
-                <div class="right">
-                  <div class="row">
-                    <div class="input-container">
-                      <label for="product-name"><span>product name</span></label>
-                      <input name="product-name" type="text" placeholder="John Doe">
-                    </div>
-                    <div class="input-container">
-                      <label for="interest"><span>interest rate (%)</span></label>
-                      <input name="interest" type="text" placeholder="John Doe">
-                    </div>
-                    <div class="input-container">
-                      <label for="loan_duration"><span>loan duration (months)</span></label>
-                      <input name="loan_duration" type="text" placeholder="John Doe">
-                    </div>
+                <div class="input-container">
+                  <label for="email"><span>email address</span></label>
+                  <input id="email" name="email" type="text" placeholder="John Doe">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-container select">
+                  <label for="role"><span>role</span></label>
+                  <select name="role" id="role">
+                    <option value="">---------</option>
+                  </select>
+                </div>
+                <div class="input-container select">
+                  <label for="password_generation"><span>password generation options</span></label>
+                  <select name="password_generation" id="password_generation">
+                    <option value="">---------</option>
+                  </select>
+                </div>
+                <div class="input-container">
+                  <label for="password"><span>if manual, please type password</span></label>
+                  <input id="password" name="password" type="text" placeholder="----------------">
+                </div>
+              </div>
+              <div class="row">
+                <div class="table">
+                  <div class="table-header">
+                    <div class="cell">S/N</div>
+                    <div class="cell">Permission</div>
+                    <div class="cell">Action</div>
                   </div>
-                  <div class="row">
-                    <div class="input-container select">
-                      <label for="product_category"><span>product formula category</span></label>
-                      <select name="product_category" id="">
-                        <option value="">---------</option>
-                      </select>
+                  <div class="table-body">
+                    <div class="table-entry">
+                      <div class="cell">1</div>
+                      <div class="cell">View Loan Aplicant</div>
+                      <div class="cell">
+                        <div class="action-checkbox-container">
+                          <div class="action-checkbox">
+                            <div class="checkbox-inside"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="input-container">
-                      <label for="charges"><span>management charges</span></label>
-                      <input name="charges" type="text" placeholder="----------------">
+                    <div class="table-entry">
+                      <div class="cell">2</div>
+                      <div class="cell">Approve Loan Aplicant</div>
+                      <div class="cell">
+                        <div class="action-checkbox-container">
+                          <div class="action-checkbox">
+                            <div class="checkbox-inside"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-container">
-                      <label for="min_loan"><span>minimum loan amount</span></label>
-                      <input name="min_loan" type="text" placeholder="----------------">
+                    <div class="table-entry">
+                      <div class="cell">3</div>
+                      <div class="cell">Disburse Loan</div>
+                      <div class="cell">
+                        <div class="action-checkbox-container">
+                          <div class="action-checkbox">
+                            <div class="checkbox-inside"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="input-container">
-                      <label for="max_loan"><span>maximum loan amount</span></label>
-                      <input name="max_loan" type="text" placeholder="----------------">
+                    <div class="table-entry">
+                      <div class="cell">4</div>
+                      <div class="cell">View Investment</div>
+                      <div class="cell">
+                        <div class="action-checkbox-container">
+                          <div class="action-checkbox">
+                            <div class="checkbox-inside"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-container full-width">
-                      <label for="product_description"><span>loan product description</span></label>
-                      <textarea name="product_description" type="text"></textarea>
-                    </div>
+                    <div class="table-entry">
+                      <div class="cell">5</div>
+                      <div class="cell">View Report</div>
+                      <div class="cell">
+                        <div class="action-checkbox-container">
+                          <div class="action-checkbox">
+                            <div class="checkbox-inside"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
                   </div>
                 </div>
               </div>

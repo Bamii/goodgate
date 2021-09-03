@@ -626,22 +626,30 @@ button.cta {
       padding: 0.8rem 1rem;
       text-align: center;
 
-      .action-checkbox {
-        height: 1.3rem;
-        width: 1.3rem;
-        padding: 0.2rem;
-        border: 1px solid $secondary-color;
-        border-radius: 5px;
-
-        .checkbox-inside {
-          width: 100%;
-          height: 100%;
-          border-radius: 3px;
-        }
+      .action-checkbox-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         
-        &.checked {
+        .action-checkbox {
+          height: 1.3rem;
+          width: 1.3rem;
+          padding: 0.2rem;
+          border: 1px solid $secondary-color;
+          border-radius: 5px;
+  
           .checkbox-inside {
-            background: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 3px;
+          }
+          
+          &.checked {
+            .checkbox-inside {
+              background: black;
+            }
           }
         }
       }

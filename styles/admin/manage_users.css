@@ -3302,16 +3302,8 @@ main {
   margin-right: 0.8rem;
 }
 
-.welcome-message .repayment-title {
-  margin-right: 1rem;
+.users-table .table-header, .users-table .table-entry {
+  -ms-grid-columns: auto 1fr 1fr (auto)[4];
+      grid-template-columns: auto 1fr 1fr repeat(4, auto);
 }
-
-.welcome-message .repayment-title span {
-  color: #4B1F51;
-}
-
-.repayment-table .table-header, .repayment-table .table-entry {
-  -ms-grid-columns: auto (1fr)[6] auto;
-      grid-template-columns: auto repeat(6, 1fr) auto;
-}
-/*# sourceMappingURL=repayment.css.map */
+/*# sourceMappingURL=manage_users.css.map */

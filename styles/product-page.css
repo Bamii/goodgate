@@ -1221,7 +1221,21 @@ button.cta.transparent {
   text-align: center;
 }
 
-.table .table-entry .cell .action-checkbox, .table .table-header .cell .action-checkbox {
+.table .table-entry .cell .action-checkbox-container, .table .table-header .cell .action-checkbox-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.table .table-entry .cell .action-checkbox-container .action-checkbox, .table .table-header .cell .action-checkbox-container .action-checkbox {
   height: 1.3rem;
   width: 1.3rem;
   padding: 0.2rem;
@@ -1229,13 +1243,13 @@ button.cta.transparent {
   border-radius: 5px;
 }
 
-.table .table-entry .cell .action-checkbox .checkbox-inside, .table .table-header .cell .action-checkbox .checkbox-inside {
+.table .table-entry .cell .action-checkbox-container .action-checkbox .checkbox-inside, .table .table-header .cell .action-checkbox-container .action-checkbox .checkbox-inside {
   width: 100%;
   height: 100%;
   border-radius: 3px;
 }
 
-.table .table-entry .cell .action-checkbox.checked .checkbox-inside, .table .table-header .cell .action-checkbox.checked .checkbox-inside {
+.table .table-entry .cell .action-checkbox-container .action-checkbox.checked .checkbox-inside, .table .table-header .cell .action-checkbox-container .action-checkbox.checked .checkbox-inside {
   background: black;
 }
 
@@ -2619,7 +2633,21 @@ button.cta.transparent {
   text-align: center;
 }
 
-.table .table-entry .cell .action-checkbox, .table .table-header .cell .action-checkbox {
+.table .table-entry .cell .action-checkbox-container, .table .table-header .cell .action-checkbox-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.table .table-entry .cell .action-checkbox-container .action-checkbox, .table .table-header .cell .action-checkbox-container .action-checkbox {
   height: 1.3rem;
   width: 1.3rem;
   padding: 0.2rem;
@@ -2627,13 +2655,13 @@ button.cta.transparent {
   border-radius: 5px;
 }
 
-.table .table-entry .cell .action-checkbox .checkbox-inside, .table .table-header .cell .action-checkbox .checkbox-inside {
+.table .table-entry .cell .action-checkbox-container .action-checkbox .checkbox-inside, .table .table-header .cell .action-checkbox-container .action-checkbox .checkbox-inside {
   width: 100%;
   height: 100%;
   border-radius: 3px;
 }
 
-.table .table-entry .cell .action-checkbox.checked .checkbox-inside, .table .table-header .cell .action-checkbox.checked .checkbox-inside {
+.table .table-entry .cell .action-checkbox-container .action-checkbox.checked .checkbox-inside, .table .table-header .cell .action-checkbox-container .action-checkbox.checked .checkbox-inside {
   background: black;
 }
 
@@ -3271,17 +3299,6 @@ main {
 
 .dashboard-contents .product-details-section .requirements-list .requirement:hover .text, .dashboard-contents .product-details-section .requirements-list .requirement.selected .text {
   border-color: white;
-}
-
-.action {
-  width: 100%;
-  -webkit-box-shadow: 0px 6px 12px #00000029;
-          box-shadow: 0px 6px 12px #00000029;
-  margin-top: 1rem;
-}
-
-.action button {
-  width: 100%;
 }
 
 .application-contents .right {

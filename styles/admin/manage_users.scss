@@ -1,0 +1,7 @@
+@import "admin";
+
+.users-table {
+  .table-header,.table-entry {
+    grid-template-columns: auto 1fr 1fr repeat(4, auto);
+  }
+}

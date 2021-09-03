@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/admin/dashboard.css">
-  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../styles/admin/loan_products.css">
+  <title>Update Users</title>
 </head>
 <body>
   <main>
@@ -20,7 +20,7 @@
               </div>
             </div>
             <div class="dashboard-navigation-items">
-              <div class="dashboard-navigation-item selected">
+              <div class="dashboard-navigation-item">
                 <a class="tag" href="index.html">Dashboard</a>
               </div>
               <div class="dashboard-navigation-item">
@@ -45,7 +45,7 @@
               <div class="dashboard-navigation-item">
                 <a href="transaction_history.html" class="tag">Transaction History</a>
               </div>
-              <div class="dashboard-navigation-item">
+              <div class="dashboard-navigation-item selected">
                 <div data-nav-tag="settings" class="tag">Settings <span>+</span></div>
                 <div data-nav-tag-target="settings" class="dashboard-navigation-subitems">
                   <a href="manage_users.html" class="dashboard-navigation-subitem">Manage Users</a>
@@ -143,17 +143,129 @@
             <span id="alert-close">x</span>
           </div>
 
-          <div class="welcome-message">
-            Overview
+          <div data-page="main" class="selected">
+            <div class="welcome-message">
+              Manage Users
+              <div>
+                <button data-page-target="update" class="cta">Update</button>
+              </div>
+            </div>
+
+            <div class="page-contents">
+              <div class="row history-search-row">
+                <input type="text" placeholder="Search name, serial, email address, product">
+                <input type="date">
+                <input type="date">
+                <button class="cta">Search</button>
+                <button class="cta transparent">Clear</button>
+              </div>
+              <div class="row">
+                <div class="table-page-row">
+                  <span class="accented-text">1</span>
+                  of
+                  <span>5</span>
+                </div>
+              </div>
+              <div class="users-table history-table table">
+                <div class="table-header">
+                  <div class="cell">S/N</div>
+                  <div class="cell">Name</div>
+                  <div class="cell">Email</div>
+                  <div class="cell">Role</div>
+                  <div class="cell">Action</div>
+                  <div class="cell">Application Date</div>
+                  <div class="cell"></div>
+                </div>
+                <div class="table-body">
+                  <div class="table-entry">
+                    <div class="cell">1</div>
+                    <div class="cell">Admin</div>
+                    <div class="cell">a@s.com</div>
+                    <div class="cell">Admin</div>
+                    <div class="cell accented-text">Edit</div>
+                    <div class="cell accented-text">11/02/21</div>
+                    <div class="cell">
+                      <div class="action-checkbox">
+                        <div class="checkbox-inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-entry">
+                    <div class="cell">2</div>
+                    <div class="cell">Admin</div>
+                    <div class="cell">a@s.com</div>
+                    <div class="cell">Admin</div>
+                    <div class="cell accented-text">Edit</div>
+                    <div class="cell accented-text">11/02/21</div>
+                    <div class="cell">
+                      <div class="action-checkbox">
+                        <div class="checkbox-inside"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="table-pages">
+                  <div class="table-page left-arrow">
+                    <
+                  </div>
+                  <div class="table-page selected">1</div>
+                  <div class="table-page">2</div>
+                  <div class="table-page">3</div>
+                  <div class="table-page">4</div>
+                  <div class="table-page">5</div>
+                  <div class="table-page right-arrow">
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="dashboard-contents split-row">
-
+          <div data-page="update">
+            <div class="welcome-message">
+              Update users
+              <span class="accented-text" data-page-target="main">BACK</span>
+            </div>
+            <div class="page-contents">
+              <div class="header medium-text">
+                Update
+              </div>
+              <div class="row">
+                <div class="input-container">
+                  <label for="search"><span>search name, email address.</span></label>
+                  <input id="search" name="search" type="text" placeholder="John Doe">
+                </div>
+                <div class="input-container">
+                  <label for="new_email"><span>new email address</span></label>
+                  <input id="new_email" name="new_email" type="text" placeholder="John Doe">
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-container select">
+                  <label for="password_generation"><span>password generation options</span></label>
+                  <select name="password_generation" id="password_generation">
+                    <option value="">---------</option>
+                  </select>
+                </div>
+                <div class="input-container">
+                  <label for="password"><span>if manual, please type password</span></label>
+                  <input id="password" name="password" type="text" placeholder="----------------">
+                </div>
+              </div>
+              <div class="action">
+                <button class="cta">
+                  SUBMIT PERSONAL INFORMATION
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </div>
   </main>
   <script src="../js/dashboard.js"></script>
+  <script src="../js/admin/common.js"></script>
 </body>
 </html>

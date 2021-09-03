@@ -1,10 +1,13 @@
 On branch master
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   admin/index.html
 	modified:   admin/loan_applicants.html
 	modified:   admin/loan_products.html
 	modified:   admin/repayment.html
-	renamed:    js/admin/loan_products.js -> js/admin/common.js
+	modified:   admin/transaction_history.html
+	modified:   repayment.html
 	modified:   single-product.html
 	modified:   styles/_common.scss
 	modified:   styles/about.css
@@ -14,13 +17,10 @@ Changes to be committed:
 	modified:   styles/admin/dashboard.css.map
 	modified:   styles/admin/loan_applicants.css
 	modified:   styles/admin/loan_applicants.css.map
-	modified:   styles/admin/loan_applicants.scss
 	modified:   styles/admin/loan_products.css
 	modified:   styles/admin/loan_products.css.map
-	modified:   styles/admin/loan_products.scss
 	modified:   styles/admin/repayment.css
 	modified:   styles/admin/repayment.css.map
-	modified:   styles/admin/repayment.scss
 	modified:   styles/admin/transaction_history.css
 	modified:   styles/admin/transaction_history.css.map
 	modified:   styles/dashboard_home.css
@@ -40,7 +40,15 @@ Changes to be committed:
 	modified:   styles/repayment.css.map
 	modified:   styles/transaction_history.css
 	modified:   styles/transaction_history.css.map
+	modified:   transaction_history.html
 	modified:   updates.md
-	new file:   upload.html
 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	admin/manage_users.html
+	admin/update_users.html
+	styles/admin/manage_users.css
+	styles/admin/manage_users.css.map
+	styles/admin/manage_users.scss
 
+no changes added to commit (use "git add" and/or "git commit -a")
