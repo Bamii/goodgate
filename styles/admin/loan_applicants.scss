@@ -1,6 +1,8 @@
 @import "admin";
 
 .applicant-details-page {
+  padding: 0 2rem;
+
   .welcome-message {
     .applicant-name{
       font-size: 1.7rem;
@@ -18,9 +20,9 @@
     margin-bottom: 1rem;
 
     .details-row {
+      margin-bottom: 1rem;
       width: 100%;
       padding: 1.5rem;
-      margin: 0;
       background: black;
       border-radius: 5px;
       background: #f7f7f7;
@@ -51,9 +53,97 @@
       padding-right: 5rem;
       grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
+
+      .details-row {
+        margin-bottom: 0;
+      }
     }
   }
 
+  .approval-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .approval-steps {
+      display: flex;
+  
+      .approval-step {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        text-align: center;
+  
+        .circle {
+          height: 2.5rem;
+          width: 2.5rem;
+          border-radius: 50%;
+          border: 1px solid $secondary-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.8rem;
+          color: $secondary-color;
+  
+          .check {
+            display: none;
+          }
+          .step-number {
+            display: block;
+          }
+        }
+  
+        &.checked {
+          .circle {
+            background: $secondary-color;
+            
+            .check {
+              display: block;
+            }
+            .step-number {
+              display: none;
+            }
+          }
+        }
+      }
+  
+      .connector {
+        width: 5rem;
+        border: 1px solid $secondary-color;
+        height: min-content;
+        margin-top: 2.2rem;
+      }
+    }
+
+    .disburse-btn {
+      margin: 2rem 0 0 0;
+    }
+  }
+
+  @include minWidth($breakpoint-tablet) {
+    .connector {
+      width: 10rem
+    }
+
+    .approval-row {
+      .disburse-btn {
+        margin: 0 0 0 1rem;
+      }
+    }
+  }
+
+  @include minWidth($breakpoint-desktop) {
+    padding: 0;
+
+    .approval-row {
+      .disburse-btn {
+        margin: 0 0 0 3rem;
+      }
+    }
+  }
 }
 
 [data-page=credit-check] {

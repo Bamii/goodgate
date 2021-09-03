@@ -52,3 +52,13 @@ Untracked files:
 	styles/admin/manage_users.scss
 
 no changes added to commit (use "git add" and/or "git commit -a")
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   admin/loan_applicants.html
+	modified:   styles/admin/loan_applicants.css
+	modified:   styles/admin/loan_applicants.css.map
+	modified:   styles/admin/loan_applicants.scss
+
+no changes added to commit (use "git add" and/or "git commit -a")
