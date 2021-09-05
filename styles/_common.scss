@@ -555,7 +555,9 @@ button.cta {
 
   .image {
     width: auto;
-    min-height: 15rem;
+    max-height: 15rem;
+    width: 100%;
+    height: auto;
     border: 1px solid $secondary-color;
   }
 
@@ -789,5 +791,29 @@ button.cta {
       color: $secondary-color;
       font-size: 0.9rem;
     }
+  }
+}
+
+[data-page] {
+  display: none;
+  
+  &.selected {
+    display: block;
+    width: 100%;
+  }
+}
+
+[data-page-target] {
+  cursor: pointer;
+}
+
+.back {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: url(../images/back.svg);
+    margin-right: 0.8rem;
   }
 }

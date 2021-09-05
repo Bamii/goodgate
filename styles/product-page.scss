@@ -2,7 +2,105 @@
 @import "footer";
 @import "variables";
 @import "common";
+@import "tabs";
 @import "dashboard";
+
+#investment-modal {
+  .mask-contents {
+    background: #F7F7F7;
+    padding: 2rem 0;
+    color: #4B1F51;
+
+    .header,.action,.text {
+      text-align: center;
+      padding: 0 3rem;
+    }
+    
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span.amount {
+        margin: 0 1rem;
+      }
+
+      .change {
+        cursor: pointer;
+      }
+    }
+
+    .tabs {
+      display: flex;
+      width: 100%;
+
+      .tab {
+        flex: 1;
+        padding: 1rem 2rem;
+        background: #E9E9E9;
+        border: 1px solid $secondary-color;
+        text-align: center;
+        &.selected {
+          background: $secondary-color;
+        }
+      }
+    }
+
+    .action {
+      margin-top: 1rem;
+      .cta {
+        padding: 1.3rem 8rem;
+      }
+    }
+
+    .tabs-targets {
+      padding: 1rem;
+      background: white;
+      border-radius: 5px;
+      margin: 2rem 5rem;
+
+      .tab-target {
+
+        .table {
+          padding: 0;
+
+          &.card-table {
+            .table-header,.table-entry {
+              grid-template-columns: 1fr 2fr 2fr 1fr;
+            }
+          }
+        }
+
+        .tab-subheader {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+        }
+
+        .tab-header {
+          text-transform: uppercase;
+          color: $secondary-color;
+          margin: 0rem 0 1.1rem 0;
+          font-weight: bold;
+        }
+
+        .bank-details {
+          width: max-content;
+
+          .bank-detail-entry {
+            font-size: 0.9rem;
+            padding: 0.5rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .type {
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 .dashboard-contents {
   padding: 0 2rem 0 0;
@@ -161,7 +259,6 @@
 
   text-align: center;
 }
-
 
 [data-application-step] {
   display: none;

@@ -6,6 +6,11 @@
 
 #loans-section {
   align-items: flex-start;
+
+  .row-half {
+    align-items: flex-start;
+  }
+  
   .left {
     width: 100%;
   }
@@ -42,6 +47,33 @@
 
     .tab {
       text-align: left;
+    }
+  }
+
+  .details-page {
+    width: 100%;
+    background: #F7F7F7;
+
+    .details-header {
+      padding: 1rem 1.5rem;
+      background: $secondary-color;
+      color: white;
+    }
+
+    .details-body {
+      padding: 1.5rem;
+      line-height: 1.5;
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .details-actions {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem;
+      font-size: 1.2rem !important;
     }
   }
 }

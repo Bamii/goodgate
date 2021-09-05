@@ -1132,7 +1132,9 @@ button.cta.transparent {
 
 .card .image {
   width: auto;
-  min-height: 15rem;
+  max-height: 15rem;
+  width: 100%;
+  height: auto;
   border: 1px solid #51C272;
 }
 
@@ -1410,6 +1412,34 @@ button.cta.transparent {
   font-size: 0.9rem;
 }
 
+[data-page] {
+  display: none;
+}
+
+[data-page].selected {
+  display: block;
+  width: 100%;
+}
+
+[data-page-target] {
+  cursor: pointer;
+}
+
+.back {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.back::before {
+  content: url(../images/back.svg);
+  margin-right: 0.8rem;
+}
+
 [data-tab] {
   cursor: pointer;
 }
@@ -1424,6 +1454,12 @@ button.cta.transparent {
 }
 
 #loans-section {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#loans-section .row-half {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1464,5 +1500,36 @@ button.cta.transparent {
   #loans-section .tab {
     text-align: left;
   }
+}
+
+#loans-section .details-page {
+  width: 100%;
+  background: #F7F7F7;
+}
+
+#loans-section .details-page .details-header {
+  padding: 1rem 1.5rem;
+  background: #51C272;
+  color: white;
+}
+
+#loans-section .details-page .details-body {
+  padding: 1.5rem;
+  line-height: 1.5;
+}
+
+#loans-section .details-page .details-body p {
+  margin-bottom: 1rem;
+}
+
+#loans-section .details-page .details-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem;
+  font-size: 1.2rem !important;
 }
 /*# sourceMappingURL=loans.css.map */
