@@ -3056,7 +3056,7 @@ main {
 
 #dashboard-container #dashboard-content-container .top-strip {
   width: 100%;
-  padding: 1rem 1rem 1rem 1.5rem;
+  padding: 1rem 1rem 1rem 2rem;
   background: #F7F7F7;
   display: -ms-grid;
   display: grid;
@@ -3243,7 +3243,6 @@ main {
     display: none;
   }
   #dashboard-container #dashboard-content-container .welcome-message {
-    padding: 1rem;
     width: 100%;
   }
 }
@@ -3260,6 +3259,9 @@ main {
   }
   #dashboard-container #dashboard-content-container {
     padding: 0 0 0 2rem;
+  }
+  #dashboard-container #dashboard-content-container .welcome-message {
+    padding: 1rem;
   }
   #dashboard-container #dashboard-content-container .dashboard-contents {
     padding: 0 1rem 0 0;

@@ -139,7 +139,7 @@ main {
     
     .top-strip {
       width: 100%;
-      padding: 1rem 1rem 1rem 1.5rem;
+      padding: 1rem 1rem 1rem 2rem;
       background: #F7F7F7;
       display: grid;
       grid-template-columns: 1fr auto auto auto;
@@ -308,7 +308,6 @@ main {
 
     #dashboard-content-container {
       .welcome-message {
-        padding: 1rem;
         width: 100%;
       }
     }
@@ -331,6 +330,10 @@ main {
 
     #dashboard-content-container {
       padding: 0 0 0 2rem;
+
+      .welcome-message {
+        padding: 1rem;
+      }
 
       .dashboard-contents {
         padding: 0 1rem 0 0; 
