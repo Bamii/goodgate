@@ -177,10 +177,14 @@
                   <div class="cell">Details</div>
                   <div class="cell">Application Date</div>
                   <div class="cell">
-                          <div class="action-checkbox">
-                            <div class="checkbox-inside"></div>
-                          </div>
+                    <div class="action-checkbox-container">
+                      <div class="action-checkbox-container">
+                        <div class="action-checkbox">
+                          <div class="checkbox-inside"></div>
                         </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="table-body">
                   <div class="table-entry">
@@ -193,10 +197,12 @@
                     <div data-page-target="applicant-details" class="cell accented-text">View</div>
                     <div class="cell accented-text">11/01/97</div>
                     <div class="cell">
-                          <div class="action-checkbox">
-                            <div class="checkbox-inside"></div>
-                          </div>
+                      <div class="action-checkbox-container">
+                        <div class="action-checkbox">
+                          <div class="checkbox-inside"></div>
                         </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="table-entry">
                     <div class="cell">j1o287</div>
@@ -208,10 +214,12 @@
                     <div data-page-target="applicant-details" class="cell accented-text">View</div>
                     <div class="cell accented-text">11/01/97</div>
                     <div class="cell">
-                          <div class="action-checkbox">
-                            <div class="checkbox-inside"></div>
-                          </div>
+                      <div class="action-checkbox-container">
+                        <div class="action-checkbox">
+                          <div class="checkbox-inside"></div>
                         </div>
+                      </div>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -287,7 +295,7 @@
                     </div>
                     <div class="small">Stage 1</div>
                     <div class="small-text">Tunde Jason</div>
-                    <div class="note accented-text">+ Note</div>
+                    <div data-modal="note-modal" class="note accented-text">+ Note</div>
                   </div>
   
                   <div class="connector"></div>
@@ -299,7 +307,7 @@
                     </div>
                     <div class="small">Stage 2</div>
                     <div class="small-text">Tunde Jason</div>
-                    <div class="note accented-text">+ Note</div>
+                    <div data-modal="note-modal" class="note accented-text">+ Note</div>
                   </div>
                                   
                   <div class="connector"></div>
@@ -311,7 +319,7 @@
                     </div>
                     <div class="small">Stage 3</div>
                     <div class="small-text">Tunde Jason</div>
-                    <div class="note accented-text">+ Note</div>
+                    <div data-modal="note-modal" class="note accented-text">+ Note</div>
                   </div>
                                   
                   <div class="connector"></div>
@@ -323,7 +331,7 @@
                     </div>
                     <div class="small">Stage 4</div>
                     <div class="small-text">Tunde Jason</div>
-                    <div class="note accented-text">+ Note</div>
+                    <div data-modal="note-modal" class="note accented-text">+ Note</div>
                   </div>
                 </div>
                 <button class="disburse-btn cta secondary">
@@ -490,10 +498,35 @@
           </div>
         </div>
         
+        <div id="note-modal" data-modal-target="note-modal" class="modal">
+          <div class="mask">
+            <div class="mask-contents">
+              <div class="">
+                <div class="applicant-name">Loan Application <span class="accented-text">Joseph Emerson</span></div>
+                <div class="shaded-box">
+                 Tunde Jason
+                </div>
+                <div class="text-box">
+                  <div>write here</div>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="buttons">
+                  <button data-modal="application-final-modal" class="cta secondary">
+                    Deny
+                  </button>
+                  <button data-modal="application-final-modal" class="cta">
+                    Approve
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </main>
   <script src="../js/dashboard.js"></script>
+  <script src="../js/modals.js"></script>
   <script src="../js/admin/common.js"></script>
 </body>
 </html>

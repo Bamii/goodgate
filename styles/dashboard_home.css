@@ -3295,6 +3295,7 @@ main {
 
 @media screen and (min-width: 760px) {
   #dashboard-content-container .dashboard-contents .left {
+    padding: 0;
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;

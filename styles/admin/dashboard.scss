@@ -1,1 +1,63 @@
 @import "admin";
+
+.welcome-message {
+  .dashboard-top-link {
+    text-transform: uppercase;
+    padding: 0 0.2rem;
+    color: #FFDC4F;
+
+    &.loan-link {
+      color: $secondary-color;
+    }
+  }
+}
+
+.dashboard-contents {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows:  auto auto;
+  gap: 2ch;
+
+  .dashboard-card-container {
+    .dashboard-card {
+      width: max-content;
+      height: 100%;
+      padding: 1.5rem 1.5rem 3rem;
+      background: $gray-bg;
+      border-radius: 3px;
+
+      &#repayment-card {
+        width: 100%;
+      }
+
+      &#list {
+        width: 100%;
+        height: auto;
+
+        .table {
+          width: 100%;
+        }
+      }
+  
+      .header {
+        font-size: 2ch;
+      }
+  
+      .sub-header {
+        span {
+          font-size: 1.5ch;
+        }
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      .body {
+        margin-top: 0.5rem;
+        height: 100%;
+        display: flex;
+        place-items: center;
+      }
+    }
+  }
+}

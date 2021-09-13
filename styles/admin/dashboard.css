@@ -3339,4 +3339,74 @@ main {
       -ms-flex: 1;
           flex: 1;
 }
+
+.welcome-message .dashboard-top-link {
+  text-transform: uppercase;
+  padding: 0 0.2rem;
+  color: #FFDC4F;
+}
+
+.welcome-message .dashboard-top-link.loan-link {
+  color: #51C272;
+}
+
+.dashboard-contents {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  gap: 2ch;
+}
+
+.dashboard-contents .dashboard-card-container .dashboard-card {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  padding: 1.5rem 1.5rem 3rem;
+  background: #F0EFEF;
+  border-radius: 3px;
+}
+
+.dashboard-contents .dashboard-card-container .dashboard-card#repayment-card {
+  width: 100%;
+}
+
+.dashboard-contents .dashboard-card-container .dashboard-card#list {
+  width: 100%;
+  height: auto;
+}
+
+.dashboard-contents .dashboard-card-container .dashboard-card#list .table {
+  width: 100%;
+}
+
+.dashboard-contents .dashboard-card-container .dashboard-card .header {
+  font-size: 2ch;
+}
+
+.dashboard-contents .dashboard-card-container .dashboard-card .sub-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard-contents .dashboard-card-container .dashboard-card .sub-header span {
+  font-size: 1.5ch;
+}
+
+.dashboard-contents .dashboard-card-container .dashboard-card .body {
+  margin-top: 0.5rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+}
 /*# sourceMappingURL=dashboard.css.map */

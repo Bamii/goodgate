@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/admin/dashboard.css">
+  <link rel="stylesheet" href="../vendors/c3/c3.css">
+  <!-- <script src="../vendors/d3/d3.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="../vendors/c3/c3.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>Admin Dashboard</title>
 </head>
 <body>
@@ -145,15 +150,77 @@
 
           <div class="welcome-message">
             Overview
+            <div>
+              <span class="loan-link dashboard-top-link">Loan</span>
+              <span class="dashboard-top-link">Investment</span>
+            </div>
           </div>
 
-          <div class="dashboard-contents split-row">
-
+          <div class="dashboard-contents">
+            <div class="dashboard-card-container">
+              <div class="dashboard-card">
+                <div class="header">Loan Statistics</div>
+                <div class="body">
+                  <canvas id="loan_statistic_chart" style="width: auto; height: 10rem;"></canvas>
+                  <!-- <div id="loan_statistic_chart"></div> -->
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-card-container">
+              <div class="dashboard-card" id="repayment-card">
+                <div class="header">Repayment</div>
+                <div class="body">
+                  <canvas id="repayment_bar_chart" style="width: 35rem; min-height: 5rem;"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-card-container">
+              <div class="dashboard-card">
+                <div class="header">Funds</div>
+                <div class="sub-header">
+                  <span class="small-text">Total Allocation</span>
+                  <span class="small-text">460,000,000</span>
+                </div>
+                <div class="body">
+                  <canvas id="funds_pie_chart" style="width: auto; height: 10rem;"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="dashboard-card-container">
+              <div class="dashboard-card" id="list">
+                <div class="header">List</div>
+                <div class="body">
+                  <div class="table">
+                    <div class="table-header">
+                      <div class="cell">Item</div>
+                      <div class="cell">No</div>
+                      <div class="cell">Action</div>
+                      <div class="cell">Amount</div>
+                    </div>
+                    <div class="table-body">
+                      <div class="table-entry">
+                        <div class="cell">Approved Loan</div>
+                        <div class="cell">20</div>
+                        <div class="cell accented-text">View Details</div>
+                        <div class="cell">N343545.54</div>
+                      </div>
+                      <div class="table-entry">
+                        <div class="cell">Approved Loan</div>
+                        <div class="cell">20</div>
+                        <div class="cell accented-text">View Details</div>
+                        <div class="cell">N343545.54</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </div>
   </main>
   <script src="../js/dashboard.js"></script>
+  <script src="../js/dashboard-home.js"></script>
 </body>
 </html>

@@ -3490,6 +3490,10 @@ main {
   display: none;
 }
 
+.applicant-details-page .approval-row .approval-steps .approval-step .note {
+  cursor: pointer;
+}
+
 .applicant-details-page .approval-row .approval-steps .connector {
   width: 5rem;
   border: 1px solid #51C272;
@@ -3612,5 +3616,63 @@ main {
 
 .credit-score-table .cell .indicator-container .indicator.bad {
   background: red;
+}
+
+#note-modal .mask-contents {
+  background: #F7F7F7;
+}
+
+#note-modal .mask-contents > div > div {
+  margin: 1.5rem 0;
+}
+
+#note-modal .mask-contents .applicant-name {
+  text-align: center;
+}
+
+#note-modal .mask-contents .shaded-box {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #51C272;
+  background: #D0EFD9;
+  text-align: center;
+}
+
+#note-modal .mask-contents .text-box {
+  background: white;
+  padding: 1.2rem 1.8rem;
+}
+
+#note-modal .mask-contents .text-box div {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+#note-modal .mask-contents .text-box textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid  #707070;
+}
+
+#note-modal .mask-contents .buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+#note-modal .mask-contents .buttons button {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  #note-modal .mask-contents {
+    padding: 2rem 4rem;
+    width: 55%;
+  }
 }
 /*# sourceMappingURL=loan_applicants.css.map */

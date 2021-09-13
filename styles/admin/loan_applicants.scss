@@ -108,6 +108,10 @@
             }
           }
         }
+
+        .note {
+          cursor: pointer;
+        }
       }
   
       .connector {
@@ -228,6 +232,60 @@
           background: red;
         }
       }
+    }
+  }
+}
+
+#note-modal {
+  .mask-contents {
+    background: #F7F7F7;
+    > div > div {
+      margin: 1.5rem 0;
+    }
+
+    .applicant-name {
+      text-align: center;
+    }
+    .shaded-box {
+      padding: 1rem;
+      border-radius: 5px;
+      border: 1px solid $secondary-color;
+      background: #D0EFD9;
+      text-align: center;
+    }
+
+    .text-box {
+      background: white;
+      padding: 1.2rem 1.8rem;
+
+      div {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+      }
+
+      textarea {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid  #707070;
+      }
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+
+      button {
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+      }
+    }
+
+    @include minWidth($breakpoint-desktop) {
+      padding: 2rem 4rem;
+      width: 55%;
     }
   }
 }

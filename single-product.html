@@ -287,7 +287,7 @@
               </div>
   
               <div class="action">
-                <button class="cta">
+                <button data-modal="application-final-modal" class="cta">
                   Apply
                 </button>
               </div>
@@ -699,8 +699,10 @@
                         <div class="cell">1</div>
                         <div class="cell">Apr 2019 to Aug 2019 Statement</div>
                         <div class="cell">
-                          <div class="action-checkbox">
-                            <div class="checkbox-inside"></div>
+                          <div class="action-checkbox-container">
+                            <div class="action-checkbox">
+                              <div class="checkbox-inside"></div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -708,8 +710,10 @@
                         <div class="cell">2</div>
                         <div class="cell">Apr 2019 to Aug 2019 Statement</div>
                         <div class="cell">
-                          <div class="action-checkbox">
-                            <div class="checkbox-inside"></div>
+                          <div class="action-checkbox-container">
+                            <div class="action-checkbox">
+                              <div class="checkbox-inside"></div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -871,18 +875,19 @@
           </div>
         </div>
 
-        <div data-modal-target="application-final-modal" class="modal">
+        <div id="application-final-modal" data-modal-target="application-final-modal" class="modal">
           <div class="mask">
             <div class="mask-contents">
               <div class="">
-                <img class="icon" src="images/Smile Completed.svg" alt="Completed">
+                <img class="icon" src="images/Smile Completed.svg" alt="Completed" />
                 <div class="large-text">Application Completed</div>
                 <div class="small-text">
-                  Thank you for applying for our <span class="accented-text">Car Loan</span>. We are processing your application and will give a feedback soon
+                  We are processing your application and will give a feedback soon
                 </div>
                 <button data-modal="application-final-modal" class="cta">
                   Close
                 </button>
+              </div>
             </div>
           </div>
         </div>

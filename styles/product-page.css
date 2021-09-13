@@ -3581,11 +3581,12 @@ main {
       grid-template-columns: 1fr 2fr 1fr;
 }
 
-.mask-contents {
+#application-final-modal .mask-contents {
+  padding: 2rem 5rem;
   text-align: center;
 }
 
-.mask-contents .icon {
+#application-final-modal .mask-contents .icon {
   height: 10rem;
   width: 10rem;
   border: 1px solid #51C272;
@@ -3593,7 +3594,7 @@ main {
   margin: 1rem auto;
 }
 
-.mask-contents .cta {
+#application-final-modal .mask-contents .cta {
   margin-top: 2rem;
   padding: 1.3rem 5rem;
 }
