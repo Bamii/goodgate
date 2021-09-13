@@ -3692,6 +3692,8 @@ main {
 
 .applicant-modal .mask-contents button.cta {
   margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 1.1rem;
 }
 
 .applicant-modal .mask-contents .buttons {
