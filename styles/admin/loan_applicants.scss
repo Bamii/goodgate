@@ -236,9 +236,15 @@
   }
 }
 
-#note-modal {
+.applicant-modal {
   .mask-contents {
-    background: #F7F7F7;
+    background: #F7F7F7 !important;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+    }
+
     > div > div {
       margin: 1.5rem 0;
     }
@@ -246,6 +252,29 @@
     .applicant-name {
       text-align: center;
     }
+
+    .modal-input-container {
+      display: flex;
+
+      .big-label {
+        padding: 1.35rem 2rem;
+        border-radius: 5px 0 0 5px;
+        height: 100%;
+        background: $secondary-color;
+      }
+
+      .input-container {
+        width: 100%;
+        input {
+          padding: 1.5rem 1rem;
+          border: 1px solid $secondary-color;
+          border-radius: 0 5px 5px 0;
+          width: 100%;
+          font-size: 1rem;
+        }
+      }
+    }
+
     .shaded-box {
       padding: 1rem;
       border-radius: 5px;
@@ -269,6 +298,10 @@
         border-radius: 5px;
         border: 1px solid  #707070;
       }
+    }
+
+    button.cta {
+      margin: 0 auto;
     }
 
     .buttons {

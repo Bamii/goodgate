@@ -3618,19 +3618,54 @@ main {
   background: red;
 }
 
-#note-modal .mask-contents {
-  background: #F7F7F7;
+.applicant-modal .mask-contents {
+  background: #F7F7F7 !important;
 }
 
-#note-modal .mask-contents > div > div {
+.applicant-modal .mask-contents > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.applicant-modal .mask-contents > div > div {
   margin: 1.5rem 0;
 }
 
-#note-modal .mask-contents .applicant-name {
+.applicant-modal .mask-contents .applicant-name {
   text-align: center;
 }
 
-#note-modal .mask-contents .shaded-box {
+.applicant-modal .mask-contents .modal-input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.applicant-modal .mask-contents .modal-input-container .big-label {
+  padding: 1.35rem 2rem;
+  border-radius: 5px 0 0 5px;
+  height: 100%;
+  background: #51C272;
+}
+
+.applicant-modal .mask-contents .modal-input-container .input-container {
+  width: 100%;
+}
+
+.applicant-modal .mask-contents .modal-input-container .input-container input {
+  padding: 1.5rem 1rem;
+  border: 1px solid #51C272;
+  border-radius: 0 5px 5px 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.applicant-modal .mask-contents .shaded-box {
   padding: 1rem;
   border-radius: 5px;
   border: 1px solid #51C272;
@@ -3638,24 +3673,28 @@ main {
   text-align: center;
 }
 
-#note-modal .mask-contents .text-box {
+.applicant-modal .mask-contents .text-box {
   background: white;
   padding: 1.2rem 1.8rem;
 }
 
-#note-modal .mask-contents .text-box div {
+.applicant-modal .mask-contents .text-box div {
   text-transform: uppercase;
   font-size: 0.8rem;
   margin-bottom: 0.3rem;
 }
 
-#note-modal .mask-contents .text-box textarea {
+.applicant-modal .mask-contents .text-box textarea {
   width: 100%;
   border-radius: 5px;
   border: 1px solid  #707070;
 }
 
-#note-modal .mask-contents .buttons {
+.applicant-modal .mask-contents button.cta {
+  margin: 0 auto;
+}
+
+.applicant-modal .mask-contents .buttons {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -3663,14 +3702,14 @@ main {
   gap: 1rem;
 }
 
-#note-modal .mask-contents .buttons button {
+.applicant-modal .mask-contents .buttons button {
   width: 100%;
   text-transform: uppercase;
   font-size: 1.1rem;
 }
 
 @media screen and (min-width: 1024px) {
-  #note-modal .mask-contents {
+  .applicant-modal .mask-contents {
     padding: 2rem 4rem;
     width: 55%;
   }

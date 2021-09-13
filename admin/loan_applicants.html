@@ -147,7 +147,7 @@
             <div class="welcome-message">
               Loan Applicants
               <div>
-                <button class="cta">Email</button>
+                <button data-modal="email-modal" class="cta">Email</button>
               </div>
             </div>
   
@@ -498,7 +498,7 @@
           </div>
         </div>
         
-        <div id="note-modal" data-modal-target="note-modal" class="modal">
+        <div id="note-modal" data-modal-target="note-modal" class="applicant-modal modal">
           <div class="mask">
             <div class="mask-contents">
               <div class="">
@@ -518,6 +518,29 @@
                     Approve
                   </button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="email-modal" data-modal-target="email-modal" class="applicant-modal modal">
+          <div class="mask">
+            <div class="mask-contents">
+              <div class="">
+                <div class="applicant-name">Loan Application <span class="accented-text">Joseph Emerson</span></div>
+                <div class="modal-input-container">
+                  <div class="big-label">Subject</div>
+                  <div class="input-container">
+                    <input id="email" name="email" type="text" placeholder="j.doe@gmail.com">
+                  </div>
+                </div>
+                <div class="text-box">
+                  <div>write here</div>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button data-modal="application-final-modal" class="cta">
+                  Approve
+                </button>
               </div>
             </div>
           </div>
