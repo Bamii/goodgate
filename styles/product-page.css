@@ -3581,6 +3581,77 @@ main {
       grid-template-columns: 1fr 2fr 1fr;
 }
 
+.application-contents.application-final-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+  place-content: center;
+}
+
+.application-contents.application-final-contents .header {
+  margin-bottom: 0 !important;
+}
+
+.application-contents.application-final-contents .account {
+  width: 50%;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+.application-contents.application-final-contents .account .details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.application-contents.application-final-contents .buttons {
+  width: 60%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.application-contents.application-final-contents .buttons button {
+  width: 100%;
+}
+
+.application-contents.application-final-contents button.cta {
+  margin-top: 2rem;
+}
+
+#application-report {
+  margin: 2rem;
+  border: 1px solid black;
+  background: white;
+}
+
+#application-report > div {
+  padding: 1rem;
+}
+
+#application-report .report-header img.application-report-logo {
+  width: auto;
+  height: 5rem;
+}
+
+#application-report .report-body {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  min-height: 20rem;
+}
+
 #application-final-modal .mask-contents {
   padding: 2rem 5rem;
   text-align: center;

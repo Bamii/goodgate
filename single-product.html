@@ -287,7 +287,8 @@
               </div>
   
               <div class="action">
-                <button data-modal="application-final-modal" class="cta">
+                <!-- <button data-modal="application-final-modal" class="cta"> -->
+                <button data-application-open="done" class="cta">
                   Apply
                 </button>
               </div>
@@ -870,6 +871,76 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-application-step="submitted" class="">
+            <div class="welcome-message">
+              Ready to apply for a loan? Please fill the form
+              <span data-application-open="main" class="accented-text">BACK</span>
+            </div>
+
+            <div class="application-contents application-final-contents">
+              <div class="header large-text">Application Status</div>
+              <div class="">
+                Your loan application is undergoing review. We would get back to you soon with a response.
+              </div>
+              <button data-application-open="report" class="cta">
+                Preview Application
+              </button>
+            </div>
+          </div>
+
+          <div data-application-step="done" class="">
+            <div class="welcome-message">
+              Ready to apply for a loan? Please fill the form
+              <span data-application-open="main" class="accented-text">BACK</span>
+            </div>
+
+            <div class="application-contents application-final-contents">
+              <div class="header large-text">Application Status</div>
+              <div class="">
+                Your loan has been approved. Please review your loan offer and give your consent to disburse.
+              </div>
+              <div class="account">
+                <div class="accented-text">Disbursement Account</div>
+                <div class="details">
+                  <div class="account-details">
+                    <div class="">Account Name: Emerson Joseph</div>
+                    <div class="">Account Number: 012374494955</div>
+                  </div>
+                  <div class="loan-details">
+                    <div class="">Loan Date: 9th September 2021</div>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons">
+                <button data-application-open="report" class="cta">
+                  Preview Application
+                </button>
+                <button class="cta">
+                  I agree
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div data-application-step="report" class="">
+            <div class="welcome-message">
+              Ready to apply for a loan? Please fill the form
+              <span data-application-open="submitted" class="accented-text">BACK</span>
+            </div>
+
+            <div id="application-report">
+              <div class="report-header">
+                <img src="images/GoodGate-Finance-Limited-Logo.png" alt="Logo." class="application-report-logo">
+              </div>
+              <div class="report-body">
+
+              </div>
+              <div class="report-footer">
+                <button class="cta">Download Report</button>
               </div>
             </div>
           </div>
