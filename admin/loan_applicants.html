@@ -147,6 +147,7 @@
             <div class="welcome-message">
               Loan Applicants
               <div>
+                <button data-page-target="create-applicant" class="cta">Create</button>
                 <button data-modal="email-modal" class="cta">Email</button>
               </div>
             </div>
@@ -284,6 +285,7 @@
                 <div data-page-target="credit-check" class="view">view</div>
               </div>
             </div>
+
             <div class="">
               <div class="medium-text">Approval/Denied</div>
               <div class="approval-row">
@@ -490,6 +492,190 @@
                       <div class="indicator-container">
                         <div class="indicator bad"></div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-page="create-applicant" class="applicant-details-page">
+            <div class="welcome-message">
+              <div class="applicant-name">
+                <span data-page-target="main" class="accented-text back">BACK</span>
+                Create Applicant
+              </div>
+
+              <span class="accented-text">Print</span>
+            </div>
+
+            <div class="applicant-details">
+              <div class="details-row">
+                <img src="../images/passport.png" alt="" class="icon">
+                <div class="">Personal Details</div>
+                <div data-page-target="create-applicant-personal-details" class="view">view</div>
+              </div>
+              <div class="details-row">
+                <img src="../images/passport.png" alt="" class="icon">
+                <div class="">Education and Employment Details</div>
+                <div class="view">view</div>
+              </div>
+              <div class="details-row">
+                <img src="../images/passport.png" alt="" class="icon">
+                <div class="">Address Details</div>
+                <div class="view">view</div>
+              </div>
+              <div class="details-row">
+                <img src="../images/passport.png" alt="" class="icon">
+                <div class="">Loan Details</div>
+                <div class="view">view</div>
+              </div>
+              <div class="details-row">
+                <img src="../images/passport.png" alt="" class="icon">
+                <div class="">Bank Details</div>
+                <div class="view">view</div>
+              </div>
+              <div class="details-row">
+                <img src="../images/passport.png" alt="" class="icon">
+                <div class="">Credit Details</div>
+                <div class="view">view</div>
+              </div>
+            </div>
+
+            <div class="">
+              <button class="cta">Submit</button>
+            </div>
+          </div>
+
+          <div data-page="create-applicant-personal-details" class="applicant-details-page">
+            <div class="welcome-message">
+              <div class="applicant-name">
+                <span data-page-target="create-applicant" class="accented-text back">BACK</span>
+                Create Applicant - Personal Details
+              </div>
+
+              <span class="accented-text">Print</span>
+            </div>
+
+            <div class="page-contents">
+              <div class="header medium-text">
+                Personal Information
+              </div>
+              <div class="split-row">
+                <div class="left">
+                  <div class="image-upload-container">
+                    <div class="label">Passport</div>
+                    <div class="image">
+                      <img src="images/passport.png" alt="User Passport Image.">
+                    </div>  <!-- <img src="" alt="User Image."> -->
+                    <div class="image-upload-input">
+                      <input type="file" name="passportupload" id="passportupload">
+                      <label class="label" for="passportupload">click here</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="row">
+                    <div class="input-container">
+                      <label for="name"><span>fullname</span></label>
+                      <input name="name" type="text" placeholder="John Doe">
+                    </div>
+                    <div class="input-container select">
+                      <label for="marital_status"><span>marital status</span></label>
+                      <select name="marital_status" id="">
+                        <option value="">---------</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container date">
+                      <label for="dob"><span>Date of Birth</span></label>
+                      <input name="dob" type="date">
+                    </div>
+                    <div class="input-container">
+                      <label for="bvn"><span>bvn</span></label>
+                      <input name="bvn" type="text" placeholder="----------------">
+                    </div>
+                    <div class="input-container select">
+                      <label for="gender"><span>gender</span></label>
+                      <select name="gender" id="">
+                        <option value="">---------</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container">
+                      <label for="email"><span>Email</span></label>
+                      <input name="email" type="type">
+                    </div>
+                    <div class="input-container select">
+                      <label for="no_of_children"><span>Number of children</span></label>
+                      <select name="no_of_children" id="">
+                        <option value="">-----</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container select">
+                      <label for="identification"><span>identification type</span></label>
+                      <select name="identification" id="">
+                        <option value="">-----</option>
+                      </select>
+                    </div>
+                    <div class="input-container">
+                      <label for="identification_nos"><span>identification nos</span></label>
+                      <input name="identification_nos" type="type">
+                    </div>
+
+                    <div class="input-container date">
+                      <label for="issue_date"><span>Issue Date</span></label>
+                      <input name="issue_date" type="date">
+                    </div>
+                    <div class="input-container date">
+                      <label for="expiry_date"><span>Expiry Date</span></label>
+                      <input name="expiry_date" type="date">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container">
+                      <label for="phone_number"><span>Phone Number</span></label>
+                      <input name="phone_number" type="text" placeholder="+2341234567634">
+                    </div>
+                    <div class="input-container">
+                      <label for="office_phone_number"><span>Phone Number</span></label>
+                      <input name="office_phone_number" type="text" placeholder="+2341234567634">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container full-width">
+                      <label for="address"><span>Home address</span></label>
+                      <textarea name="address" type="text"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-container select">
+                      <label for="landmart"><span>nearest landmark</span></label>
+                      <select name="landmart" id="">
+                        <option value="">-----</option>
+                      </select>
+                    </div>
+                    <div class="input-container select">
+                      <label for="lga"><span>local government area</span></label>
+                      <select name="lga" id="">
+                        <option value="">-----</option>
+                      </select>
+                    </div>
+                    <div class="input-container select">
+                      <label for="state"><span>state</span></label>
+                      <select name="state" id="">
+                        <option value="">-----</option>
+                      </select>
+                    </div>
+                    <div class="input-container select">
+                      <label for="residential_status"><span>residential status</span></label>
+                      <select name="residential_status" id="">
+                        <option value="">-----</option>
+                      </select>
                     </div>
                   </div>
                 </div>
